@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CountryNameModeActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvQuestionNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question #"
+            android:textSize="15pt"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            />
+        <TextView
+            android:id="@+id/tvCountryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lorem Ipsum"
+            android:textSize="20pt"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tvQuestionNum"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/textBlue"
+            android:textStyle="bold"/>
+        <TableLayout
+            android:id="@+id/layoutAns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:layout_below="@id/tvCountryName">
+            <TableRow>
+                <ImageButton
+                    android:id="@+id/btAnsA"
+                    android:layout_height="120dp" />
+                <ImageButton
+                    android:id="@+id/btAnsB"
+                    android:layout_height="120dp"
+                    />
+            </TableRow>
+            <TableRow>
+                <ImageButton
+                    android:id="@+id/btAnsC"
+                    android:layout_height="120dp"/>
+                <ImageButton
+                    android:id="@+id/btAnsD"
+                    android:layout_height="120dp"/>
+            </TableRow>
+        </TableLayout>
+        <ProgressBar
+            android:id="@+id/progressTime"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/layoutAns"
+            android:indeterminate="false"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

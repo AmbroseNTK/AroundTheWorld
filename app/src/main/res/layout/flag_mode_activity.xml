@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".FlagModeActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvQuestionNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question:"
+            android:textSize="15pt"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"/>
+        <ImageView
+            android:id="@+id/imgFlag"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/tvQuestionNum"
+            android:background="@color/colorPrimary"
+            />
+       <TableLayout
+           android:id="@+id/layoutAns"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/imgFlag"
+           android:layout_marginTop="50dp"
+           android:stretchColumns="*">
+           <TableRow>
+               <Button
+                   android:id="@+id/btAnsA"
+                   android:text="Country A"/>
+               <Button
+                   android:id="@+id/btAnsB"
+                   android:text="Country B"/>
+           </TableRow>
+           <TableRow>
+               <Button
+                   android:id="@+id/btAnsC"
+                   android:text="Country C"/>
+               <Button
+                   android:id="@+id/btAnsD"
+                   android:text="Country D"/>
+           </TableRow>
+       </TableLayout>
+        <ProgressBar
+            android:id="@+id/progressTime"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/layoutAns"
+            android:indeterminate="false"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
