@@ -38,7 +38,7 @@ public class WorldMap {
             Document document = documentBuilder.parse(inputStream);
             Element element =document.getDocumentElement();
             element.normalize();
-            NodeList nodeList = document.getElementsByTagName("world");
+            NodeList nodeList = document.getElementsByTagName("country");
             Node node;
             for(int i=0;i<nodeList.getLength();i++){
                 node = nodeList.item(i);
