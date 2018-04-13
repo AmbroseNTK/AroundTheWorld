@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".OptionActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tvSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Setting"
+        android:textStyle="bold"
+        android:textSize="20pt"
+        android:textColor="@color/textBlue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+    <CheckBox
+        android:id="@+id/checkMute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mute"
+        android:textSize="15pt"
+        android:layout_below="@id/tvSetting"
+        android:layout_marginStart="10dp"/>
+    <TextView
+        android:id="@+id/tvPromp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select your country"
+        android:textSize="12pt"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/checkMute"
+        android:layout_marginStart="10dp"
+        />
+    <Spinner
+        android:id="@+id/spinCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tvPromp1"/>
+    <Button
+        android:id="@+id/btAutoDetectCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Auto detect"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/spinCountry"/>
+
+</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

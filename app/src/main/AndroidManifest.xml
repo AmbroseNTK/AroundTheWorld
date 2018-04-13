@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".OptionActivity"/>
+        <activity android:name=".FlagModeActivity"/>
+        <activity android:name=".CountryNameModeActivity"/>
+
     </application>
 
 </manifest>
