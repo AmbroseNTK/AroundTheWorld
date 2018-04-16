@@ -57,6 +57,14 @@
             android:layout_below="@id/btDiscoveryMode"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btLeaderBoard"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="dlsfk"
+            />
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>
