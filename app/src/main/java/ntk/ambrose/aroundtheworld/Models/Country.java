@@ -1,4 +1,4 @@
-package ntk.ambrose.aroundtheworld;
+package ntk.ambrose.aroundtheworld.Models;
 
 public class Country {
     private String name;

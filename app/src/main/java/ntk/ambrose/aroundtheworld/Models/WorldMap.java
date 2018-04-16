@@ -1,4 +1,4 @@
-package ntk.ambrose.aroundtheworld;
+package ntk.ambrose.aroundtheworld.Models;
 
 import android.content.Context;
 
@@ -8,7 +8,6 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 import java.io.InputStream;
-import java.util.ArrayList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -16,12 +15,12 @@ import javax.xml.parsers.DocumentBuilderFactory;
 public class WorldMap {
     public final int WIDTH = 12;
     public final int HEIGHT = 6;
-    public ArrayList<Country>[][] map;
+    private CountryUnit[][] map;
     private WorldMap() {
-        map = new ArrayList[HEIGHT][WIDTH];
-        for (int i = 0; i < HEIGHT; i++) {
-            for (int j = 0; j < WIDTH; j++) {
-                map[i][j] = new ArrayList<>();
+        map = new CountryUnit[HEIGHT][WIDTH];
+        for(int i=0;i<HEIGHT;i++){
+            for(int j=0;j<WIDTH;j++){
+                map[i][j]=new CountryUnit();
             }
         }
     }
@@ -47,7 +46,7 @@ public class WorldMap {
                     Country country = new Country(getNodeValue("name",subElement),getNodeValue("code",subElement),getNodeValue("lang",subElement));
                     int x = Integer.parseInt(getNodeValue("x",subElement));
                     int y = Integer.parseInt(getNodeValue("y",subElement));
-                    map[y-1][x-1].add(country);
+                    map[y-1][x-1].getUnit().add(country);
                 }
             }
             inputStream.close();
@@ -60,5 +59,12 @@ public class WorldMap {
         NodeList nodeList = element.getElementsByTagName(tag).item(0).getChildNodes();
         Node node = nodeList.item(0);
         return node.getNodeValue();
+    }
+
+    public CountryUnit[][] getMap() {
+        return map;
+    }
+    public CountryUnit getCell(int height, int width){
+        return map[height][width];
     }
 }
