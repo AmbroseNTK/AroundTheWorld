@@ -17,12 +17,12 @@
             android:layout_marginStart="10dp"/>
         <ImageView
             android:id="@+id/imgFlag"
-            android:layout_width="250dp"
-            android:layout_height="100dp"
+            android:layout_width="290dp"
+            android:layout_height="150dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
             android:layout_below="@id/tvQuestionNum"
-            android:background="@color/colorPrimary"
+
             />
        <TableLayout
            android:id="@+id/layoutAns"
@@ -35,6 +35,8 @@
                <Button
                    android:id="@+id/btAnsA"
                    android:text="Country A"/>
+           </TableRow>
+           <TableRow>
                <Button
                    android:id="@+id/btAnsB"
                    android:text="Country B"/>
@@ -43,6 +45,8 @@
                <Button
                    android:id="@+id/btAnsC"
                    android:text="Country C"/>
+           </TableRow>
+           <TableRow>
                <Button
                    android:id="@+id/btAnsD"
                    android:text="Country D"/>

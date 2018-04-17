@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".OptionActivity">
 <RelativeLayout
+    android:background="@color/backgroundHong"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <TextView
@@ -14,7 +15,7 @@
         android:text="Setting"
         android:textStyle="bold"
         android:textSize="20pt"
-        android:textColor="@color/textBlue"
+        android:textColor="@color/textXanh"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp" />
     <CheckBox
@@ -22,6 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mute"
+        android:textColor="@color/textDen"
         android:textSize="15pt"
         android:layout_marginTop="10pt"
         android:layout_below="@id/tvSetting"
@@ -32,7 +34,7 @@
         android:layout_height="wrap_content"
         android:text="Select your country"
         android:textSize="12pt"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="70dp"
         android:layout_below="@id/checkMute"
         android:layout_marginStart="20dp"
 
