@@ -16,24 +16,26 @@
         android:textSize="20pt"
         android:textColor="@color/textBlue"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp" />
+        android:layout_marginTop="10dp" />
     <CheckBox
         android:id="@+id/checkMute"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mute"
         android:textSize="15pt"
+        android:layout_marginTop="10pt"
         android:layout_below="@id/tvSetting"
-        android:layout_marginStart="10dp"/>
+        android:layout_marginStart="20dp"/>
     <TextView
         android:id="@+id/tvPromp1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Select your country"
         android:textSize="12pt"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:layout_below="@id/checkMute"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="20dp"
+
         />
     <Spinner
         android:id="@+id/spinCountry"
