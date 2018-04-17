@@ -2,7 +2,7 @@ package ntk.ambrose.aroundtheworld;
 
 public class Setting {
     private boolean isMute;
-    private String country;
+    private String country="vn";
     private int x;
     private int y;
 

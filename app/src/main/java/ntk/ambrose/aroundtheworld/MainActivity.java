@@ -1,6 +1,7 @@
 package ntk.ambrose.aroundtheworld;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     Button btCountryMode;
     Button btDiscovery;
     Button btMixMode;
+    Button btSetting;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         btCountryMode=findViewById(R.id.btNameMode);
         btMixMode = findViewById(R.id.btMixMode);
         btDiscovery=findViewById(R.id.btDiscoveryMode);
+        btSetting = findViewById(R.id.btSetting);
 
         btFlagMode.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,6 +55,16 @@ public class MainActivity extends AppCompatActivity {
                 QuestionBundle.getInstance().setLevel(QuestionBundle.LEVEL_EASY);
                 QuestionBundle.getInstance().generateQuestionList(3,10);
                 Log.d("APP","Created question bundle");
+                Intent intent = new Intent(MainActivity.this,FlagModeActivity.class);
+                intent.putExtra("index",0);
+                startActivity(intent);
+            }
+        });
+
+        btSetting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,OptionActivity.class));
             }
         });
 

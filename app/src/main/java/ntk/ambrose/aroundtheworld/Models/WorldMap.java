@@ -9,6 +9,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 import java.io.InputStream;
+import java.util.HashMap;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -17,8 +18,10 @@ public class WorldMap {
     public final int WIDTH = 12;
     public final int HEIGHT = 6;
     private CountryUnit[][] map;
+    private HashMap<String,String> codeTable;
     private WorldMap() {
         map = new CountryUnit[HEIGHT][WIDTH];
+        codeTable=new HashMap<>();
         for(int i=0;i<HEIGHT;i++){
             for(int j=0;j<WIDTH;j++){
                 map[i][j]=new CountryUnit();
@@ -47,6 +50,7 @@ public class WorldMap {
                     Country country = new Country(getNodeValue("name",subElement),getNodeValue("code",subElement),getNodeValue("lang",subElement));
                     int x = Integer.parseInt(getNodeValue("x",subElement));
                     int y = Integer.parseInt(getNodeValue("y",subElement));
+                    codeTable.put(country.getCode(),country.getName());
                     map[y-1][x-1].getUnit().add(country);
                 }
             }
@@ -72,5 +76,8 @@ public class WorldMap {
     }
     public CountryUnit getCell(int height, int width){
         return map[height][width];
+    }
+    public String codeToName(String code){
+        return codeTable.containsKey(code)?codeTable.get(code):"";
     }
 }

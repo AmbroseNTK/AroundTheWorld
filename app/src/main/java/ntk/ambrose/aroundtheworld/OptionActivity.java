@@ -14,6 +14,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -28,34 +29,38 @@ public class OptionActivity extends AppCompatActivity{
     Spinner spinCountry;
     LocationManager locationManager;
     LocationListener locationListener;
+    ArrayList<String> countries;
+    String code;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.option_activity);
 
         locationManager=(LocationManager)getSystemService(Context.LOCATION_SERVICE);
+
         locationListener=new LocationListener() {
             @Override
             public void onLocationChanged(Location location) {
                 Geocoder geocoder = new Geocoder(getBaseContext(), Locale.getDefault());
                 try {
                     List<Address> addressList = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
-                    addressList.get(0).getCountryCode();
+                    Toast.makeText(getBaseContext(),addressList.get(0).getCountryCode(),Toast.LENGTH_LONG).show();
+                    code = addressList.get(0).getCountryCode().toLowerCase();
+                    Setting.getInstance().setCountry(code);
+                    spinCountry.setSelection(countries.indexOf(WorldMap.getInstance().codeToName(code)));
+                    locationManager.removeUpdates(this);
                 } catch (IOException exception) {
 
                 }
             }
-
             @Override
             public void onStatusChanged(String s, int i, Bundle bundle) {
 
             }
-
             @Override
             public void onProviderEnabled(String s) {
 
             }
-
             @Override
             public void onProviderDisabled(String s) {
 
@@ -64,7 +69,7 @@ public class OptionActivity extends AppCompatActivity{
         checkMute=findViewById(R.id.checkMute);
         btDetectCountry=findViewById(R.id.btAutoDetectCountry);
         spinCountry = findViewById(R.id.spinCountry);
-        ArrayList<String> countries = new ArrayList<>();
+        countries = new ArrayList<>();
         for(int i = 0; i< WorldMap.getInstance().HEIGHT; i++){
             for(int j=0;j<WorldMap.getInstance().WIDTH;j++) {
                 for (int k = 0; k < WorldMap.getInstance().getCell(i, j).getUnit().size(); k++) {
@@ -80,14 +85,11 @@ public class OptionActivity extends AppCompatActivity{
         btDetectCountry.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 try {
                     locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 5000, 10, locationListener);
                 }catch(SecurityException ex){
 
                 }
-
-
             }
         });
 

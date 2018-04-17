@@ -14,6 +14,10 @@ public class QuestionBundle {
         this.level = level;
     }
 
+    public ArrayList<Question> getQuestionArrayList() {
+        return questionArrayList;
+    }
+
     public class Question {
 
         private Country question;
@@ -83,7 +87,7 @@ public class QuestionBundle {
         }
     }
 
-    ArrayList<Question> questionArrayList;
+    private ArrayList<Question> questionArrayList;
     ArrayList<Country> shuffleCountriesList;
 
     private boolean[][] stateVisited;
@@ -177,7 +181,7 @@ public class QuestionBundle {
                 }
             }
             Collections.shuffle(listAns);
-            questionArrayList.add(new Question(correctCountry,
+            getQuestionArrayList().add(new Question(correctCountry,
                     listAns.get(0),
                     listAns.get(1),
                     listAns.get(2),
