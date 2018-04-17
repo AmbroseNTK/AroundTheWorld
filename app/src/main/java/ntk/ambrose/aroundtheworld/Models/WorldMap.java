@@ -1,6 +1,7 @@
 package ntk.ambrose.aroundtheworld.Models;
 
 import android.content.Context;
+import android.util.Log;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -56,9 +57,14 @@ public class WorldMap {
         }
     }
     private static String getNodeValue(String tag, Element element) {
-        NodeList nodeList = element.getElementsByTagName(tag).item(0).getChildNodes();
-        Node node = nodeList.item(0);
-        return node.getNodeValue();
+        try {
+            NodeList nodeList = element.getElementsByTagName(tag).item(0).getChildNodes();
+            Node node = nodeList.item(0);
+            return node.getNodeValue();
+        }catch(Exception e){
+            Log.i("APP",e.getMessage());
+            return "";
+        }
     }
 
     public CountryUnit[][] getMap() {

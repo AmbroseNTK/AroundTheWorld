@@ -2,10 +2,21 @@ package ntk.ambrose.aroundtheworld.Models;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Random;
 
 public class QuestionBundle {
 
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
+
     public class Question {
+
+        private Country question;
         private String ansA;
         private String ansB;
         private String ansC;
@@ -22,7 +33,8 @@ public class QuestionBundle {
 
         }
 
-        public Question(String ansA, String ansB, String ansC, String ansD, int correctCode) {
+        public Question(Country question,String ansA, String ansB, String ansC, String ansD, int correctCode) {
+            setQuestion(question);
             setAnsA(ansA);
             setAnsB(ansB);
             setAnsC(ansC);
@@ -61,12 +73,27 @@ public class QuestionBundle {
         public void setAnsD(String ansD) {
             this.ansD = ansD;
         }
+
+        public Country getQuestion() {
+            return question;
+        }
+
+        public void setQuestion(Country question) {
+            this.question = question;
+        }
     }
 
     ArrayList<Question> questionArrayList;
     ArrayList<Country> shuffleCountriesList;
 
     private boolean[][] stateVisited;
+
+    private int level;
+
+    public static final int LEVEL_EASY=5;
+    public static final int LEVEL_MEDIUM=4;
+    public static final int LEVEL_HARD = 8;
+
 
     private QuestionBundle() {
         questionArrayList = new ArrayList<>();
@@ -104,7 +131,10 @@ public class QuestionBundle {
                 tempCountryList.add(WorldMap.getInstance().getCell(y, x).getUnit().get(i));
             }
             Collections.shuffle(tempCountryList);
-            shuffleCountriesList.addAll(tempCountryList);
+            for(Country tempCountry: tempCountryList){
+                if(!isContainCountry(tempCountry,shuffleCountriesList))
+                    shuffleCountriesList.add(tempCountry);
+            }
             stateVisited[y][x] = true;
             //Recursion
             generateCountryList(y - 1, x);
@@ -118,10 +148,44 @@ public class QuestionBundle {
         }
     }
 
+    private boolean isContainCountry(Country country, ArrayList<Country> list){
+        for(Country countryInList: list){
+            if(country.getCode().equals(countryInList.getCode()))
+                return true;
+        }
+        return false;
+    }
+
     public void generateQuestionList(int y, int x) {
         questionArrayList = new ArrayList<>();
         shuffleCountriesList=new ArrayList<>();
         generateCountryList(y,x);
+        Random random=new Random();
+        for(int i=0;i<shuffleCountriesList.size()-level;i++) {
+            ArrayList<String> listAns=new ArrayList<>();
+            Country correctCountry = shuffleCountriesList.get(i);
+            listAns.add(correctCountry.getCode());
+            for (int j = 1; j < 4; j++) {
+                int maximum = (i + level > shuffleCountriesList.size()) ? shuffleCountriesList.size() : i + level;
+                while (true) {
+                    int rand = random.nextInt((maximum - i)) + i;
+                    String newAns = shuffleCountriesList.get(rand).getCode();
+                    if(!listAns.contains(newAns)) {
+                        listAns.add(newAns);
+                        break;
+                    }
+                }
+            }
+            Collections.shuffle(listAns);
+            questionArrayList.add(new Question(correctCountry,
+                    listAns.get(0),
+                    listAns.get(1),
+                    listAns.get(2),
+                    listAns.get(3),
+                    listAns.indexOf(correctCountry.getCode())));
+
+
+        }
 
     }
 
