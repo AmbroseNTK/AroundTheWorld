@@ -2,8 +2,15 @@
 <resources>
 
     <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="textXanh">#2A93D5</color>
     <color name="backgroundHong">#F2AD9F</color>
     <color name="textDen">#000</color>
+    <color name="darkBlue">#000428</color>
+    <color name="navyBlue">#004e92</color>
+    <color name="orange1">#ff512f</color>
+    <color name="orange2">#f09819</color>
+    <color name="pink1">#ff00cc</color>
+    <color name="purple1">#333399</color>
 </resources>

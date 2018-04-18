@@ -6,15 +6,18 @@
     tools:context=".FlagModeActivity">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/layout_style3">
         <TextView
             android:id="@+id/tvQuestionNum"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Question:"
+            android:text="Score:"
             android:textSize="15pt"
             android:layout_marginTop="10dp"
-            android:layout_marginStart="10dp"/>
+            android:layout_marginStart="10dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
         <ImageView
             android:id="@+id/imgFlag"
             android:layout_width="290dp"
@@ -30,34 +33,49 @@
            android:layout_height="wrap_content"
            android:layout_below="@id/imgFlag"
            android:layout_marginTop="50dp"
+           android:layout_marginStart="10dp"
+           android:layout_marginEnd="10dp"
            android:stretchColumns="*">
            <TableRow>
                <Button
                    android:id="@+id/btAnsA"
-                   android:text="Country A"/>
+                   android:text="Country A"
+                   android:background="@drawable/button_style2"
+                   android:textColor="#fff" />
            </TableRow>
            <TableRow>
                <Button
+                   android:layout_marginTop="10dp"
                    android:id="@+id/btAnsB"
-                   android:text="Country B"/>
+                   android:text="Country B"
+                   android:background="@drawable/button_style2"
+                   android:textColor="#fff"/>
            </TableRow>
            <TableRow>
                <Button
                    android:id="@+id/btAnsC"
-                   android:text="Country C"/>
+                   android:text="Country C"
+                   android:background="@drawable/button_style2"
+                   android:layout_marginTop="10dp"
+                   android:textColor="#fff"/>
            </TableRow>
            <TableRow>
                <Button
                    android:id="@+id/btAnsD"
-                   android:text="Country D"/>
+                   android:text="Country D"
+                   android:background="@drawable/button_style2"
+                   android:layout_marginTop="10dp"
+                   android:textColor="#fff"/>
            </TableRow>
        </TableLayout>
         <ProgressBar
+            android:layout_marginTop="20dp"
             android:id="@+id/progressTime"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_below="@id/layoutAns"
             android:indeterminate="false"
+            android:progressDrawable="@drawable/progress_style1"
             style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal" />
     </RelativeLayout>
 
