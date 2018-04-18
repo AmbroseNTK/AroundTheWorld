@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/tvTitle"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="80dp"
             android:text="@string/menu_button_play"
             android:background="@drawable/bnt_style2"/>
 

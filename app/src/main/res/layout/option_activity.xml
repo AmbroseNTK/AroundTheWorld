@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".OptionActivity">
 <RelativeLayout
-    android:background="@color/backgroundHong"
+    android:background="@drawable/background_style"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <TextView
@@ -15,7 +15,7 @@
         android:text="Setting"
         android:textStyle="bold"
         android:textSize="20pt"
-        android:textColor="@color/textXanh"
+        android:textColor="#ffff"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp" />
     <CheckBox
