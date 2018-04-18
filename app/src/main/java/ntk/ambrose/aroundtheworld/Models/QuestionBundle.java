@@ -94,7 +94,7 @@ public class QuestionBundle {
 
     private int level;
 
-    public static final int LEVEL_EASY=5;
+    public static final int LEVEL_EASY=4;
     public static final int LEVEL_MEDIUM=4;
     public static final int LEVEL_HARD = 8;
 

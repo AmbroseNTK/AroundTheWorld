@@ -3,9 +3,11 @@ package ntk.ambrose.aroundtheworld;
 public class Setting {
     private boolean isMute;
     private String country="vn";
-    private int x;
-    private int y;
-
+    private int x=10;
+    private int y=3;
+    private int score;
+    private int highScore;
+    private int currentQuestion;
 
     private Setting(){
 
@@ -46,5 +48,29 @@ public class Setting {
 
     public void setY(int y) {
         this.y = y;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
+
+    public int getHighScore() {
+        return highScore;
+    }
+
+    public void setHighScore(int highScore) {
+        this.highScore = highScore;
+    }
+
+    public int getCurrentQuestion() {
+        return currentQuestion;
+    }
+
+    public void setCurrentQuestion(int currentQuestion) {
+        this.currentQuestion = currentQuestion;
     }
 }

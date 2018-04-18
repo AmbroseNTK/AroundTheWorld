@@ -53,11 +53,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 QuestionBundle.getInstance().setLevel(QuestionBundle.LEVEL_EASY);
-                QuestionBundle.getInstance().generateQuestionList(3,10);
+                QuestionBundle.getInstance().generateQuestionList(Setting.getInstance().getY(),Setting.getInstance().getX());
                 Log.d("APP","Created question bundle");
-                Intent intent = new Intent(MainActivity.this,FlagModeActivity.class);
-                intent.putExtra("index",0);
-                startActivity(intent);
+                Setting.getInstance().setCurrentQuestion(0);
+                startActivity(new Intent(MainActivity.this,FlagModeActivity.class));
             }
         });
 
