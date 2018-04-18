@@ -7,5 +7,15 @@
     <color name="textXanh">#2A93D5</color>
     <color name="backgroundHong">#F2AD9F</color>
     <color name="textDen">#000</color>
+    <color name="bntStyleScooter1">#36d1dc</color>
+    <color name="bntStyleScooter2">#5b86d5</color>
+    <color name="blue2">#00c3ff</color>
+    <color name="yellow">#ffff1c</color>
+    <color name="tim">#667db6</color>
+    <color name="xanh">#0082c8</color>
+    <color name="xanh1">#56CCF2</color>
+    <color name="xanh2">#2F80ED</color>
+    <color name="nau">#cb2d3e</color>
+    <color name="maudo">#ef473a</color>
 
 </resources>

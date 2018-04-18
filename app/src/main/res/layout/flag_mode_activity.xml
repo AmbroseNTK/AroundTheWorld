@@ -6,7 +6,8 @@
     tools:context=".FlagModeActivity">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/background_style2">
         <TextView
             android:id="@+id/tvQuestionNum"
             android:layout_width="wrap_content"
@@ -33,23 +34,32 @@
            android:stretchColumns="*">
            <TableRow>
                <Button
+                   android:background="@drawable/button_style1"
                    android:id="@+id/btAnsA"
-                   android:text="Country A"/>
+                   android:text="Country A"
+                   android:layout_marginTop="7dp"
+                   />
            </TableRow>
            <TableRow>
                <Button
+                   android:background="@drawable/button_style1"
                    android:id="@+id/btAnsB"
-                   android:text="Country B"/>
+                   android:text="Country B"
+                   android:layout_marginTop="7dp"/>
            </TableRow>
            <TableRow>
                <Button
+                   android:background="@drawable/button_style1"
                    android:id="@+id/btAnsC"
-                   android:text="Country C"/>
+                   android:text="Country C"
+                   android:layout_marginTop="7dp"/>
            </TableRow>
            <TableRow>
                <Button
+                   android:background="@drawable/button_style1"
                    android:id="@+id/btAnsD"
-                   android:text="Country D"/>
+                   android:text="Country D"
+                   android:layout_marginTop="7dp"/>
            </TableRow>
        </TableLayout>
         <ProgressBar
