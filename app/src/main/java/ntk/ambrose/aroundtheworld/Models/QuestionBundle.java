@@ -169,6 +169,7 @@ public class QuestionBundle {
             }
         }
         generateCountryList(y,x);
+        adjustFamousCountry();
         Random random=new Random();
         for(int i=0;i<shuffleCountriesList.size()-level;i++) {
             ArrayList<String> listAns=new ArrayList<>();
@@ -196,6 +197,23 @@ public class QuestionBundle {
 
         }
 
+    }
+    private void shiftCountry(int begin, int step) {
+        int distance = begin - step;
+        for (int i = begin; distance > 0 && i > distance; i--) {
+            Country temp = shuffleCountriesList.get(i);
+            shuffleCountriesList.set(i, shuffleCountriesList.get(i - 1));
+            shuffleCountriesList.set(i - 1, temp);
+        }
+    }
+    private void adjustFamousCountry(){
+        for(int i = 0;i<WorldMap.getInstance().famousCountryList.length;i++){
+            for(int j=0;j<shuffleCountriesList.size();j++){
+                if(WorldMap.getInstance().famousCountryList[i].equals(shuffleCountriesList.get(j).getCode())){
+                    shiftCountry(i,WorldMap.getInstance().famousCountryList.length-i);
+                }
+            }
+        }
     }
 
 }

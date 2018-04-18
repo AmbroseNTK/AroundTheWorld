@@ -56,10 +56,6 @@
             </TableRow>
         </TableLayout>
 
-
-
-
-
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>
