@@ -2,8 +2,10 @@
 <resources>
 
     <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="textXanh">#2A93D5</color>
     <color name="backgroundHong">#F2AD9F</color>
     <color name="textDen">#000</color>
+
 </resources>

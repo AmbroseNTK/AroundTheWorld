@@ -7,7 +7,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/"
+
         >
     <TextView
         android:id="@+id/tvSetting"
@@ -15,10 +15,10 @@
         android:layout_height="wrap_content"
         android:text="GAME OVER"
         android:textStyle="bold"
-        android:textSize="200dp"
-        android:textColor="@color/textGreen"
+        android:textSize="50dp"
+        android:textColor="@color/textXanh"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="180dp" />
+        android:layout_marginTop="200dp" />
         >
     </RelativeLayout>
 
