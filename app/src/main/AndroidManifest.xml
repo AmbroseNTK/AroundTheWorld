@@ -19,7 +19,8 @@
         <activity android:name=".OptionActivity"/>
         <activity android:name=".FlagModeActivity"/>
         <activity android:name=".CountryNameModeActivity"/>
-
+        <activity android:name=".ModeActivity"/>
+        <activity android:name=".GameOverActivity"/>
 
     </application>
 

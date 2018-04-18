@@ -3,8 +3,8 @@ package ntk.ambrose.aroundtheworld;
 public class Setting {
     private boolean isMute;
     private String country="vn";
-    private int x=10;
-    private int y=3;
+    private int x=9;
+    private int y=2;
     private int score;
     private int highScore;
     private int currentQuestion;

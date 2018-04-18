@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".GameOverActivity">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -11,7 +11,7 @@
 
         >
     <TextView
-        android:id="@+id/tvSetting"
+        android:id="@+id/tvGameOver"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="GAME OVER"
@@ -20,8 +20,26 @@
         android:textColor="@color/textXanh"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="200dp" />
-        >
-
+        <Button
+            android:id="@+id/btRetry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Retry"
+            android:layout_below="@id/tvGameOver"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/textXanh"
+            android:textColor="#fff"
+            />
+        <TextView
+            android:id="@+id/tvScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your score"
+            android:textStyle="bold"
+            android:textSize="15pt"
+            android:layout_below="@id/btRetry"
+            android:layout_centerHorizontal="true"/>
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>
