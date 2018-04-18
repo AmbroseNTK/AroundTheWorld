@@ -62,6 +62,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/btDiscoveryMode"
             android:layout_centerHorizontal="true"
+<<<<<<< HEAD
             android:layout_marginTop="20dp"
             android:text="@string/menu_button_leader_board" />
 
@@ -72,6 +73,18 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
             android:text="Exit" />
+=======
+            android:layout_marginTop="20dp"/>
+        <Button
+            android:id="@+id/btSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_button_setting"
+            android:layout_below="@id/btLeaderBoard"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            />
+>>>>>>> Coding
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>
