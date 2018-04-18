@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Around The World</string>
-    <string name="menu_button_guess_flag_mode">Guess flags Mode</string>
-    <string name="menu_button_guess_country_name">Guess countries name</string>
+    <string name="menu_button_play">PLAY</string>
+    <string name="menu_button_exit">EXIT</string>
     <string name="menu_button_mix_mode">Mix mode</string>
     <string name="menu_button_discovery_mode">Discovery Our World</string>
     <string name="menu_button_leader_board">Leader board</string>

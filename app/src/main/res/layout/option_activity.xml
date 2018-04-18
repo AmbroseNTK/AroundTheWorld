@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:text="Select your country"
         android:textSize="12pt"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="20dp"
         android:layout_below="@id/checkMute"
         android:layout_marginStart="20dp"
 
