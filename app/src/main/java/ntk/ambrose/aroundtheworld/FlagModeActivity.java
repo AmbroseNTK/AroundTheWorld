@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
@@ -43,30 +42,10 @@ public class FlagModeActivity extends AppCompatActivity{
 
         showQuestion();
 
-        btAnsA.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                checkAnswer(btAnsA.getText().toString());
-            }
-        });
-        btAnsB.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                checkAnswer(btAnsB.getText().toString());
-            }
-        });
-        btAnsC.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                checkAnswer(btAnsC.getText().toString());
-            }
-        });
-        btAnsD.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                checkAnswer(btAnsD.getText().toString());
-            }
-        });
+        btAnsA.setOnClickListener(view -> checkAnswer(btAnsA.getText().toString()));
+        btAnsB.setOnClickListener(view -> checkAnswer(btAnsB.getText().toString()));
+        btAnsC.setOnClickListener(view -> checkAnswer(btAnsC.getText().toString()));
+        btAnsD.setOnClickListener(view -> checkAnswer(btAnsD.getText().toString()));
 
         timer = new Timer();
         /*timer.schedule(new TimerTask() {

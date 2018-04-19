@@ -1,5 +1,7 @@
 package ntk.ambrose.aroundtheworld.Models;
 
+import android.util.Log;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
@@ -37,7 +39,7 @@ public class QuestionBundle {
 
         }
 
-        public Question(Country question,String ansA, String ansB, String ansC, String ansD, int correctCode) {
+        public Question(Country question, String ansA, String ansB, String ansC, String ansD, int correctCode) {
             setQuestion(question);
             setAnsA(ansA);
             setAnsB(ansB);
@@ -94,8 +96,8 @@ public class QuestionBundle {
 
     private int level;
 
-    public static final int LEVEL_EASY=4;
-    public static final int LEVEL_MEDIUM=4;
+    public static final int LEVEL_EASY = 4;
+    public static final int LEVEL_MEDIUM = 4;
     public static final int LEVEL_HARD = 8;
 
 
@@ -118,16 +120,9 @@ public class QuestionBundle {
         return instance;
     }
 
-    private void generateCountryList(int y, int x) {
+    int vistedQuantity;
 
-        if (y == WorldMap.getInstance().HEIGHT || y == -1) {
-            return;
-        }
-        if (x == -1) {
-            x = WorldMap.getInstance().WIDTH - 1;
-        } else if (x == WorldMap.getInstance().WIDTH) {
-            x = 0;
-        }
+    private void visitCountryUnit(int y, int x) {
         if (!stateVisited[y][x]) {
             int countryQuantityInUnit = WorldMap.getInstance().getCell(y, x).getUnit().size();
             ArrayList<Country> tempCountryList = new ArrayList<>();
@@ -135,22 +130,59 @@ public class QuestionBundle {
                 tempCountryList.add(WorldMap.getInstance().getCell(y, x).getUnit().get(i));
             }
             Collections.shuffle(tempCountryList);
-            for(Country tempCountry: tempCountryList){
-                if(!isContainCountry(tempCountry,shuffleCountriesList))
+            for (Country tempCountry : tempCountryList) {
+                if (!isContainCountry(tempCountry, shuffleCountriesList))
                     shuffleCountriesList.add(tempCountry);
             }
             stateVisited[y][x] = true;
-            //Recursion
-            generateCountryList(y - 1, x);
-            generateCountryList(y - 1, x - 1);
-            generateCountryList(y - 1, x + 1);
-            generateCountryList(y, x - 1);
-            generateCountryList(y, x + 1);
-            generateCountryList(y + 1, x);
-            generateCountryList(y + 1, x - 1);
-            generateCountryList(y + 1, x + 1);
+            vistedQuantity++;
+            Log.i("Algorithm","("+y+","+x+")");
         }
     }
+
+    private void countrySpread(int y, int x, int step){
+        if(step>0) {
+            if (y == WorldMap.getInstance().HEIGHT || y == -1) {
+                return;
+            }
+            if (x == -1) {
+                x = WorldMap.getInstance().WIDTH - 1;
+            } else if (x == WorldMap.getInstance().WIDTH) {
+                x = 0;
+            }
+            visitCountryUnit(y,x);
+            step--;
+            countrySpread(y - 1, x, step);
+            countrySpread(y - 1, x - 1, step);
+            countrySpread(y - 1, x + 1, step);
+            countrySpread(y, x - 1, step);
+            countrySpread(y, x + 1, step);
+            countrySpread(y + 1, x, step);
+            countrySpread(y + 1, x - 1, step);
+            countrySpread(y + 1, x + 1, step);
+
+        }
+
+    }
+
+    private void generateCountryList(int y, int x) {
+        vistedQuantity=0;
+        int step = 1;
+        visitCountryUnit(y,x);
+        while (vistedQuantity < WorldMap.getInstance().WIDTH * WorldMap.getInstance().HEIGHT) {
+            //Recursion
+            countrySpread(y - 1, x, step);
+            countrySpread(y - 1, x - 1, step);
+            countrySpread(y - 1, x + 1, step);
+            countrySpread(y, x - 1, step);
+            countrySpread(y, x + 1, step);
+            countrySpread(y + 1, x, step);
+            countrySpread(y + 1, x - 1, step);
+            countrySpread(y + 1, x + 1, step);
+            step++;
+        }
+    }
+
 
     private boolean isContainCountry(Country country, ArrayList<Country> list){
         for(Country countryInList: list){

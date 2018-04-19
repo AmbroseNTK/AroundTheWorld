@@ -1,6 +1,7 @@
 package ntk.ambrose.aroundtheworld;
 
 import android.content.Context;
+import android.graphics.Point;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
@@ -10,6 +11,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -31,6 +33,7 @@ public class OptionActivity extends AppCompatActivity{
     LocationListener locationListener;
     ArrayList<String> countries;
     String code;
+    String countryName;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,8 +49,14 @@ public class OptionActivity extends AppCompatActivity{
                     List<Address> addressList = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
                     Toast.makeText(getBaseContext(),addressList.get(0).getCountryCode(),Toast.LENGTH_LONG).show();
                     code = addressList.get(0).getCountryCode().toLowerCase();
+                    countryName=WorldMap.getInstance().codeToName(code);
+
                     Setting.getInstance().setCountry(code);
-                    spinCountry.setSelection(countries.indexOf(WorldMap.getInstance().codeToName(code)));
+                    spinCountry.setSelection(countries.indexOf(countryName));
+                    Point point = WorldMap.getInstance().codeToPos(countryName);
+                    Setting.getInstance().setX(point.x);
+                    Setting.getInstance().setY(point.y);
+
                     locationManager.removeUpdates(this);
                 } catch (IOException exception) {
 
@@ -82,16 +91,29 @@ public class OptionActivity extends AppCompatActivity{
         ArrayAdapter arrayAdapter = new ArrayAdapter(this,android.R.layout.simple_spinner_dropdown_item,countries.toArray());
         spinCountry.setAdapter(arrayAdapter);
 
-        btDetectCountry.setOnClickListener(new View.OnClickListener() {
+        spinCountry.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onClick(View view) {
-                try {
-                    locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 5000, 10, locationListener);
-                }catch(SecurityException ex){
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                Point point = WorldMap.getInstance().codeToPos(countries.get(i));
+                Setting.getInstance().setX(point.x);
+                Setting.getInstance().setY(point.y);
+                Toast.makeText(getBaseContext(),point.x+","+point.y,Toast.LENGTH_LONG).show();
+            }
 
-                }
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
             }
         });
+
+        btDetectCountry.setOnClickListener(view -> {
+            try {
+                locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 5000, 10, locationListener);
+            }catch(SecurityException ex){
+
+            }
+        });
+
 
     }
 

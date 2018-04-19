@@ -7,7 +7,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background_style2">
+        android:background="#fff">
         <TextView
             android:id="@+id/tvQuestionNum"
             android:layout_width="wrap_content"
@@ -16,7 +16,7 @@
             android:textSize="15pt"
             android:layout_marginTop="10dp"
             android:layout_marginStart="10dp"
-            android:textColor="#fff"
+            android:textColor="@color/textXanh"
             android:textStyle="bold"/>
         <ImageView
             android:id="@+id/imgFlag"
@@ -25,6 +25,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
             android:layout_below="@id/tvQuestionNum"
+            android:background="@drawable/image_style1"
 
             />
        <TableLayout
@@ -33,6 +34,8 @@
            android:layout_height="wrap_content"
            android:layout_below="@id/imgFlag"
            android:layout_marginTop="50dp"
+           android:layout_marginStart="20dp"
+           android:layout_marginEnd="20dp"
            android:stretchColumns="*">
            <TableRow>
                <Button

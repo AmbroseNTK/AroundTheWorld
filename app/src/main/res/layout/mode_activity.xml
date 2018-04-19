@@ -49,9 +49,7 @@
         android:background="@drawable/bnt_style2"
         android:text="@string/menu_button_leader_board" />
 
-
     <Button
-
         android:id="@+id/btSetting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

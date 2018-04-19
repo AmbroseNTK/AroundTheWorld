@@ -1,6 +1,7 @@
 package ntk.ambrose.aroundtheworld.Models;
 
 import android.content.Context;
+import android.graphics.Point;
 import android.util.Log;
 
 import org.w3c.dom.Document;
@@ -80,5 +81,26 @@ public class WorldMap {
     }
     public String codeToName(String code){
         return codeTable.containsKey(code)?codeTable.get(code):"";
+    }
+    public Point codeToPos(String name) {
+        int x = -1;
+        int y = -1;
+        for (int i = 0; i < HEIGHT; i++) {
+            for (int j = 0; j < WIDTH; j++) {
+                for (int k = 0; k < map[i][j].getUnit().size(); k++) {
+                    if (map[i][j].getUnit().get(k).getName().equals(name)) {
+                        if (x == -1) {
+                            y = i;
+                            x = j;
+                        } else {
+                            y = (y + i) / 2;
+                            x = (x + j) / 2;
+                        }
+                        break;
+                    }
+                }
+            }
+        }
+        return x == -1 ? new Point(0, 0) : new Point(x, y);
     }
 }
