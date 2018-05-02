@@ -4,6 +4,7 @@
     <string name="menu_button_exit">EXIT</string>
     <string name="menu_button_mix_mode">Mix mode</string>
     <string name="menu_button_discovery_mode">Discovery Our World</string>
+    <string name="menu_button_name_mode">Name mode</string>
     <string name="menu_button_leader_board">Leader board</string>
     <string name="menu_button_setting">Setting</string>
 </resources>
