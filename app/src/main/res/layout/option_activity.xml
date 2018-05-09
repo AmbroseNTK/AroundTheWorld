@@ -46,6 +46,7 @@
         android:layout_marginTop="10dp"
         android:layout_below="@id/tvPromp1"/>
     <Button
+        android:background="@drawable/button_style1"
         android:id="@+id/btAutoDetectCountry"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
