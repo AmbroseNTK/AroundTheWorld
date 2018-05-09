@@ -9,52 +9,40 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#fff"
+        android:background="#aac6e0"
         >
-
-        <TextView
-            android:id="@+id/tvTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp"
-            android:text="@string/app_name"
-            android:textSize="20pt"
-            android:textColor="@color/xanh2"
-            android:textStyle="bold"
+<!--
+       <ImageView
+           android:layout_width="360dp"
+           android:layout_height="100dp"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="20dp"
+           android:src="@drawable/around_the_world"
+           android:id="@+id/imgTitle"
            />
-
-        <TableLayout
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="50dp"
-            android:layout_marginTop="50dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tvTitle"
-            android:stretchColumns="*">
-            <TableRow>
-                <Button
+-->
+        
+                <ImageButton
                     android:id="@+id/btStart"
 
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/tvTitle"
+                    android:layout_width="150dp"
+                    android:layout_height="72dp"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="70dp"
                     android:text="@string/menu_button_play"
-                    android:background="@drawable/bnt_style2"/>
-            </TableRow>
-            <TableRow>
-                <Button
+                    android:background="@drawable/bntplay"/>
+
+                <ImageButton
                     android:id="@+id/btExit"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="150dp"
+                    android:layout_height="72dp"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="20dp"
+                    android:layout_below="@id/btStart"
                     android:text="@string/menu_button_exit"
-                    android:background="@drawable/bnt_style2"/>
-            </TableRow>
-        </TableLayout>
+                    android:background="@drawable/bntmode"/>
+
+
 
     </RelativeLayout>
 
