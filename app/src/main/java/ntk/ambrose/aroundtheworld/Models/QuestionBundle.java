@@ -163,6 +163,11 @@ public class QuestionBundle {
     public void generateQuestionList(int y, int x) {
         questionArrayList = new ArrayList<>();
         shuffleCountriesList=new ArrayList<>();
+        for (int i = 0; i < WorldMap.getInstance().HEIGHT; i++) {
+            for (int j = 0; j < WorldMap.getInstance().WIDTH; j++) {
+                stateVisited[i][j] = false;
+            }
+        }
         generateCountryList(y,x);
         Random random=new Random();
         for(int i=0;i<shuffleCountriesList.size()-level;i++) {

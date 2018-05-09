@@ -1,5 +1,6 @@
 package ntk.ambrose.aroundtheworld;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -8,10 +9,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.Timer;
-import java.util.TimerTask;
 
 import ntk.ambrose.aroundtheworld.Models.QuestionBundle;
 import ntk.ambrose.aroundtheworld.Models.WorldMap;
@@ -39,6 +38,7 @@ public class FlagModeActivity extends AppCompatActivity{
         btAnsC=findViewById(R.id.btAnsC);
         btAnsD=findViewById(R.id.btAnsD);
 
+        Setting.getInstance().setScore(0);
         timeProgress = findViewById(R.id.progressTime);
 
         showQuestion();
@@ -69,21 +69,21 @@ public class FlagModeActivity extends AppCompatActivity{
         });
 
         timer = new Timer();
-        timer.schedule(new TimerTask() {
+        /*timer.schedule(new TimerTask() {
             @Override
             public void run() {
                 if(timeProgress.getProgress()==100){
+                    gameOver();
                     return;
                 }
                 timeProgress.setProgress(timeProgress.getProgress()+1);
 
             }
-        }, 0,100);
-
-
+        }, 0,100);*/
     }
     public void gameOver(){
-        Toast.makeText(getBaseContext(),"Game Over",Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(FlagModeActivity.this,GameOverActivity.class));
+        finish();
     }
     private void showQuestion(){
         currentQuestion = QuestionBundle.getInstance().getQuestionArrayList().get(Setting.getInstance().getCurrentQuestion());

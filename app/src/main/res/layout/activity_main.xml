@@ -9,7 +9,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background_style2"
+        android:background="@drawable/background_style"
         >
 
         <TextView
@@ -17,33 +17,47 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="50dp"
             android:text="@string/app_name"
             android:textSize="20pt"
             android:textColor="#ffffff"
             android:textStyle="bold"
            />
 
-        <Button
-            android:id="@+id/btFlagMode"
-
+        <TableLayout
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="50dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/tvTitle"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="80dp"
-            android:text="@string/menu_button_play"
-            android:background="@drawable/bnt_style2"/>
+            android:stretchColumns="*">
+            <TableRow>
+                <Button
+                    android:id="@+id/btStart"
 
-        <Button
-            android:id="@+id/btNameMode"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/btFlagMode"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
-            android:text="@string/menu_button_exit"
-            android:background="@drawable/bnt_style2"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvTitle"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/menu_button_play"
+                    android:background="@drawable/bnt_style2"/>
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:id="@+id/btExit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/menu_button_exit"
+                    android:background="@drawable/bnt_style2"/>
+            </TableRow>
+        </TableLayout>
+
+
+
 
 
     </RelativeLayout>

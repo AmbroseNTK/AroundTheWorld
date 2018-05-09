@@ -7,16 +7,14 @@ import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-import ntk.ambrose.aroundtheworld.Models.QuestionBundle;
 import ntk.ambrose.aroundtheworld.Models.WorldMap;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btFlagMode;
+    Button btStart;
     Button btCountryMode;
     Button btDiscovery;
     Button btMixMode;
@@ -43,29 +41,18 @@ public class MainActivity extends AppCompatActivity {
 
         WorldMap.getInstance().createWorldMap(this);
 
-        btFlagMode=findViewById(R.id.btFlagMode);
-        btCountryMode=findViewById(R.id.btNameMode);
-        btMixMode = findViewById(R.id.btMixMode);
-        btDiscovery=findViewById(R.id.btDiscoveryMode);
-        btSetting = findViewById(R.id.btSetting);
+        btStart =findViewById(R.id.btStart);
 
-        btFlagMode.setOnClickListener(new View.OnClickListener() {
+
+        btStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                QuestionBundle.getInstance().setLevel(QuestionBundle.LEVEL_EASY);
-                QuestionBundle.getInstance().generateQuestionList(Setting.getInstance().getY(),Setting.getInstance().getX());
-                Log.d("APP","Created question bundle");
-                Setting.getInstance().setCurrentQuestion(0);
-                startActivity(new Intent(MainActivity.this,FlagModeActivity.class));
+                startActivity(new Intent(MainActivity.this,ModeActivity.class));
+                finish();
             }
         });
 
-        btSetting.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,OptionActivity.class));
-            }
-        });
+
 
     }
 }
