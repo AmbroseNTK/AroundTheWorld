@@ -19,6 +19,7 @@ public class WorldMap {
     public final int HEIGHT = 6;
     private CountryUnit[][] map;
     private HashMap<String,String> codeTable;
+    public final String[] famousCountryList = {"us","cn","jp","de","fr","uk","in","br","it","ca","kr","ru","au"};
     private WorldMap() {
         map = new CountryUnit[HEIGHT][WIDTH];
         codeTable=new HashMap<>();
