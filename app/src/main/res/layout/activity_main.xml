@@ -11,20 +11,20 @@
         android:layout_height="match_parent"
         android:background="#aac6e0"
         >
-<!--
+
        <ImageView
            android:layout_width="360dp"
            android:layout_height="100dp"
            android:layout_centerHorizontal="true"
            android:layout_marginTop="20dp"
-           android:src="@drawable/around_the_world"
+           android:src="@drawable/text_around_the_world"
            android:id="@+id/imgTitle"
            />
--->
+
         
                 <ImageButton
                     android:id="@+id/btStart"
-
+                    android:layout_below="@id/imgTitle"
                     android:layout_width="150dp"
                     android:layout_height="72dp"
                     android:layout_centerHorizontal="true"
