@@ -1,6 +1,5 @@
 package ntk.ambrose.aroundtheworld;
 
-import android.accounts.Account;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -10,12 +9,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
-import com.google.android.gms.games.Game;
-import com.google.android.gms.games.Games;
-import com.google.android.gms.games.LeaderboardsClient;
 
 public class GameOverActivity extends AppCompatActivity {
     Button btRetry;
@@ -58,7 +51,6 @@ public class GameOverActivity extends AppCompatActivity {
         editor.apply();
     }
     public void saveToLeaderboard(){
-
-        LeaderboardsClient leaderboardsClient = Games.getLeaderboardsClient(this,)
+        
     }
 }
