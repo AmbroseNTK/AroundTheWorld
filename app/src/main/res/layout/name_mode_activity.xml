@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".NameModeActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgmode12new">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: "
+        android:textSize="20pt"
+        android:textColor="@color/xanh2"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/tvScore"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvScore"
+        android:text="Lorem ipsum"
+        android:textStyle="bold"
+        android:textSize="15pt"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:id="@+id/tvQuestion"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvQuestion"
+        android:layout_marginTop="20dp"
+        android:stretchColumns="*">
+        <TableRow>
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@id/btAnsA"
+                    android:scaleType="fitCenter"
+                    android:layout_span="1"
+                    />
+        </TableRow>
+        <TableRow>
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/btAnsB"
+                    android:scaleType="centerInside"
+                    android:layout_span="1"
+                    />
+
+        </TableRow>
+
+        <TableRow>
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/btAnsC"
+                    android:scaleType="centerInside"
+                    android:layout_span="1"
+
+                    />
+        </TableRow>
+        <TableRow>
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/btAnsD"
+                    android:scaleType="centerInside"
+                    android:layout_span="1"
+                    />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

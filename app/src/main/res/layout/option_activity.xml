@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".OptionActivity">
 <RelativeLayout
-    android:background="@drawable/background_style"
+    android:background="#fff"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <TextView
@@ -15,7 +15,7 @@
         android:text="Setting"
         android:textStyle="bold"
         android:textSize="20pt"
-        android:textColor="#ffff"
+        android:textColor="@color/textXanh"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp" />
     <CheckBox
@@ -46,7 +46,6 @@
         android:layout_marginTop="10dp"
         android:layout_below="@id/tvPromp1"/>
     <Button
-        android:background="@drawable/button_style1"
         android:id="@+id/btAutoDetectCountry"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

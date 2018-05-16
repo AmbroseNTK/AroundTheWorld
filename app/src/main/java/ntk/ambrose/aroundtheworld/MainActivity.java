@@ -8,17 +8,14 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 
 import ntk.ambrose.aroundtheworld.Models.WorldMap;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btStart;
-    Button btCountryMode;
-    Button btDiscovery;
-    Button btMixMode;
-    Button btSetting;
+    ImageButton btStart;
+    ImageButton btSetting;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

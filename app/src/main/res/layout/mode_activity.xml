@@ -7,7 +7,7 @@
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_style">
+    android:background="#fff">
     <TextView
         android:id="@+id/tvLabel1"
         android:layout_width="wrap_content"
@@ -16,50 +16,67 @@
         android:textSize="20pt"
         android:layout_marginTop="50dp"
         android:layout_centerHorizontal="true"
-        android:textColor="#ffff"
+        android:textColor="@color/xanh2"
         android:textStyle="bold"/>
 
-    <Button
-        android:id="@+id/btFlagMode"
-        android:layout_width="wrap_content"
+    <TableLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tvLabel1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/bnt_style2"
-        android:text="Flag mode" />
+        android:stretchColumns="*"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp">
+        <TableRow>
+            <Button
+                android:id="@+id/btFlagMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvLabel1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bnt_style2"
+                android:text="Flag mode" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/btNameMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bnt_style2"
+                android:text="@string/menu_button_name_mode"
+                android:layout_marginTop="20dp"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/btLeaderBoard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
 
-    <Button
-        android:id="@+id/btDiscoveryMode"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btFlagMode"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/bnt_style2"
-        android:text="@string/menu_button_discovery_mode"
-        android:layout_marginTop="20dp"/>
-
-    <Button
-        android:id="@+id/btLeaderBoard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btDiscoveryMode"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/bnt_style2"
-        android:text="@string/menu_button_leader_board" />
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bnt_style2"
+                android:text="@string/menu_button_leader_board" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/btSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bnt_style2"
+                android:text="@string/menu_button_setting"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                />
+        </TableRow>
+    </TableLayout>
 
 
-    <Button
 
-        android:id="@+id/btSetting"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bnt_style2"
-        android:text="@string/menu_button_setting"
-        android:layout_below="@id/btLeaderBoard"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        />
+
+
+
+
 </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

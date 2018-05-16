@@ -21,6 +21,7 @@
         <activity android:name=".CountryNameModeActivity"/>
         <activity android:name=".ModeActivity"/>
         <activity android:name=".GameOverActivity"/>
+        <activity android:name=".NameModeActivity"/>
 
     </application>
 

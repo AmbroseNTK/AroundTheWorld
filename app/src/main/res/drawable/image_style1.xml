@@ -2,9 +2,8 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 <item>
     <shape>
-        <solid android:color="#fcee21"/>
-        <stroke android:color="#000" android:width="7pt"/>
-        <corners android:radius="20dp"/>
+        <gradient android:startColor="#0984e3"
+            android:endColor="#00b894"/>
 
     </shape>
 </item>
