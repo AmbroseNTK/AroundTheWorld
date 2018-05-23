@@ -1,6 +1,10 @@
 package ntk.ambrose.aroundtheworld.Models;
 
+/**
+ * Lưu thông tin một quốc gia
+ */
 public class Country {
+
     private String name;
     private String code;
     private String language;
@@ -33,6 +37,13 @@ public class Country {
         setCode("");
         setLanguage("");
     }
+
+    /**
+     * Tạo một quốc gia
+     * @param name tên quốc gia
+     * @param code mã quốc gia
+     * @param language ngôn ngữ
+     */
     public Country(String name,String code, String language) {
         setName(name);
         setCode(code);

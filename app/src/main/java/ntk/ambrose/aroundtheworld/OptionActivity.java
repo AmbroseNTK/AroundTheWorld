@@ -1,6 +1,7 @@
 package ntk.ambrose.aroundtheworld;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.graphics.Point;
 import android.location.Address;
 import android.location.Geocoder;
@@ -15,8 +16,10 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.RadioButton;
 import android.widget.Spinner;
-import android.widget.Toast;
+
+import com.sdsmdg.tastytoast.TastyToast;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -34,10 +37,24 @@ public class OptionActivity extends AppCompatActivity{
     ArrayList<String> countries;
     String code;
     String countryName;
+
+    RadioButton radioEasy;
+    RadioButton radioMedium;
+    RadioButton radioHard;
+
+    Button btSaveChanges;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.option_activity);
+
+        radioEasy =findViewById(R.id.radioEasy);
+        radioMedium = findViewById(R.id.radioMedium);
+        radioHard = findViewById(R.id.radioHard);
+
+        btSaveChanges = findViewById(R.id.btSaveChanges);
+
 
         locationManager=(LocationManager)getSystemService(Context.LOCATION_SERVICE);
 
@@ -47,7 +64,7 @@ public class OptionActivity extends AppCompatActivity{
                 Geocoder geocoder = new Geocoder(getBaseContext(), Locale.getDefault());
                 try {
                     List<Address> addressList = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
-                    Toast.makeText(getBaseContext(),addressList.get(0).getCountryCode(),Toast.LENGTH_LONG).show();
+
                     code = addressList.get(0).getCountryCode().toLowerCase();
                     countryName=WorldMap.getInstance().codeToName(code);
 
@@ -56,7 +73,7 @@ public class OptionActivity extends AppCompatActivity{
                     Point point = WorldMap.getInstance().codeToPos(countryName);
                     Setting.getInstance().setX(point.x);
                     Setting.getInstance().setY(point.y);
-
+                    TastyToast.makeText(getBaseContext(),"You are in "+countryName,TastyToast.LENGTH_LONG,TastyToast.SUCCESS);
                     locationManager.removeUpdates(this);
                 } catch (IOException exception) {
 
@@ -97,7 +114,7 @@ public class OptionActivity extends AppCompatActivity{
                 Point point = WorldMap.getInstance().codeToPos(countries.get(i));
                 Setting.getInstance().setX(point.x);
                 Setting.getInstance().setY(point.y);
-                Toast.makeText(getBaseContext(),point.x+","+point.y,Toast.LENGTH_LONG).show();
+
             }
 
             @Override
@@ -107,14 +124,78 @@ public class OptionActivity extends AppCompatActivity{
         });
 
         btDetectCountry.setOnClickListener(view -> {
-            try {
-                locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 5000, 10, locationListener);
-            }catch(SecurityException ex){
+                    try {
+                        TastyToast.makeText(getBaseContext(), "Please wait!!!", TastyToast.LENGTH_LONG, TastyToast.INFO);
 
+                        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 5000, 10, locationListener);
+                    } catch (SecurityException ex) {
+                        TastyToast.makeText(getBaseContext(), "Sorry! We cannot find you", TastyToast.LENGTH_SHORT, TastyToast.ERROR);
+                    }
+                });
+
+        checkMute.setOnClickListener((view)->{
+            if(checkMute.isChecked()){
+                SoundManager.getInstance().setMuteAll();
+            }
+            else{
+                SoundManager.getInstance().setMute(false);
             }
         });
 
+        radioEasy.setOnClickListener(view -> {
+            if(radioEasy.isChecked()){
+                Setting.getInstance().setLevel(4);
+            }
+        });
+        radioMedium.setOnClickListener(view -> {
+            if(radioEasy.isChecked()){
+                Setting.getInstance().setLevel(8);
+            }
+        });
+        radioHard.setOnClickListener(view -> {
+            if(radioEasy.isChecked()){
+                Setting.getInstance().setLevel(12);
+            }
+        });
+        loadSetting();
+        btSaveChanges.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                saveSetting();
+                TastyToast.makeText(getBaseContext(),"Saved changes !",TastyToast.LENGTH_LONG,TastyToast.SUCCESS);
+            }
+        });
 
+    }
+    public void loadSetting(){
+        SharedPreferences sharedPreferences = getSharedPreferences("Data", Context.MODE_PRIVATE);
+        if(sharedPreferences!=null){
+            Setting.getInstance().setLevel(sharedPreferences.getInt("setting_level",4));
+            switch (Setting.getInstance().getLevel()){
+                case 4:
+                    radioEasy.setChecked(true);
+                    break;
+                case 8:
+                    radioMedium.setChecked(true);
+                    break;
+                case 12:
+                    radioHard.setChecked(true);
+            }
+            checkMute.setChecked(sharedPreferences.getBoolean("setting_isMute",false));
+            int id = sharedPreferences.getInt("setting_pos",0);
+            Point point = WorldMap.getInstance().codeToPos(countries.get(id));
+            Setting.getInstance().setX(point.x);
+            Setting.getInstance().setY(point.y);
+            spinCountry.setSelection(id);
+        }
+    }
+    public void saveSetting(){
+        SharedPreferences sharedPreferences = getSharedPreferences("Data", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putInt("setting_level",Setting.getInstance().getLevel());
+        editor.putBoolean("setting_isMute",checkMute.isChecked());
+        editor.putInt("setting_pos", (int)(spinCountry.getSelectedItemId()));
+        editor.apply();
     }
 
 }

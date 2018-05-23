@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
@@ -23,11 +26,17 @@ public class FlagModeActivity extends AppCompatActivity{
     Button btAnsC;
     Button btAnsD;
     ProgressBar timeProgress;
+    CardView cardView;
 
     QuestionBundle.Question currentQuestion;
     Timer timer;
     CountDownTimer  countDownTimer;
     int timeLength=4;
+
+    Animation showButtonAnswerAnim;
+    Animation flyFlagAnim;
+    Animation textFadeAnim;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,8 +48,17 @@ public class FlagModeActivity extends AppCompatActivity{
         btAnsC=findViewById(R.id.btAnsC);
         btAnsD=findViewById(R.id.btAnsD);
 
+        cardView = findViewById(R.id.cardImg);
+
+        SoundManager.getInstance().Play(SoundManager.Playlist.BG_MODE1,true);
+        SoundManager.getInstance().Stop(SoundManager.Playlist.BG_MAIN);
+
         Setting.getInstance().setScore(0);
         timeProgress = findViewById(R.id.progressTime);
+
+        showButtonAnswerAnim = AnimationUtils.loadAnimation(getBaseContext(),R.anim.show_button_answer);
+        flyFlagAnim = AnimationUtils.loadAnimation(getBaseContext(),R.anim.flag_fly);
+        textFadeAnim = AnimationUtils.loadAnimation(getBaseContext(),R.anim.text_fade);
 
         showQuestion();
 
@@ -48,6 +66,12 @@ public class FlagModeActivity extends AppCompatActivity{
         btAnsB.setOnClickListener(view -> checkAnswer(btAnsB.getText().toString()));
         btAnsC.setOnClickListener(view -> checkAnswer(btAnsC.getText().toString()));
         btAnsD.setOnClickListener(view -> checkAnswer(btAnsD.getText().toString()));
+
+
+
+        setAnimForButton(showButtonAnswerAnim);
+
+
 
         /*
         timer = new Timer();
@@ -74,24 +98,40 @@ public class FlagModeActivity extends AppCompatActivity{
             }
         }.start();
     }
+    private void setAnimForButton(Animation anim){
+        btAnsA.startAnimation(anim);
+        btAnsB.startAnimation(anim);
+        btAnsC.startAnimation(anim);
+        btAnsD.startAnimation(anim);
+
+    }
     public void gameOver(){
         countDownTimer.cancel();
+        SoundManager.getInstance().Stop(SoundManager.Playlist.BG_MODE1);
+        SoundManager.getInstance().Play(SoundManager.Playlist.SOUND_WRONG,false);
         startActivity(new Intent(FlagModeActivity.this,GameOverActivity.class));
         finish();
     }
     private void showQuestion(){
         currentQuestion = QuestionBundle.getInstance().getQuestionArrayList().get(Setting.getInstance().getCurrentQuestion());
-
+        cardView.startAnimation(flyFlagAnim);
         tvQuestionNum.setText("Score: "+Setting.getInstance().getScore());
         imgFlag.setImageResource(this.getResources().getIdentifier(currentQuestion.getQuestion().getCode(),"drawable",getPackageName()));
         btAnsA.setText(WorldMap.getInstance().codeToName(currentQuestion.getAnsA()));
         btAnsB.setText(WorldMap.getInstance().codeToName(currentQuestion.getAnsB()));
         btAnsC.setText(WorldMap.getInstance().codeToName(currentQuestion.getAnsC()));
         btAnsD.setText(WorldMap.getInstance().codeToName(currentQuestion.getAnsD()));
+        if(showButtonAnswerAnim!=null) {
+            setAnimForButton(showButtonAnswerAnim);
+        }
     }
     private void checkAnswer(String ans){
+
         if(ans.equals(currentQuestion.getQuestion().getName())){
             countDownTimer.cancel();
+
+            tvQuestionNum.startAnimation(textFadeAnim);
+            SoundManager.getInstance().Play(SoundManager.Playlist.SOUND_CORRECT,false);
             Setting.getInstance().setScore(Setting.getInstance().getScore()+100);
             Setting.getInstance().setCurrentQuestion(Setting.getInstance().getCurrentQuestion()+1);
             if(Setting.getInstance().getCurrentQuestion()==QuestionBundle.getInstance().getQuestionArrayList().size()){

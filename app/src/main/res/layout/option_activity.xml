@@ -44,6 +44,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:layout_below="@id/tvPromp1"/>
     <Button
         android:id="@+id/btAutoDetectCountry"
@@ -51,7 +53,61 @@
         android:layout_height="wrap_content"
         android:text="Auto detect"
         android:layout_marginTop="10dp"
-        android:layout_below="@id/spinCountry"/>
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/spinCountry"
+        android:background="@color/textXanh"
+        android:textColor="#fff"/>
+    <TextView
+        android:id="@+id/tvSelectPlayerMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select player mode"
+        android:layout_below="@id/btAutoDetectCountry"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textSize="12pt"/>
+    <RadioGroup
+        android:id="@+id/checkGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSelectPlayerMode"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        >
+        <RadioButton
+            android:id="@+id/radioEasy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Easy"
+            android:textSize="12pt"
+            android:layout_marginTop="10dp"/>
+        <RadioButton
+            android:id="@+id/radioMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medium"
+            android:textSize="12pt"
+            android:layout_marginTop="10dp"/>
+        <RadioButton
+            android:id="@+id/radioHard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hard"
+            android:textSize="12pt"
+            android:layout_marginTop="10dp"/>
 
+    </RadioGroup>
+    <Button
+        android:id="@+id/btSaveChanges"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save changes"
+        android:background="@color/textXanh"
+        android:layout_below="@id/checkGroup"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
 </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

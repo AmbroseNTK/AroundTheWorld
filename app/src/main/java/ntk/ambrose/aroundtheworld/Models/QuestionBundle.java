@@ -6,6 +6,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
 
+/**
+ * Generate question bundle tool
+ */
 public class QuestionBundle {
 
     public int getLevel() {
@@ -96,10 +99,6 @@ public class QuestionBundle {
 
     private int level;
 
-    public static final int LEVEL_EASY = 4;
-    public static final int LEVEL_MEDIUM = 4;
-    public static final int LEVEL_HARD = 8;
-
 
     private QuestionBundle() {
         questionArrayList = new ArrayList<>();
@@ -122,6 +121,11 @@ public class QuestionBundle {
 
     int vistedQuantity;
 
+    /**
+     * Vist a country at the position
+     * @param y y
+     * @param x x
+     */
     private void visitCountryUnit(int y, int x) {
         if (!stateVisited[y][x]) {
             int countryQuantityInUnit = WorldMap.getInstance().getCell(y, x).getUnit().size();
@@ -140,6 +144,12 @@ public class QuestionBundle {
         }
     }
 
+    /**
+     * Apply Oil Spread algorithm
+     * @param y y
+     * @param x x
+     * @param step step
+     */
     private void countrySpread(int y, int x, int step){
         if(step>0) {
             if (y == WorldMap.getInstance().HEIGHT || y == -1) {
@@ -165,6 +175,11 @@ public class QuestionBundle {
 
     }
 
+    /**
+     * Tạo ra danh sách các quốc gia
+     * @param y vĩ độ
+     * @param x kinh độ
+     */
     private void generateCountryList(int y, int x) {
         vistedQuantity=0;
         int step = 1;
@@ -183,6 +198,12 @@ public class QuestionBundle {
         }
     }
 
+    /**
+     * Tìm xem quốc gia có trong một danh sách hay không
+     * @param country quốc gia cần tìm
+     * @param list danh sách các quốc gia đã có
+     * @return nếu có thì true
+     */
 
     private boolean isContainCountry(Country country, ArrayList<Country> list){
         for(Country countryInList: list){
@@ -192,6 +213,11 @@ public class QuestionBundle {
         return false;
     }
 
+    /**
+     * Create new question list according to the position
+     * @param y y
+     * @param x x
+     */
     public void generateQuestionList(int y, int x) {
         questionArrayList = new ArrayList<>();
         shuffleCountriesList=new ArrayList<>();
@@ -230,6 +256,12 @@ public class QuestionBundle {
         }
 
     }
+
+    /**
+     * Shift country position in list
+     * @param begin begin position
+     * @param step step
+     */
     private void shiftCountry(int begin, int step) {
         int distance = begin - step;
         for (int i = begin; distance > 0 && i > distance; i--) {
@@ -238,6 +270,10 @@ public class QuestionBundle {
             shuffleCountriesList.set(i - 1, temp);
         }
     }
+
+    /**
+     * Adjust the country position by famous degree
+     */
     private void adjustFamousCountry(){
         for(int i = 0;i<WorldMap.getInstance().famousCountryList.length;i++){
             for(int j=0;j<shuffleCountriesList.size();j++){

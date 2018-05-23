@@ -42,6 +42,7 @@
                     android:id="@id/btAnsA"
                     android:scaleType="fitCenter"
                     android:layout_span="1"
+
                     />
         </TableRow>
         <TableRow>
@@ -50,7 +51,9 @@
                     android:layout_height="100dp"
                     android:id="@+id/btAnsB"
                     android:scaleType="centerInside"
+
                     android:layout_span="1"
+
                     />
 
         </TableRow>

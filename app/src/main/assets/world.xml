@@ -1,1810 +1,1810 @@
 <world>
-<country>
-    <id>1</id>
-    <name>United States</name>
-    <code>us</code>
-    <x>1</x>
-    <y>1</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>2</id>
-    <name>United States</name>
-    <code>us</code>
-    <x>1</x>
-    <y>2</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>3</id>
-    <name>United States</name>
-    <code>us</code>
-    <x>2</x>
-    <y>2</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>4</id>
-    <name>United States</name>
-    <code>us</code>
-    <x>3</x>
-    <y>2</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>5</id>
-    <name>United States</name>
-    <code>us</code>
-    <x>4</x>
-    <y>2</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>6</id>
-    <name>United States</name>
-    <code>us</code>
-    <x>4</x>
-    <y>3</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>7</id>
-    <name>Canada</name>
-    <code>ca</code>
-    <x>2</x>
-    <y>1</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>8</id>
-    <name>Canada</name>
-    <code>ca</code>
-    <x>3</x>
-    <y>1</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>9</id>
-    <name>Canada</name>
-    <code>ca</code>
-    <x>4</x>
-    <y>1</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>10</id>
-    <name>Canada</name>
-    <code>ca</code>
-    <x>3</x>
-    <y>2</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>11</id>
-    <name>Canada</name>
-    <code>ca</code>
-    <x>3</x>
-    <y>1</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>12</id>
-    <name>Canada</name>
-    <code>ca</code>
-    <x>4</x>
-    <y>1</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>13</id>
-    <name>Canada</name>
-    <code>ca</code>
-    <x>4</x>
-    <y>2</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>14</id>
-    <name>Canada</name>
-    <code>ca</code>
-    <x>2</x>
-    <y>2</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>15</id>
-    <name>Canada</name>
-    <code>ca</code>
-    <x>5</x>
-    <y>2</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>16</id>
-    <name>Mexico</name>
-    <code>mx</code>
-    <x>3</x>
-    <y>2</y>
-    <lang>Hola Mundo</lang>
-</country>
-<country>
-    <id>17</id>
-    <name>Mexico</name>
-    <code>mx</code>
-    <x>3</x>
-    <y>3</y>
-    <lang>Hola Mundo</lang>
-</country>
-<country>
-    <id>18</id>
-    <name>Mexico</name>
-    <code>mx</code>
-    <x>4</x>
-    <y>3</y>
-    <lang>Hola Mundo</lang>
-</country>
-<country>
-    <id>19</id>
-    <name>Cuba</name>
-    <code>cu</code>
-    <x>4</x>
-    <y>3</y>
-    <lang>Hola Mundo</lang>
-</country>
-<country>
-    <id>20</id>
-    <name>Guatemala</name>
-    <code>gt</code>
-    <x>4</x>
-    <y>3</y>
-    <lang>Hola Mundo</lang>
-</country>
-<country>
-    <id>21</id>
-    <name>Honduras</name>
-    <code>hn</code>
-    <x>4</x>
-    <y>3</y>
-    <lang>Hola Mundo</lang>
-</country>
-<country>
-    <id>22</id>
-    <name>Nicaragua</name>
-    <code>ni</code>
-    <x>4</x>
-    <y>3</y>
-    <lang>Hola Mundo</lang>
-</country>
-<country>
-    <id>23</id>
-    <name>Costa Rica</name>
-    <code>cr</code>
-    <x>4</x>
-    <y>3</y>
-    <lang>Hola Mundo</lang>
-</country>
-<country>
-    <id>24</id>
-    <name>Panama</name>
-    <code>pa</code>
-    <x>4</x>
-    <y>3</y>
-    <lang>Hola Mundo</lang>
-</country>
-<country>
-    <id>25</id>
-    <name>Jamaica</name>
-    <code>jm</code>
-    <x>4</x>
-    <y>3</y>
-    <lang>Hola Mundo</lang>
-</country>
-<country>
-    <id>26</id>
-    <name>Dominican republic</name>
-    <code>do</code>
-    <x>4</x>
-    <y>3</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>27</id>
-    <name>Afghanistan</name>
-    <code>af</code>
-    <x>8</x>
-    <y>3</y>
-    <lang>سلام دنیا</lang>
-</country>
-<country>
-    <id>28</id>
-    <name>Puerto Rico</name>
-    <code>pr</code>
-    <x>4</x>
-    <y>3</y>
-    <lang>Hola Mundo</lang>
-</country>
-<country>
-    <id>29</id>
-    <name>Haiti</name>
-    <code>ht</code>
-    <x>4</x>
-    <y>3</y>
-    <lang>Bonjour le monde</lang>
-</country>
-<country>
-    <id>30</id>
-    <name>Grenada</name>
-    <code>gd</code>
-    <x>4</x>
-    <y>3</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>31</id>
-    <name>Saint Lucia</name>
-    <code>lc</code>
-    <x>4</x>
-    <y>3</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>32</id>
-    <name>Saint Vincent and the Granadines</name>
-    <code>vc</code>
-    <x>4</x>
-    <y>3</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>33</id>
-    <name>Barbados</name>
-    <code>bb</code>
-    <x>4</x>
-    <y>3</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>34</id>
-    <name>Guadeloupe</name>
-    <code>gp</code>
-    <x>4</x>
-    <y>3</y>
-    <lang>Hola Mundo</lang>
-</country>
-<country>
-    <id>35</id>
-    <name>Antigua and Barbuda</name>
-    <code>ag</code>
-    <x>4</x>
-    <y>3</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>36</id>
-    <name>Saint kitts and Nevis</name>
-    <code>kn</code>
-    <x>4</x>
-    <y>3</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>37</id>
-    <name>Anguilla</name>
-    <code>ai</code>
-    <x>4</x>
-    <y>3</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>38</id>
-    <name>Montserrat</name>
-    <code>ms</code>
-    <x>4</x>
-    <y>3</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>39</id>
-    <name>El Salvador</name>
-    <code>sv</code>
-    <x>4</x>
-    <y>3</y>
-    <lang>Hola Mundo</lang>
-</country>
-<country>
-    <id>40</id>
-    <name>Colombia</name>
-    <code>co</code>
-    <x>4</x>
-    <y>3</y>
-    <lang>Hola Mundo</lang>
-</country>
-<country>
-    <id>41</id>
-    <name>Colombia</name>
-    <code>co</code>
-    <x>4</x>
-    <y>4</y>
-    <lang>Hola Mundo</lang>
-</country>
-<country>
-    <id>42</id>
-    <name>Venezuela</name>
-    <code>ve</code>
-    <x>4</x>
-    <y>3</y>
-    <lang>Hola Mundo</lang>
-</country>
-<country>
-    <id>43</id>
-    <name>Guyana</name>
-    <code>gy</code>
-    <x>5</x>
-    <y>3</y>
-    <lang>Hola Mundo</lang>
-</country>
-<country>
-    <id>44</id>
-    <name>Suriname</name>
-    <code>sr</code>
-    <x>5</x>
-    <y>3</y>
-    <lang>Hello Wêreld</lang>
-</country>
-<country>
-    <id>45</id>
-    <name>Suriname</name>
-    <code>sr</code>
-    <x>5</x>
-    <y>4</y>
-    <lang>Hello Wêreld</lang>
-</country>
-<country>
-    <id>46</id>
-    <name>Ecuador</name>
-    <code>ec</code>
-    <x>4</x>
-    <y>3</y>
-    <lang>Hola Mundo</lang>
-</country>
-<country>
-    <id>47</id>
-    <name>Ecuador</name>
-    <code>ec</code>
-    <x>4</x>
-    <y>4</y>
-    <lang>Hola Mundo</lang>
-</country>
-<country>
-    <id>48</id>
-    <name>Peru</name>
-    <code>pe</code>
-    <x>4</x>
-    <y>4</y>
-    <lang>Hola Mundo</lang>
-</country>
-<country>
-    <id>49</id>
-    <name>Chile</name>
-    <code>cl</code>
-    <x>4</x>
-    <y>4</y>
-    <lang>Hola Mundo</lang>
-</country>
-<country>
-    <id>50</id>
-    <name>Chile</name>
-    <code>cl</code>
-    <x>4</x>
-    <y>5</y>
-    <lang>Hola Mundo</lang>
-</country>
-<country>
-    <id>51</id>
-    <name>Argentina</name>
-    <code>ar</code>
-    <x>4</x>
-    <y>5</y>
-    <lang>Hola Mundo</lang>
-</country>
-<country>
-    <id>52</id>
-    <name>Argentina</name>
-    <code>ar</code>
-    <x>4</x>
-    <y>4</y>
-    <lang>Hola Mundo</lang>
-</country>
-<country>
-    <id>53</id>
-    <name>Argentina</name>
-    <code>ar</code>
-    <x>5</x>
-    <y>5</y>
-    <lang>Hola Mundo</lang>
-</country>
-<country>
-    <id>54</id>
-    <name>Argentina</name>
-    <code>ar</code>
-    <x>5</x>
-    <y>4</y>
-    <lang>Hola Mundo</lang>
-</country>
-<country>
-    <id>55</id>
-    <name>Uruguay</name>
-    <code>uy</code>
-    <x>5</x>
-    <y>4</y>
-    <lang>Hola Mundo</lang>
-</country>
-<country>
-    <id>56</id>
-    <name>Paraguay</name>
-    <code>py</code>
-    <x>4</x>
-    <y>4</y>
-    <lang>Hola Mundo</lang>
-</country>
-<country>
-    <id>57</id>
-    <name>Paraguay</name>
-    <code>py</code>
-    <x>5</x>
-    <y>4</y>
-    <lang>Hola Mundo</lang>
-</country>
-<country>
-    <id>58</id>
-    <name>Bolivia</name>
-    <code>bo</code>
-    <x>4</x>
-    <y>4</y>
-    <lang>Hola Mundo</lang>
-</country>
-<country>
-    <id>59</id>
-    <name>Bolivia</name>
-    <code>bo</code>
-    <x>5</x>
-    <y>4</y>
-    <lang>Hola Mundo</lang>
-</country>
-<country>
-    <id>60</id>
-    <name>Brazil</name>
-    <code>br</code>
-    <x>5</x>
-    <y>5</y>
-    <lang>Olá Mundo</lang>
-</country>
-<country>
-    <id>61</id>
-    <name>Brazil</name>
-    <code>br</code>
-    <x>5</x>
-    <y>4</y>
-    <lang>Olá Mundo</lang>
-</country>
-<country>
-    <id>62</id>
-    <name>French Guiana</name>
-    <code>gf</code>
-    <x>5</x>
-    <y>3</y>
-    <lang>Bonjour le monde</lang>
-</country>
-<country>
-    <id>63</id>
-    <name>Greenland</name>
-    <code>gl</code>
-    <x>4</x>
-    <y>1</y>
-    <lang>Hej Verden</lang>
-</country>
-<country>
-    <id>64</id>
-    <name>Greenland</name>
-    <code>gl</code>
-    <x>5</x>
-    <y>1</y>
-    <lang>Hej Verden</lang>
-</country>
-<country>
-    <id>65</id>
-    <name>Greenland</name>
-    <code>gl</code>
-    <x>6</x>
-    <y>1</y>
-    <lang>Hej Verden</lang>
-</country>
-<country>
-    <id>66</id>
-    <name>Iceland</name>
-    <code>is</code>
-    <x>6</x>
-    <y>1</y>
-    <lang>Hallo Welt</lang>
-</country>
-<country>
-    <id>67</id>
-    <name>Russia</name>
-    <code>ru</code>
-    <x>7</x>
-    <y>1</y>
-    <lang>Привет мир</lang>
-</country>
-<country>
-    <id>68</id>
-    <name>Russia</name>
-    <code>ru</code>
-    <x>8</x>
-    <y>1</y>
-    <lang>Привет мир</lang>
-</country>
-<country>
-    <id>69</id>
-    <name>Russia</name>
-    <code>ru</code>
-    <x>9</x>
-    <y>1</y>
-    <lang>Привет мир</lang>
-</country>
-<country>
-    <id>70</id>
-    <name>Russia</name>
-    <code>ru</code>
-    <x>10</x>
-    <y>1</y>
-    <lang>Привет мир</lang>
-</country>
-<country>
-    <id>71</id>
-    <name>Russia</name>
-    <code>ru</code>
-    <x>11</x>
-    <y>1</y>
-    <lang>Привет мир</lang>
-</country>
-<country>
-    <id>72</id>
-    <name>Russia</name>
-    <code>ru</code>
-    <x>12</x>
-    <y>2</y>
-    <lang>Привет мир</lang>
-</country>
-<country>
-    <id>73</id>
-    <name>Russia</name>
-    <code>ru</code>
-    <x>12</x>
-    <y>1</y>
-    <lang>Привет мир</lang>
-</country>
-<country>
-    <id>74</id>
-    <name>Russia</name>
-    <code>ru</code>
-    <x>7</x>
-    <y>2</y>
-    <lang>Привет мир</lang>
-</country>
-<country>
-    <id>75</id>
-    <name>Russia</name>
-    <code>ru</code>
-    <x>8</x>
-    <y>2</y>
-    <lang>Привет мир</lang>
-</country>
-<country>
-    <id>76</id>
-    <name>Russia</name>
-    <code>ru</code>
-    <x>9</x>
-    <y>2</y>
-    <lang>Привет мир</lang>
-</country>
-<country>
-    <id>77</id>
-    <name>Russia</name>
-    <code>ru</code>
-    <x>10</x>
-    <y>2</y>
-    <lang>Привет мир</lang>
-</country>
-<country>
-    <id>78</id>
-    <name>Russia</name>
-    <code>ru</code>
-    <x>11</x>
-    <y>2</y>
-    <lang>Привет мир</lang>
-</country>
-<country>
-    <id>79</id>
-    <name>Norway</name>
-    <code>no</code>
-    <x>7</x>
-    <y>1</y>
-    <lang>Hei Verden</lang>
-</country>
-<country>
-    <id>80</id>
-    <name>Finland</name>
-    <code>fi</code>
-    <x>7</x>
-    <y>1</y>
-    <lang>Hei maailma</lang>
-</country>
-<country>
-    <id>81</id>
-    <name>Sweden</name>
-    <code>se</code>
-    <x>7</x>
-    <y>2</y>
-    <lang>Hej världen</lang>
-</country>
-<country>
-    <id>82</id>
-    <name>Estonia</name>
-    <code>ee</code>
-    <x>7</x>
-    <y>2</y>
-    <lang>Hei maailma</lang>
-</country>
-<country>
-    <id>83</id>
-    <name>United Kingdom</name>
-    <code>gb</code>
-    <x>6</x>
-    <y>2</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>84</id>
-    <name>Ireland</name>
-    <code>ie</code>
-    <x>6</x>
-    <y>2</y>
-    <lang>Dia duit domhan</lang>
-</country>
-<country>
-    <id>85</id>
-    <name>Portugal</name>
-    <code>pt</code>
-    <x>6</x>
-    <y>2</y>
-    <lang>Olá Mundo</lang>
-</country>
-<country>
-    <id>86</id>
-    <name>Spain</name>
-    <code>es</code>
-    <x>6</x>
-    <y>2</y>
-    <lang>Hola Mundo</lang>
-</country>
-<country>
-    <id>87</id>
-    <name>France</name>
-    <code>fr</code>
-    <x>6</x>
-    <y>2</y>
-    <lang>Bonjour le monde</lang>
-</country>
-<country>
-    <id>88</id>
-    <name>Estonia</name>
-    <code>ee</code>
-    <x>7</x>
-    <y>2</y>
-    <lang>Tere, Maailm</lang>
-</country>
-<country>
-    <id>89</id>
-    <name>Latvia</name>
-    <code>lv</code>
-    <x>7</x>
-    <y>2</y>
-    <lang>Labas pasauli</lang>
-</country>
-<country>
-    <id>90</id>
-    <name>Lithuania</name>
-    <code>lt</code>
-    <x>7</x>
-    <y>2</y>
-    <lang>Labas pasauli</lang>
-</country>
-<country>
-    <id>91</id>
-    <name>Belarus</name>
-    <code>by</code>
-    <x>7</x>
-    <y>2</y>
-    <lang>Привет мир</lang>
-</country>
-<country>
-    <id>92</id>
-    <name>Poland</name>
-    <code>pl</code>
-    <x>7</x>
-    <y>2</y>
-    <lang>Witaj świecie</lang>
-</country>
-<country>
-    <id>93</id>
-    <name>Germany</name>
-    <code>de</code>
-    <x>7</x>
-    <y>2</y>
-    <lang>Hallo Welt</lang>
-</country>
-<country>
-    <id>94</id>
-    <name>Czech</name>
-    <code>cz</code>
-    <x>7</x>
-    <y>2</y>
-    <lang>Ahoj světe</lang>
-</country>
-<country>
-    <id>95</id>
-    <name>Slovakia</name>
-    <code>sk</code>
-    <x>7</x>
-    <y>2</y>
-    <lang>ahoj svet</lang>
-</country>
-<country>
-    <id>96</id>
-    <name>Greece</name>
-    <code>gr</code>
-    <x>7</x>
-    <y>2</y>
-    <lang>Γειά σου Κόσμε</lang>
-</country>
-<country>
-    <id>97</id>
-    <name>Kosovo</name>
-    <code>ks</code>
-    <x>7</x>
-    <y>2</y>
-    <lang>драво Свете</lang>
-</country>
-<country>
-    <id>98</id>
-    <name>Italy</name>
-    <code>it</code>
-    <x>7</x>
-    <y>2</y>
-    <lang>Ciao mondo</lang>
-</country>
-<country>
-    <id>99</id>
-    <name>Bosnia</name>
-    <code>ba</code>
-    <x>7</x>
-    <y>2</y>
-    <lang>Pozdrav svijete</lang>
-</country>
-<country>
-    <id>100</id>
-    <name>Belgium</name>
-    <code>be</code>
-    <x>7</x>
-    <y>2</y>
-    <lang>Bonjour le monde</lang>
-</country>
-<country>
-    <id>101</id>
-    <name>Netherlands</name>
-    <code>nl</code>
-    <x>7</x>
-    <y>2</y>
-    <lang>Hallo Wereld</lang>
-</country>
-<country>
-    <id>102</id>
-    <name>Switzerland</name>
-    <code>ch</code>
-    <x>7</x>
-    <y>2</y>
-    <lang>Bonjour le monde</lang>
-</country>
-<country>
-    <id>103</id>
-    <name>Slovenia</name>
-    <code>si</code>
-    <x>7</x>
-    <y>2</y>
-    <lang>Pozdravljen, svet</lang>
-</country>
-<country>
-    <id>104</id>
-    <name>Austria</name>
-    <code>at</code>
-    <x>7</x>
-    <y>2</y>
-    <lang>Hallo Welt</lang>
-</country>
-<country>
-    <id>105</id>
-    <name>Denmark</name>
-    <code>dk</code>
-    <x>7</x>
-    <y>2</y>
-    <lang>Hej Verden</lang>
-</country>
-<country>
-    <id>106</id>
-    <name>Hungary</name>
-    <code>hu</code>
-    <x>7</x>
-    <y>2</y>
-    <lang>Helló Világ</lang>
-</country>
-<country>
-    <id>107</id>
-    <name>Serbia</name>
-    <code>rs</code>
-    <x>7</x>
-    <y>2</y>
-    <lang>Здраво Свете</lang>
-</country>
-<country>
-    <id>108</id>
-    <name>Moldova</name>
-    <code>md</code>
-    <x>7</x>
-    <y>2</y>
-    <lang>Salut Lume</lang>
-</country>
-<country>
-    <id>109</id>
-    <name>Macedonia</name>
-    <code>mk</code>
-    <x>7</x>
-    <y>2</y>
-    <lang>Здраво свету</lang>
-</country>
-<country>
-    <id>110</id>
-    <name>Croatia</name>
-    <code>hr</code>
-    <x>7</x>
-    <y>2</y>
-    <lang>Pozdrav svijete</lang>
-</country>
-<country>
-    <id>111</id>
-    <name>Georgia</name>
-    <code>ge</code>
-    <x>8</x>
-    <y>2</y>
-    <lang>Сәлем Әлем</lang>
-</country>
-<country>
-    <id>112</id>
-    <name>Ukraine</name>
-    <code>ua</code>
-    <x>7</x>
-    <y>2</y>
-    <lang>Привіт Світ</lang>
-</country>
-<country>
-    <id>113</id>
-    <name>Ukraine</name>
-    <code>ua</code>
-    <x>8</x>
-    <y>2</y>
-    <lang>Привіт Світ</lang>
-</country>
-<country>
-    <id>114</id>
-    <name>Turkey</name>
-    <code>tr</code>
-    <x>7</x>
-    <y>2</y>
-    <lang>Selam Dünya</lang>
-</country>
-<country>
-    <id>115</id>
-    <name>Turkey</name>
-    <code>tr</code>
-    <x>8</x>
-    <y>2</y>
-    <lang>Selam Dünya</lang>
-</country>
-<country>
-    <id>116</id>
-    <name>Morocco</name>
-    <code>ma</code>
-    <x>6</x>
-    <y>2</y>
-    <lang>سلام دنیا</lang>
-</country>
-<country>
-    <id>117</id>
-    <name>Western Sahara</name>
-    <code>eh</code>
-    <x>6</x>
-    <y>2</y>
-    <lang>سلام دنیا</lang>
-</country>
-<country>
-    <id>118</id>
-    <name>Algeria</name>
-    <code>dz</code>
-    <x>6</x>
-    <y>2</y>
-    <lang>سلام دنیا</lang>
-</country>
-<country>
-    <id>119</id>
-    <name>Tunisia</name>
-    <code>tn</code>
-    <x>6</x>
-    <y>2</y>
-    <lang>Bonjour le monde</lang>
-</country>
-<country>
-    <id>120</id>
-    <name>Mauritania</name>
-    <code>mr</code>
-    <x>6</x>
-    <y>3</y>
-    <lang>سلام دنیا</lang>
-</country>
-<country>
-    <id>121</id>
-    <name>Mali</name>
-    <code>ml</code>
-    <x>6</x>
-    <y>3</y>
-    <lang>Bonjour le monde</lang>
-</country>
-<country>
-    <id>122</id>
-    <name>Senegal</name>
-    <code>sn</code>
-    <x>6</x>
-    <y>3</y>
-    <lang>Bonjour le monde</lang>
-</country>
-<country>
-    <id>123</id>
-    <name>Guinea</name>
-    <code>gn</code>
-    <x>6</x>
-    <y>3</y>
-    <lang>Bonjour le monde</lang>
-</country>
-<country>
-    <id>124</id>
-    <name>Sierra Leone</name>
-    <code>sl</code>
-    <x>6</x>
-    <y>3</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>125</id>
-    <name>Liberia</name>
-    <code>lr</code>
-    <x>6</x>
-    <y>3</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>126</id>
-    <name>Côte d'Ivore</name>
-    <code>ci</code>
-    <x>6</x>
-    <y>3</y>
-    <lang>Bonjour le monde</lang>
-</country>
-<country>
-    <id>127</id>
-    <name>Ghana</name>
-    <code>gh</code>
-    <x>6</x>
-    <y>3</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>128</id>
-    <name>Togo</name>
-    <code>tg</code>
-    <x>6</x>
-    <y>3</y>
-    <lang>Togo</lang>
-</country>
-<country>
-    <id>129</id>
-    <name>Benin</name>
-    <code>bj</code>
-    <x>6</x>
-    <y>3</y>
-    <lang>Bonjour le monde</lang>
-</country>
-<country>
-    <id>130</id>
-    <name>Burkina Faso</name>
-    <code>bf</code>
-    <x>6</x>
-    <y>3</y>
-    <lang>Bonjour le monde</lang>
-</country>
-<country>
-    <id>131</id>
-    <name>Niger</name>
-    <code>ne</code>
-    <x>7</x>
-    <y>3</y>
-    <lang>Hello World</lang>
-</country>
-<country>
-    <id>132</id>
-    <name>Nigeria</name>
-    <code>ng</code>
-    <x>7</x>
-    <y>3</y>
-    <lang>Hello World</lang>
-</country>
-<country>
-    <id>133</id>
-    <name>Cameroon</name>
-    <code>cm</code>
-    <x>7</x>
-    <y>3</y>
-    <lang>Bonjour le monde</lang>
-</country>
-<country>
-    <id>134</id>
-    <name>Chad</name>
-    <code>td</code>
-    <x>7</x>
-    <y>3</y>
-    <lang>Bonjour le monde</lang>
-</country>
-<country>
-    <id>135</id>
-    <name>Central African Republic</name>
-    <code>cf</code>
-    <x>7</x>
-    <y>3</y>
-    <lang>Bonjour le monde</lang>
-</country>
-<country>
-    <id>136</id>
-    <name>Sudan</name>
-    <code>sd</code>
-    <x>7</x>
-    <y>3</y>
-    <lang>سلام دنیا</lang>
-</country>
-<country>
-    <id>137</id>
-    <name>Somalia</name>
-    <code>so</code>
-    <x>8</x>
-    <y>3</y>
-    <lang>Dunida Hello</lang>
-</country>
-<country>
-    <id>138</id>
-    <name>Ethiopia</name>
-    <code>et</code>
-    <x>8</x>
-    <y>3</y>
-    <lang>ሰላም ልዑል</lang>
-</country>
-<country>
-    <id>139</id>
-    <name>South Sudan</name>
-    <code>ss</code>
-    <x>7</x>
-    <y>3</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>140</id>
-    <name>Egypt</name>
-    <code>eg</code>
-    <x>8</x>
-    <y>3</y>
-    <lang>سلام دنیا</lang>
-</country>
-<country>
-    <id>141</id>
-    <name>Eritrea</name>
-    <code>er</code>
-    <x>8</x>
-    <y>3</y>
-    <lang>سلام دنیا</lang>
-</country>
-<country>
-    <id>142</id>
-    <name>Djibouti</name>
-    <code>dj</code>
-    <x>8</x>
-    <y>3</y>
-    <lang>Dunida Hello</lang>
-</country>
-<country>
-    <id>143</id>
-    <name>Equatorial Guinea</name>
-    <code>gq</code>
-    <x>7</x>
-    <y>4</y>
-    <lang>Hola Mundo</lang>
-</country>
-<country>
-    <id>144</id>
-    <name>Gabon</name>
-    <code>ga</code>
-    <x>7</x>
-    <y>4</y>
-    <lang>Bonjour le monde</lang>
-</country>
-<country>
-    <id>145</id>
-    <name>Congo-Brazzaville</name>
-    <code>cg</code>
-    <x>7</x>
-    <y>4</y>
-    <lang>Bonjour le monde</lang>
-</country>
-<country>
-    <id>146</id>
-    <name>Congo-Kinshasa</name>
-    <code>cd</code>
-    <x>7</x>
-    <y>4</y>
-    <lang>Bonjour le monde</lang>
-</country>
-<country>
-    <id>147</id>
-    <name>Rwanda</name>
-    <code>rw</code>
-    <x>7</x>
-    <y>4</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>148</id>
-    <name>Uganda</name>
-    <code>ug</code>
-    <x>7</x>
-    <y>4</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>149</id>
-    <name>Kenya</name>
-    <code>ke</code>
-    <x>7</x>
-    <y>4</y>
-    <lang>Olá Mundo</lang>
-</country>
-<country>
-    <id>150</id>
-    <name>Burundi</name>
-    <code>bi</code>
-    <x>7</x>
-    <y>4</y>
-    <lang>Bonjour le monde</lang>
-</country>
-<country>
-    <id>151</id>
-    <name>Angola</name>
-    <code>ao</code>
-    <x>7</x>
-    <y>4</y>
-    <lang>Olá Mundo</lang>
-</country>
-<country>
-    <id>152</id>
-    <name>Tanzania</name>
-    <code>tz</code>
-    <x>7</x>
-    <y>4</y>
-    <lang>Hello World</lang>
-</country>
-<country>
-    <id>153</id>
-    <name>Zambia</name>
-    <code>zm</code>
-    <x>7</x>
-    <y>4</y>
-    <lang>Hello World</lang>
-</country>
-<country>
-    <id>154</id>
-    <name>Malawi</name>
-    <code>mw</code>
-    <x>7</x>
-    <y>4</y>
-    <lang>Hello World</lang>
-</country>
-<country>
-    <id>155</id>
-    <name>Mozambique</name>
-    <code>mz</code>
-    <x>7</x>
-    <y>4</y>
-    <lang>Olá Mundo</lang>
-</country>
-<country>
-    <id>156</id>
-    <name>Namibia</name>
-    <code>na</code>
-    <x>7</x>
-    <y>4</y>
-    <lang>Hello World</lang>
-</country>
-<country>
-    <id>157</id>
-    <name>Botswana</name>
-    <code>bw</code>
-    <x>7</x>
-    <y>4</y>
-    <lang>Hello World</lang>
-</country>
-<country>
-    <id>158</id>
-    <name>Zimbabwe</name>
-    <code>zw</code>
-    <x>7</x>
-    <y>4</y>
-    <lang>Hello World</lang>
-</country>
-<country>
-    <id>159</id>
-    <name>South Africa</name>
-    <code>za</code>
-    <x>7</x>
-    <y>4</y>
-    <lang>Sawubona Mhlaba</lang>
-</country>
-<country>
-    <id>160</id>
-    <name>Lesotho</name>
-    <code>ls</code>
-    <x>7</x>
-    <y>4</y>
-    <lang>Hello World</lang>
-</country>
-<country>
-    <id>161</id>
-    <name>Swaziland</name>
-    <code>sz</code>
-    <x>7</x>
-    <y>4</y>
-    <lang>Hello World</lang>
-</country>
-<country>
-    <id>162</id>
-    <name>Comoros</name>
-    <code>km</code>
-    <x>7</x>
-    <y>4</y>
-    <lang>سلام دنیا</lang>
-</country>
-<country>
-    <id>163</id>
-    <name>Madagascar</name>
-    <code>mg</code>
-    <x>7</x>
-    <y>4</y>
-    <lang>Hello World</lang>
-</country>
-<country>
-    <id>164</id>
-    <name>Reunion</name>
-    <code>re</code>
-    <x>7</x>
-    <y>4</y>
-    <lang>Bonjour le monde</lang>
-</country>
-<country>
-    <id>165</id>
-    <name>Yemen</name>
-    <code>ye</code>
-    <x>8</x>
-    <y>3</y>
-    <lang>سلام دنیا</lang>
-</country>
-<country>
-    <id>166</id>
-    <name>Oman</name>
-    <code>om</code>
-    <x>8</x>
-    <y>3</y>
-    <lang>سلام دنیا</lang>
-</country>
-<country>
-    <id>167</id>
-    <name>Saudi Arabia</name>
-    <code>sa</code>
-    <x>8</x>
-    <y>3</y>
-    <lang>سلام دنیا</lang>
-</country>
-<country>
-    <id>168</id>
-    <name>United Arab Emirates</name>
-    <code>ae</code>
-    <x>8</x>
-    <y>3</y>
-    <lang>سلام دنیا</lang>
-</country>
-<country>
-    <id>169</id>
-    <name>Qatar</name>
-    <code>qa</code>
-    <x>8</x>
-    <y>3</y>
-    <lang>سلام دنیا</lang>
-</country>
-<country>
-    <id>170</id>
-    <name>Jordan</name>
-    <code>jo</code>
-    <x>8</x>
-    <y>3</y>
-    <lang>سلام دنیا</lang>
-</country>
-<country>
-    <id>171</id>
-    <name>Palestinian Territory</name>
-    <code>ps</code>
-    <x>8</x>
-    <y>3</y>
-    <lang>سلام دنیا</lang>
-</country>
-<country>
-    <id>172</id>
-    <name>Iraq</name>
-    <code>iq</code>
-    <x>8</x>
-    <y>3</y>
-    <lang>سلام دنیا</lang>
-</country>
-<country>
-    <id>173</id>
-    <name>Iran</name>
-    <code>ir</code>
-    <x>8</x>
-    <y>2</y>
-    <lang>سلام دنیا</lang>
-</country>
-<country>
-    <id>174</id>
-    <name>Israel</name>
-    <code>il</code>
-    <x>8</x>
-    <y>3</y>
-    <lang>سلام دنیا</lang>
-</country>
-<country>
-    <id>175</id>
-    <name>Syria</name>
-    <code>sy</code>
-    <x>8</x>
-    <y>3</y>
-    <lang>سلام دنیا</lang>
-</country>
-<country>
-    <id>176</id>
-    <name>Armenia</name>
-    <code>am</code>
-    <x>8</x>
-    <y>2</y>
-    <lang>नमस्ते दुनिया</lang>
-</country>
-<country>
-    <id>177</id>
-    <name>Azerbaijan</name>
-    <code>az</code>
-    <x>8</x>
-    <y>2</y>
-    <lang>Բարեւ աշխարհ</lang>
-</country>
-<country>
-    <id>178</id>
-    <name>Kazakhstan</name>
-    <code>kz</code>
-    <x>8</x>
-    <y>2</y>
-    <lang>Сәлем Әлем</lang>
-</country>
-<country>
-    <id>179</id>
-    <name>Kazakhstan</name>
-    <code>kz</code>
-    <x>9</x>
-    <y>2</y>
-    <lang>Сәлем Әлем</lang>
-</country>
-<country>
-    <id>180</id>
-    <name>Uzbekistan</name>
-    <code>uz</code>
-    <x>8</x>
-    <y>2</y>
-    <lang>Салом Ҷаҳон</lang>
-</country>
-<country>
-    <id>181</id>
-    <name>Turkmenistan</name>
-    <code>tm</code>
-    <x>8</x>
-    <y>2</y>
-    <lang>سلام دنیا</lang>
-</country>
-<country>
-    <id>182</id>
-    <name>Sri Lanka</name>
-    <code>lk</code>
-    <x>9</x>
-    <y>3</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>183</id>
-    <name>India</name>
-    <code>in</code>
-    <x>9</x>
-    <y>3</y>
-    <lang>नमस्ते दुनिया</lang>
-</country>
-<country>
-    <id>184</id>
-    <name>Pakistan</name>
-    <code>pk</code>
-    <x>9</x>
-    <y>3</y>
-    <lang>ہیلو دنیا</lang>
-</country>
-<country>
-    <id>185</id>
-    <name>Pakistan</name>
-    <code>pk</code>
-    <x>9</x>
-    <y>2</y>
-    <lang>ہیلو دنیا</lang>
-</country>
-<country>
-    <id>186</id>
-    <name>Nepal</name>
-    <code>np</code>
-    <x>9</x>
-    <y>2</y>
-    <lang>नमस्कार संसार</lang>
-</country>
-<country>
-    <id>187</id>
-    <name>Mongolia</name>
-    <code>mn</code>
-    <x>9</x>
-    <y>2</y>
-    <lang>Сайн байна уу</lang>
-</country>
-<country>
-    <id>188</id>
-    <name>Bhutan</name>
-    <code>bt</code>
-    <x>9</x>
-    <y>3</y>
-    <lang>नमस्ते दुनिया</lang>
-</country>
-<country>
-    <id>189</id>
-    <name>Bangladesh</name>
-    <code>bd</code>
-    <x>9</x>
-    <y>3</y>
-    <lang>ওহে বিশ্ব</lang>
-</country>
-<country>
-    <id>190</id>
-    <name>Myanmar</name>
-    <code>mm</code>
-    <x>10</x>
-    <y>3</y>
-    <lang>ສະ​ບາຍ​ດີ​ຊາວ​ໂລກ</lang>
-</country>
-<country>
-    <id>191</id>
-    <name>Vatican</name>
-    <code>va</code>
-    <x>7</x>
-    <y>2</y>
-    <lang></lang>
-</country>
-<country>
-    <id>192</id>
-    <name>Thailand</name>
-    <code>th</code>
-    <x>10</x>
-    <y>3</y>
-    <lang>สวัสดีชาวโลก</lang>
-</country>
-<country>
-    <id>193</id>
-    <name>Laos</name>
-    <code>la</code>
-    <x>10</x>
-    <y>3</y>
-    <lang>ສະ​ບາຍ​ດີ​ຊາວ​ໂລກ</lang>
-</country>
-<country>
-    <id>194</id>
-    <name>Viet Nam</name>
-    <code>vn</code>
-    <x>10</x>
-    <y>3</y>
-    <lang>Xin chào</lang>
-</country>
-<country>
-    <id>195</id>
-    <name>Cambodia</name>
-    <code>kh</code>
-    <x>10</x>
-    <y>3</y>
-    <lang>សួស្តី​ពិភពលោក</lang>
-</country>
-<country>
-    <id>196</id>
-    <name>China</name>
-    <code>cn</code>
-    <x>8</x>
-    <y>2</y>
-    <lang>你好，世界</lang>
-</country>
-<country>
-    <id>197</id>
-    <name>China</name>
-    <code>cn</code>
-    <x>9</x>
-    <y>2</y>
-    <lang>你好，世界</lang>
-</country>
-<country>
-    <id>198</id>
-    <name>China</name>
-    <code>cn</code>
-    <x>10</x>
-    <y>2</y>
-    <lang>你好，世界</lang>
-</country>
-<country>
-    <id>199</id>
-    <name>China</name>
-    <code>cn</code>
-    <x>11</x>
-    <y>2</y>
-    <lang>你好，世界</lang>
-</country>
-<country>
-    <id>200</id>
-    <name>Kyrgyzstan</name>
-    <code>kg</code>
-    <x>8</x>
-    <y>2</y>
-    <lang>Привет мир</lang>
-</country>
-<country>
-    <id>201</id>
-    <name>China</name>
-    <code>cn</code>
-    <x>10</x>
-    <y>3</y>
-    <lang>你好，世界</lang>
-</country>
-<country>
-    <id>202</id>
-    <name>Taiwan</name>
-    <code>tw</code>
-    <x>11</x>
-    <y>3</y>
-    <lang>你好，世界</lang>
-</country>
-<country>
-    <id>203</id>
-    <name>Mongolia</name>
-    <code>mn</code>
-    <x>9</x>
-    <y>2</y>
-    <lang>Сайн уу</lang>
-</country>
-<country>
-    <id>204</id>
-    <name>Mongolia</name>
-    <code>mn</code>
-    <x>10</x>
-    <y>2</y>
-    <lang>Сайн уу</lang>
-</country>
-<country>
-    <id>205</id>
-    <name>North Korea</name>
-    <code>kp</code>
-    <x>11</x>
-    <y>2</y>
-    <lang>안녕 세상</lang>
-</country>
-<country>
-    <id>206</id>
-    <name>South Korea</name>
-    <code>kr</code>
-    <x>11</x>
-    <y>2</y>
-    <lang>안녕 세상</lang>
-</country>
-<country>
-    <id>207</id>
-    <name>Japan</name>
-    <code>jp</code>
-    <x>11</x>
-    <y>2</y>
-    <lang>こんにちは世界</lang>
-</country>
-<country>
-    <id>208</id>
-    <name>Russia</name>
-    <code>ru</code>
-    <x>11</x>
-    <y>2</y>
-    <lang>Привет мир</lang>
-</country>
-<country>
-    <id>209</id>
-    <name>Philippines</name>
-    <code>ph</code>
-    <x>11</x>
-    <y>2</y>
-    <lang>Hai dunia</lang>
-</country>
-<country>
-    <id>210</id>
-    <name>Malaysia</name>
-    <code>my</code>
-    <x>11</x>
-    <y>3</y>
-    <lang>Hai dunia</lang>
-</country>
-<country>
-    <id>211</id>
-    <name>Brunei</name>
-    <code>bn</code>
-    <x>10</x>
-    <y>3</y>
-    <lang>Hai dunia</lang>
-</country>
-<country>
-    <id>212</id>
-    <name>Malaysia</name>
-    <code>my</code>
-    <x>10</x>
-    <y>2</y>
-    <lang>Hai dunia</lang>
-</country>
-<country>
-    <id>213</id>
-    <name>Malaysia</name>
-    <code>my</code>
-    <x>11</x>
-    <y>2</y>
-    <lang>Hai dunia</lang>
-</country>
-<country>
-    <id>214</id>
-    <name>Indonesia</name>
-    <code>id</code>
-    <x>10</x>
-    <y>3</y>
-    <lang>Halo Dunia</lang>
-</country>
-<country>
-    <id>215</id>
-    <name>Indonesia</name>
-    <code>id</code>
-    <x>11</x>
-    <y>3</y>
-    <lang>Halo Dunia</lang>
-</country>
-<country>
-    <id>216</id>
-    <name>Indonesia</name>
-    <code>id</code>
-    <x>10</x>
-    <y>4</y>
-    <lang>Halo Dunia</lang>
-</country>
-<country>
-    <id>217</id>
-    <name>Indonesia</name>
-    <code>id</code>
-    <x>11</x>
-    <y>4</y>
-    <lang>Halo Dunia</lang>
-</country>
-<country>
-    <id>218</id>
-    <name>Timor-Leste</name>
-    <code>tl</code>
-    <x>11</x>
-    <y>4</y>
-    <lang>Olá Mundo</lang>
-</country>
-<country>
-    <id>219</id>
-    <name>Papua New Guinea</name>
-    <code>pg</code>
-    <x>11</x>
-    <y>4</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>220</id>
-    <name>Australia</name>
-    <code>au</code>
-    <x>10</x>
-    <y>4</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>221</id>
-    <name>Australia</name>
-    <code>au</code>
-    <x>11</x>
-    <y>4</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>222</id>
-    <name>Australia</name>
-    <code>au</code>
-    <x>12</x>
-    <y>4</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>223</id>
-    <name>Australia</name>
-    <code>au</code>
-    <x>10</x>
-    <y>5</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>224</id>
-    <name>Australia</name>
-    <code>au</code>
-    <x>11</x>
-    <y>5</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>225</id>
-    <name>Australia</name>
-    <code>au</code>
-    <x>12</x>
-    <y>5</y>
-    <lang>Hello world</lang>
-</country>
-<country>
-    <id>226</id>
-    <name>New Zealand</name>
-    <code>nz</code>
-    <x>12</x>
-    <y>5</y>
-    <lang>Hello world</lang>
-</country>
+    <country>
+        <id>1</id>
+        <name>United States</name>
+        <code>us</code>
+        <x>1</x>
+        <y>1</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>2</id>
+        <name>United States</name>
+        <code>us</code>
+        <x>1</x>
+        <y>2</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>3</id>
+        <name>United States</name>
+        <code>us</code>
+        <x>2</x>
+        <y>2</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>4</id>
+        <name>United States</name>
+        <code>us</code>
+        <x>3</x>
+        <y>2</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>5</id>
+        <name>United States</name>
+        <code>us</code>
+        <x>4</x>
+        <y>2</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>6</id>
+        <name>United States</name>
+        <code>us</code>
+        <x>4</x>
+        <y>3</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>7</id>
+        <name>Canada</name>
+        <code>ca</code>
+        <x>2</x>
+        <y>1</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>8</id>
+        <name>Canada</name>
+        <code>ca</code>
+        <x>3</x>
+        <y>1</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>9</id>
+        <name>Canada</name>
+        <code>ca</code>
+        <x>4</x>
+        <y>1</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>10</id>
+        <name>Canada</name>
+        <code>ca</code>
+        <x>3</x>
+        <y>2</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>11</id>
+        <name>Canada</name>
+        <code>ca</code>
+        <x>3</x>
+        <y>1</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>12</id>
+        <name>Canada</name>
+        <code>ca</code>
+        <x>4</x>
+        <y>1</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>13</id>
+        <name>Canada</name>
+        <code>ca</code>
+        <x>4</x>
+        <y>2</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>14</id>
+        <name>Canada</name>
+        <code>ca</code>
+        <x>2</x>
+        <y>2</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>15</id>
+        <name>Canada</name>
+        <code>ca</code>
+        <x>5</x>
+        <y>2</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>16</id>
+        <name>Mexico</name>
+        <code>mx</code>
+        <x>3</x>
+        <y>2</y>
+        <lang>Hola Mundo</lang>
+    </country>
+    <country>
+        <id>17</id>
+        <name>Mexico</name>
+        <code>mx</code>
+        <x>3</x>
+        <y>3</y>
+        <lang>Hola Mundo</lang>
+    </country>
+    <country>
+        <id>18</id>
+        <name>Mexico</name>
+        <code>mx</code>
+        <x>4</x>
+        <y>3</y>
+        <lang>Hola Mundo</lang>
+    </country>
+    <country>
+        <id>19</id>
+        <name>Cuba</name>
+        <code>cu</code>
+        <x>4</x>
+        <y>3</y>
+        <lang>Hola Mundo</lang>
+    </country>
+    <country>
+        <id>20</id>
+        <name>Guatemala</name>
+        <code>gt</code>
+        <x>4</x>
+        <y>3</y>
+        <lang>Hola Mundo</lang>
+    </country>
+    <country>
+        <id>21</id>
+        <name>Honduras</name>
+        <code>hn</code>
+        <x>4</x>
+        <y>3</y>
+        <lang>Hola Mundo</lang>
+    </country>
+    <country>
+        <id>22</id>
+        <name>Nicaragua</name>
+        <code>ni</code>
+        <x>4</x>
+        <y>3</y>
+        <lang>Hola Mundo</lang>
+    </country>
+    <country>
+        <id>23</id>
+        <name>Costa Rica</name>
+        <code>cr</code>
+        <x>4</x>
+        <y>3</y>
+        <lang>Hola Mundo</lang>
+    </country>
+    <country>
+        <id>24</id>
+        <name>Panama</name>
+        <code>pa</code>
+        <x>4</x>
+        <y>3</y>
+        <lang>Hola Mundo</lang>
+    </country>
+    <country>
+        <id>25</id>
+        <name>Jamaica</name>
+        <code>jm</code>
+        <x>4</x>
+        <y>3</y>
+        <lang>Hola Mundo</lang>
+    </country>
+    <country>
+        <id>26</id>
+        <name>Dominican republic</name>
+        <code>do</code>
+        <x>4</x>
+        <y>3</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>27</id>
+        <name>Afghanistan</name>
+        <code>af</code>
+        <x>8</x>
+        <y>3</y>
+        <lang>سلام دنیا</lang>
+    </country>
+    <country>
+        <id>28</id>
+        <name>Puerto Rico</name>
+        <code>pr</code>
+        <x>4</x>
+        <y>3</y>
+        <lang>Hola Mundo</lang>
+    </country>
+    <country>
+        <id>29</id>
+        <name>Haiti</name>
+        <code>ht</code>
+        <x>4</x>
+        <y>3</y>
+        <lang>Bonjour le monde</lang>
+    </country>
+    <country>
+        <id>30</id>
+        <name>Grenada</name>
+        <code>gd</code>
+        <x>4</x>
+        <y>3</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>31</id>
+        <name>Saint Lucia</name>
+        <code>lc</code>
+        <x>4</x>
+        <y>3</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>32</id>
+        <name>Saint Vincent and the Granadines</name>
+        <code>vc</code>
+        <x>4</x>
+        <y>3</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>33</id>
+        <name>Barbados</name>
+        <code>bb</code>
+        <x>4</x>
+        <y>3</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>34</id>
+        <name>Guadeloupe</name>
+        <code>gp</code>
+        <x>4</x>
+        <y>3</y>
+        <lang>Hola Mundo</lang>
+    </country>
+    <country>
+        <id>35</id>
+        <name>Antigua and Barbuda</name>
+        <code>ag</code>
+        <x>4</x>
+        <y>3</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>36</id>
+        <name>Saint kitts and Nevis</name>
+        <code>kn</code>
+        <x>4</x>
+        <y>3</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>37</id>
+        <name>Anguilla</name>
+        <code>ai</code>
+        <x>4</x>
+        <y>3</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>38</id>
+        <name>Montserrat</name>
+        <code>ms</code>
+        <x>4</x>
+        <y>3</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>39</id>
+        <name>El Salvador</name>
+        <code>sv</code>
+        <x>4</x>
+        <y>3</y>
+        <lang>Hola Mundo</lang>
+    </country>
+    <country>
+        <id>40</id>
+        <name>Colombia</name>
+        <code>co</code>
+        <x>4</x>
+        <y>3</y>
+        <lang>Hola Mundo</lang>
+    </country>
+    <country>
+        <id>41</id>
+        <name>Colombia</name>
+        <code>co</code>
+        <x>4</x>
+        <y>4</y>
+        <lang>Hola Mundo</lang>
+    </country>
+    <country>
+        <id>42</id>
+        <name>Venezuela</name>
+        <code>ve</code>
+        <x>4</x>
+        <y>3</y>
+        <lang>Hola Mundo</lang>
+    </country>
+    <country>
+        <id>43</id>
+        <name>Guyana</name>
+        <code>gy</code>
+        <x>5</x>
+        <y>3</y>
+        <lang>Hola Mundo</lang>
+    </country>
+    <country>
+        <id>44</id>
+        <name>Suriname</name>
+        <code>sr</code>
+        <x>5</x>
+        <y>3</y>
+        <lang>Hello Wêreld</lang>
+    </country>
+    <country>
+        <id>45</id>
+        <name>Suriname</name>
+        <code>sr</code>
+        <x>5</x>
+        <y>4</y>
+        <lang>Hello Wêreld</lang>
+    </country>
+    <country>
+        <id>46</id>
+        <name>Ecuador</name>
+        <code>ec</code>
+        <x>4</x>
+        <y>3</y>
+        <lang>Hola Mundo</lang>
+    </country>
+    <country>
+        <id>47</id>
+        <name>Ecuador</name>
+        <code>ec</code>
+        <x>4</x>
+        <y>4</y>
+        <lang>Hola Mundo</lang>
+    </country>
+    <country>
+        <id>48</id>
+        <name>Peru</name>
+        <code>pe</code>
+        <x>4</x>
+        <y>4</y>
+        <lang>Hola Mundo</lang>
+    </country>
+    <country>
+        <id>49</id>
+        <name>Chile</name>
+        <code>cl</code>
+        <x>4</x>
+        <y>4</y>
+        <lang>Hola Mundo</lang>
+    </country>
+    <country>
+        <id>50</id>
+        <name>Chile</name>
+        <code>cl</code>
+        <x>4</x>
+        <y>5</y>
+        <lang>Hola Mundo</lang>
+    </country>
+    <country>
+        <id>51</id>
+        <name>Argentina</name>
+        <code>ar</code>
+        <x>4</x>
+        <y>5</y>
+        <lang>Hola Mundo</lang>
+    </country>
+    <country>
+        <id>52</id>
+        <name>Argentina</name>
+        <code>ar</code>
+        <x>4</x>
+        <y>4</y>
+        <lang>Hola Mundo</lang>
+    </country>
+    <country>
+        <id>53</id>
+        <name>Argentina</name>
+        <code>ar</code>
+        <x>5</x>
+        <y>5</y>
+        <lang>Hola Mundo</lang>
+    </country>
+    <country>
+        <id>54</id>
+        <name>Argentina</name>
+        <code>ar</code>
+        <x>5</x>
+        <y>4</y>
+        <lang>Hola Mundo</lang>
+    </country>
+    <country>
+        <id>55</id>
+        <name>Uruguay</name>
+        <code>uy</code>
+        <x>5</x>
+        <y>4</y>
+        <lang>Hola Mundo</lang>
+    </country>
+    <country>
+        <id>56</id>
+        <name>Paraguay</name>
+        <code>py</code>
+        <x>4</x>
+        <y>4</y>
+        <lang>Hola Mundo</lang>
+    </country>
+    <country>
+        <id>57</id>
+        <name>Paraguay</name>
+        <code>py</code>
+        <x>5</x>
+        <y>4</y>
+        <lang>Hola Mundo</lang>
+    </country>
+    <country>
+        <id>58</id>
+        <name>Bolivia</name>
+        <code>bo</code>
+        <x>4</x>
+        <y>4</y>
+        <lang>Hola Mundo</lang>
+    </country>
+    <country>
+        <id>59</id>
+        <name>Bolivia</name>
+        <code>bo</code>
+        <x>5</x>
+        <y>4</y>
+        <lang>Hola Mundo</lang>
+    </country>
+    <country>
+        <id>60</id>
+        <name>Brazil</name>
+        <code>br</code>
+        <x>5</x>
+        <y>5</y>
+        <lang>Olá Mundo</lang>
+    </country>
+    <country>
+        <id>61</id>
+        <name>Brazil</name>
+        <code>br</code>
+        <x>5</x>
+        <y>4</y>
+        <lang>Olá Mundo</lang>
+    </country>
+    <country>
+        <id>62</id>
+        <name>French Guiana</name>
+        <code>gf</code>
+        <x>5</x>
+        <y>3</y>
+        <lang>Bonjour le monde</lang>
+    </country>
+    <country>
+        <id>63</id>
+        <name>Greenland</name>
+        <code>gl</code>
+        <x>4</x>
+        <y>1</y>
+        <lang>Hej Verden</lang>
+    </country>
+    <country>
+        <id>64</id>
+        <name>Greenland</name>
+        <code>gl</code>
+        <x>5</x>
+        <y>1</y>
+        <lang>Hej Verden</lang>
+    </country>
+    <country>
+        <id>65</id>
+        <name>Greenland</name>
+        <code>gl</code>
+        <x>6</x>
+        <y>1</y>
+        <lang>Hej Verden</lang>
+    </country>
+    <country>
+        <id>66</id>
+        <name>Iceland</name>
+        <code>is</code>
+        <x>6</x>
+        <y>1</y>
+        <lang>Hallo Welt</lang>
+    </country>
+    <country>
+        <id>67</id>
+        <name>Russia</name>
+        <code>ru</code>
+        <x>7</x>
+        <y>1</y>
+        <lang>Привет мир</lang>
+    </country>
+    <country>
+        <id>68</id>
+        <name>Russia</name>
+        <code>ru</code>
+        <x>8</x>
+        <y>1</y>
+        <lang>Привет мир</lang>
+    </country>
+    <country>
+        <id>69</id>
+        <name>Russia</name>
+        <code>ru</code>
+        <x>9</x>
+        <y>1</y>
+        <lang>Привет мир</lang>
+    </country>
+    <country>
+        <id>70</id>
+        <name>Russia</name>
+        <code>ru</code>
+        <x>10</x>
+        <y>1</y>
+        <lang>Привет мир</lang>
+    </country>
+    <country>
+        <id>71</id>
+        <name>Russia</name>
+        <code>ru</code>
+        <x>11</x>
+        <y>1</y>
+        <lang>Привет мир</lang>
+    </country>
+    <country>
+        <id>72</id>
+        <name>Russia</name>
+        <code>ru</code>
+        <x>12</x>
+        <y>2</y>
+        <lang>Привет мир</lang>
+    </country>
+    <country>
+        <id>73</id>
+        <name>Russia</name>
+        <code>ru</code>
+        <x>12</x>
+        <y>1</y>
+        <lang>Привет мир</lang>
+    </country>
+    <country>
+        <id>74</id>
+        <name>Russia</name>
+        <code>ru</code>
+        <x>7</x>
+        <y>2</y>
+        <lang>Привет мир</lang>
+    </country>
+    <country>
+        <id>75</id>
+        <name>Russia</name>
+        <code>ru</code>
+        <x>8</x>
+        <y>2</y>
+        <lang>Привет мир</lang>
+    </country>
+    <country>
+        <id>76</id>
+        <name>Russia</name>
+        <code>ru</code>
+        <x>9</x>
+        <y>2</y>
+        <lang>Привет мир</lang>
+    </country>
+    <country>
+        <id>77</id>
+        <name>Russia</name>
+        <code>ru</code>
+        <x>10</x>
+        <y>2</y>
+        <lang>Привет мир</lang>
+    </country>
+    <country>
+        <id>78</id>
+        <name>Russia</name>
+        <code>ru</code>
+        <x>11</x>
+        <y>2</y>
+        <lang>Привет мир</lang>
+    </country>
+    <country>
+        <id>79</id>
+        <name>Norway</name>
+        <code>no</code>
+        <x>7</x>
+        <y>1</y>
+        <lang>Hei Verden</lang>
+    </country>
+    <country>
+        <id>80</id>
+        <name>Finland</name>
+        <code>fi</code>
+        <x>7</x>
+        <y>1</y>
+        <lang>Hei maailma</lang>
+    </country>
+    <country>
+        <id>81</id>
+        <name>Sweden</name>
+        <code>se</code>
+        <x>7</x>
+        <y>2</y>
+        <lang>Hej världen</lang>
+    </country>
+    <country>
+        <id>82</id>
+        <name>Estonia</name>
+        <code>ee</code>
+        <x>7</x>
+        <y>2</y>
+        <lang>Hei maailma</lang>
+    </country>
+    <country>
+        <id>83</id>
+        <name>United Kingdom</name>
+        <code>gb</code>
+        <x>6</x>
+        <y>2</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>84</id>
+        <name>Ireland</name>
+        <code>ie</code>
+        <x>6</x>
+        <y>2</y>
+        <lang>Dia duit domhan</lang>
+    </country>
+    <country>
+        <id>85</id>
+        <name>Portugal</name>
+        <code>pt</code>
+        <x>6</x>
+        <y>2</y>
+        <lang>Olá Mundo</lang>
+    </country>
+    <country>
+        <id>86</id>
+        <name>Spain</name>
+        <code>es</code>
+        <x>6</x>
+        <y>2</y>
+        <lang>Hola Mundo</lang>
+    </country>
+    <country>
+        <id>87</id>
+        <name>France</name>
+        <code>fr</code>
+        <x>6</x>
+        <y>2</y>
+        <lang>Bonjour le monde</lang>
+    </country>
+    <country>
+        <id>88</id>
+        <name>Estonia</name>
+        <code>ee</code>
+        <x>7</x>
+        <y>2</y>
+        <lang>Tere, Maailm</lang>
+    </country>
+    <country>
+        <id>89</id>
+        <name>Latvia</name>
+        <code>lv</code>
+        <x>7</x>
+        <y>2</y>
+        <lang>Labas pasauli</lang>
+    </country>
+    <country>
+        <id>90</id>
+        <name>Lithuania</name>
+        <code>lt</code>
+        <x>7</x>
+        <y>2</y>
+        <lang>Labas pasauli</lang>
+    </country>
+    <country>
+        <id>91</id>
+        <name>Belarus</name>
+        <code>by</code>
+        <x>7</x>
+        <y>2</y>
+        <lang>Привет мир</lang>
+    </country>
+    <country>
+        <id>92</id>
+        <name>Poland</name>
+        <code>pl</code>
+        <x>7</x>
+        <y>2</y>
+        <lang>Witaj świecie</lang>
+    </country>
+    <country>
+        <id>93</id>
+        <name>Germany</name>
+        <code>de</code>
+        <x>7</x>
+        <y>2</y>
+        <lang>Hallo Welt</lang>
+    </country>
+    <country>
+        <id>94</id>
+        <name>Czech</name>
+        <code>cz</code>
+        <x>7</x>
+        <y>2</y>
+        <lang>Ahoj světe</lang>
+    </country>
+    <country>
+        <id>95</id>
+        <name>Slovakia</name>
+        <code>sk</code>
+        <x>7</x>
+        <y>2</y>
+        <lang>ahoj svet</lang>
+    </country>
+    <country>
+        <id>96</id>
+        <name>Greece</name>
+        <code>gr</code>
+        <x>7</x>
+        <y>2</y>
+        <lang>Γειά σου Κόσμε</lang>
+    </country>
+    <country>
+        <id>97</id>
+        <name>Kosovo</name>
+        <code>ks</code>
+        <x>7</x>
+        <y>2</y>
+        <lang>драво Свете</lang>
+    </country>
+    <country>
+        <id>98</id>
+        <name>Italy</name>
+        <code>it</code>
+        <x>7</x>
+        <y>2</y>
+        <lang>Ciao mondo</lang>
+    </country>
+    <country>
+        <id>99</id>
+        <name>Bosnia</name>
+        <code>ba</code>
+        <x>7</x>
+        <y>2</y>
+        <lang>Pozdrav svijete</lang>
+    </country>
+    <country>
+        <id>100</id>
+        <name>Belgium</name>
+        <code>be</code>
+        <x>7</x>
+        <y>2</y>
+        <lang>Bonjour le monde</lang>
+    </country>
+    <country>
+        <id>101</id>
+        <name>Netherlands</name>
+        <code>nl</code>
+        <x>7</x>
+        <y>2</y>
+        <lang>Hallo Wereld</lang>
+    </country>
+    <country>
+        <id>102</id>
+        <name>Switzerland</name>
+        <code>ch</code>
+        <x>7</x>
+        <y>2</y>
+        <lang>Bonjour le monde</lang>
+    </country>
+    <country>
+        <id>103</id>
+        <name>Slovenia</name>
+        <code>si</code>
+        <x>7</x>
+        <y>2</y>
+        <lang>Pozdravljen, svet</lang>
+    </country>
+    <country>
+        <id>104</id>
+        <name>Austria</name>
+        <code>at</code>
+        <x>7</x>
+        <y>2</y>
+        <lang>Hallo Welt</lang>
+    </country>
+    <country>
+        <id>105</id>
+        <name>Denmark</name>
+        <code>dk</code>
+        <x>7</x>
+        <y>2</y>
+        <lang>Hej Verden</lang>
+    </country>
+    <country>
+        <id>106</id>
+        <name>Hungary</name>
+        <code>hu</code>
+        <x>7</x>
+        <y>2</y>
+        <lang>Helló Világ</lang>
+    </country>
+    <country>
+        <id>107</id>
+        <name>Serbia</name>
+        <code>rs</code>
+        <x>7</x>
+        <y>2</y>
+        <lang>Здраво Свете</lang>
+    </country>
+    <country>
+        <id>108</id>
+        <name>Moldova</name>
+        <code>md</code>
+        <x>7</x>
+        <y>2</y>
+        <lang>Salut Lume</lang>
+    </country>
+    <country>
+        <id>109</id>
+        <name>Macedonia</name>
+        <code>mk</code>
+        <x>7</x>
+        <y>2</y>
+        <lang>Здраво свету</lang>
+    </country>
+    <country>
+        <id>110</id>
+        <name>Croatia</name>
+        <code>hr</code>
+        <x>7</x>
+        <y>2</y>
+        <lang>Pozdrav svijete</lang>
+    </country>
+    <country>
+        <id>111</id>
+        <name>Georgia</name>
+        <code>ge</code>
+        <x>8</x>
+        <y>2</y>
+        <lang>Сәлем Әлем</lang>
+    </country>
+    <country>
+        <id>112</id>
+        <name>Ukraine</name>
+        <code>ua</code>
+        <x>7</x>
+        <y>2</y>
+        <lang>Привіт Світ</lang>
+    </country>
+    <country>
+        <id>113</id>
+        <name>Ukraine</name>
+        <code>ua</code>
+        <x>8</x>
+        <y>2</y>
+        <lang>Привіт Світ</lang>
+    </country>
+    <country>
+        <id>114</id>
+        <name>Turkey</name>
+        <code>tr</code>
+        <x>7</x>
+        <y>2</y>
+        <lang>Selam Dünya</lang>
+    </country>
+    <country>
+        <id>115</id>
+        <name>Turkey</name>
+        <code>tr</code>
+        <x>8</x>
+        <y>2</y>
+        <lang>Selam Dünya</lang>
+    </country>
+    <country>
+        <id>116</id>
+        <name>Morocco</name>
+        <code>ma</code>
+        <x>6</x>
+        <y>2</y>
+        <lang>سلام دنیا</lang>
+    </country>
+    <country>
+        <id>117</id>
+        <name>Western Sahara</name>
+        <code>eh</code>
+        <x>6</x>
+        <y>2</y>
+        <lang>سلام دنیا</lang>
+    </country>
+    <country>
+        <id>118</id>
+        <name>Algeria</name>
+        <code>dz</code>
+        <x>6</x>
+        <y>2</y>
+        <lang>سلام دنیا</lang>
+    </country>
+    <country>
+        <id>119</id>
+        <name>Tunisia</name>
+        <code>tn</code>
+        <x>6</x>
+        <y>2</y>
+        <lang>Bonjour le monde</lang>
+    </country>
+    <country>
+        <id>120</id>
+        <name>Mauritania</name>
+        <code>mr</code>
+        <x>6</x>
+        <y>3</y>
+        <lang>سلام دنیا</lang>
+    </country>
+    <country>
+        <id>121</id>
+        <name>Mali</name>
+        <code>ml</code>
+        <x>6</x>
+        <y>3</y>
+        <lang>Bonjour le monde</lang>
+    </country>
+    <country>
+        <id>122</id>
+        <name>Senegal</name>
+        <code>sn</code>
+        <x>6</x>
+        <y>3</y>
+        <lang>Bonjour le monde</lang>
+    </country>
+    <country>
+        <id>123</id>
+        <name>Guinea</name>
+        <code>gn</code>
+        <x>6</x>
+        <y>3</y>
+        <lang>Bonjour le monde</lang>
+    </country>
+    <country>
+        <id>124</id>
+        <name>Sierra Leone</name>
+        <code>sl</code>
+        <x>6</x>
+        <y>3</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>125</id>
+        <name>Liberia</name>
+        <code>lr</code>
+        <x>6</x>
+        <y>3</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>126</id>
+        <name>Côte d'Ivore</name>
+        <code>ci</code>
+        <x>6</x>
+        <y>3</y>
+        <lang>Bonjour le monde</lang>
+    </country>
+    <country>
+        <id>127</id>
+        <name>Ghana</name>
+        <code>gh</code>
+        <x>6</x>
+        <y>3</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>128</id>
+        <name>Togo</name>
+        <code>tg</code>
+        <x>6</x>
+        <y>3</y>
+        <lang>Togo</lang>
+    </country>
+    <country>
+        <id>129</id>
+        <name>Benin</name>
+        <code>bj</code>
+        <x>6</x>
+        <y>3</y>
+        <lang>Bonjour le monde</lang>
+    </country>
+    <country>
+        <id>130</id>
+        <name>Burkina Faso</name>
+        <code>bf</code>
+        <x>6</x>
+        <y>3</y>
+        <lang>Bonjour le monde</lang>
+    </country>
+    <country>
+        <id>131</id>
+        <name>Niger</name>
+        <code>ne</code>
+        <x>7</x>
+        <y>3</y>
+        <lang>Hello World</lang>
+    </country>
+    <country>
+        <id>132</id>
+        <name>Nigeria</name>
+        <code>ng</code>
+        <x>7</x>
+        <y>3</y>
+        <lang>Hello World</lang>
+    </country>
+    <country>
+        <id>133</id>
+        <name>Cameroon</name>
+        <code>cm</code>
+        <x>7</x>
+        <y>3</y>
+        <lang>Bonjour le monde</lang>
+    </country>
+    <country>
+        <id>134</id>
+        <name>Chad</name>
+        <code>td</code>
+        <x>7</x>
+        <y>3</y>
+        <lang>Bonjour le monde</lang>
+    </country>
+    <country>
+        <id>135</id>
+        <name>Central African Republic</name>
+        <code>cf</code>
+        <x>7</x>
+        <y>3</y>
+        <lang>Bonjour le monde</lang>
+    </country>
+    <country>
+        <id>136</id>
+        <name>Sudan</name>
+        <code>sd</code>
+        <x>7</x>
+        <y>3</y>
+        <lang>سلام دنیا</lang>
+    </country>
+    <country>
+        <id>137</id>
+        <name>Somalia</name>
+        <code>so</code>
+        <x>8</x>
+        <y>3</y>
+        <lang>Dunida Hello</lang>
+    </country>
+    <country>
+        <id>138</id>
+        <name>Ethiopia</name>
+        <code>et</code>
+        <x>8</x>
+        <y>3</y>
+        <lang>ሰላም ልዑል</lang>
+    </country>
+    <country>
+        <id>139</id>
+        <name>South Sudan</name>
+        <code>ss</code>
+        <x>7</x>
+        <y>3</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>140</id>
+        <name>Egypt</name>
+        <code>eg</code>
+        <x>8</x>
+        <y>3</y>
+        <lang>سلام دنیا</lang>
+    </country>
+    <country>
+        <id>141</id>
+        <name>Eritrea</name>
+        <code>er</code>
+        <x>8</x>
+        <y>3</y>
+        <lang>سلام دنیا</lang>
+    </country>
+    <country>
+        <id>142</id>
+        <name>Djibouti</name>
+        <code>dj</code>
+        <x>8</x>
+        <y>3</y>
+        <lang>Dunida Hello</lang>
+    </country>
+    <country>
+        <id>143</id>
+        <name>Equatorial Guinea</name>
+        <code>gq</code>
+        <x>7</x>
+        <y>4</y>
+        <lang>Hola Mundo</lang>
+    </country>
+    <country>
+        <id>144</id>
+        <name>Gabon</name>
+        <code>ga</code>
+        <x>7</x>
+        <y>4</y>
+        <lang>Bonjour le monde</lang>
+    </country>
+    <country>
+        <id>145</id>
+        <name>Congo-Brazzaville</name>
+        <code>cg</code>
+        <x>7</x>
+        <y>4</y>
+        <lang>Bonjour le monde</lang>
+    </country>
+    <country>
+        <id>146</id>
+        <name>Congo-Kinshasa</name>
+        <code>cd</code>
+        <x>7</x>
+        <y>4</y>
+        <lang>Bonjour le monde</lang>
+    </country>
+    <country>
+        <id>147</id>
+        <name>Rwanda</name>
+        <code>rw</code>
+        <x>7</x>
+        <y>4</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>148</id>
+        <name>Uganda</name>
+        <code>ug</code>
+        <x>7</x>
+        <y>4</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>149</id>
+        <name>Kenya</name>
+        <code>ke</code>
+        <x>7</x>
+        <y>4</y>
+        <lang>Olá Mundo</lang>
+    </country>
+    <country>
+        <id>150</id>
+        <name>Burundi</name>
+        <code>bi</code>
+        <x>7</x>
+        <y>4</y>
+        <lang>Bonjour le monde</lang>
+    </country>
+    <country>
+        <id>151</id>
+        <name>Angola</name>
+        <code>ao</code>
+        <x>7</x>
+        <y>4</y>
+        <lang>Olá Mundo</lang>
+    </country>
+    <country>
+        <id>152</id>
+        <name>Tanzania</name>
+        <code>tz</code>
+        <x>7</x>
+        <y>4</y>
+        <lang>Hello World</lang>
+    </country>
+    <country>
+        <id>153</id>
+        <name>Zambia</name>
+        <code>zm</code>
+        <x>7</x>
+        <y>4</y>
+        <lang>Hello World</lang>
+    </country>
+    <country>
+        <id>154</id>
+        <name>Malawi</name>
+        <code>mw</code>
+        <x>7</x>
+        <y>4</y>
+        <lang>Hello World</lang>
+    </country>
+    <country>
+        <id>155</id>
+        <name>Mozambique</name>
+        <code>mz</code>
+        <x>7</x>
+        <y>4</y>
+        <lang>Olá Mundo</lang>
+    </country>
+    <country>
+        <id>156</id>
+        <name>Namibia</name>
+        <code>na</code>
+        <x>7</x>
+        <y>4</y>
+        <lang>Hello World</lang>
+    </country>
+    <country>
+        <id>157</id>
+        <name>Botswana</name>
+        <code>bw</code>
+        <x>7</x>
+        <y>4</y>
+        <lang>Hello World</lang>
+    </country>
+    <country>
+        <id>158</id>
+        <name>Zimbabwe</name>
+        <code>zw</code>
+        <x>7</x>
+        <y>4</y>
+        <lang>Hello World</lang>
+    </country>
+    <country>
+        <id>159</id>
+        <name>South Africa</name>
+        <code>za</code>
+        <x>7</x>
+        <y>4</y>
+        <lang>Sawubona Mhlaba</lang>
+    </country>
+    <country>
+        <id>160</id>
+        <name>Lesotho</name>
+        <code>ls</code>
+        <x>7</x>
+        <y>4</y>
+        <lang>Hello World</lang>
+    </country>
+    <country>
+        <id>161</id>
+        <name>Swaziland</name>
+        <code>sz</code>
+        <x>7</x>
+        <y>4</y>
+        <lang>Hello World</lang>
+    </country>
+    <country>
+        <id>162</id>
+        <name>Comoros</name>
+        <code>km</code>
+        <x>7</x>
+        <y>4</y>
+        <lang>سلام دنیا</lang>
+    </country>
+    <country>
+        <id>163</id>
+        <name>Madagascar</name>
+        <code>mg</code>
+        <x>7</x>
+        <y>4</y>
+        <lang>Hello World</lang>
+    </country>
+    <country>
+        <id>164</id>
+        <name>Reunion</name>
+        <code>re</code>
+        <x>7</x>
+        <y>4</y>
+        <lang>Bonjour le monde</lang>
+    </country>
+    <country>
+        <id>165</id>
+        <name>Yemen</name>
+        <code>ye</code>
+        <x>8</x>
+        <y>3</y>
+        <lang>سلام دنیا</lang>
+    </country>
+    <country>
+        <id>166</id>
+        <name>Oman</name>
+        <code>om</code>
+        <x>8</x>
+        <y>3</y>
+        <lang>سلام دنیا</lang>
+    </country>
+    <country>
+        <id>167</id>
+        <name>Saudi Arabia</name>
+        <code>sa</code>
+        <x>8</x>
+        <y>3</y>
+        <lang>سلام دنیا</lang>
+    </country>
+    <country>
+        <id>168</id>
+        <name>United Arab Emirates</name>
+        <code>ae</code>
+        <x>8</x>
+        <y>3</y>
+        <lang>سلام دنیا</lang>
+    </country>
+    <country>
+        <id>169</id>
+        <name>Qatar</name>
+        <code>qa</code>
+        <x>8</x>
+        <y>3</y>
+        <lang>سلام دنیا</lang>
+    </country>
+    <country>
+        <id>170</id>
+        <name>Jordan</name>
+        <code>jo</code>
+        <x>8</x>
+        <y>3</y>
+        <lang>سلام دنیا</lang>
+    </country>
+    <country>
+        <id>171</id>
+        <name>Palestinian Territory</name>
+        <code>ps</code>
+        <x>8</x>
+        <y>3</y>
+        <lang>سلام دنیا</lang>
+    </country>
+    <country>
+        <id>172</id>
+        <name>Iraq</name>
+        <code>iq</code>
+        <x>8</x>
+        <y>3</y>
+        <lang>سلام دنیا</lang>
+    </country>
+    <country>
+        <id>173</id>
+        <name>Iran</name>
+        <code>ir</code>
+        <x>8</x>
+        <y>2</y>
+        <lang>سلام دنیا</lang>
+    </country>
+    <country>
+        <id>174</id>
+        <name>Israel</name>
+        <code>il</code>
+        <x>8</x>
+        <y>3</y>
+        <lang>سلام دنیا</lang>
+    </country>
+    <country>
+        <id>175</id>
+        <name>Syria</name>
+        <code>sy</code>
+        <x>8</x>
+        <y>3</y>
+        <lang>سلام دنیا</lang>
+    </country>
+    <country>
+        <id>176</id>
+        <name>Armenia</name>
+        <code>am</code>
+        <x>8</x>
+        <y>2</y>
+        <lang>नमस्ते दुनिया</lang>
+    </country>
+    <country>
+        <id>177</id>
+        <name>Azerbaijan</name>
+        <code>az</code>
+        <x>8</x>
+        <y>2</y>
+        <lang>Բարեւ աշխարհ</lang>
+    </country>
+    <country>
+        <id>178</id>
+        <name>Kazakhstan</name>
+        <code>kz</code>
+        <x>8</x>
+        <y>2</y>
+        <lang>Сәлем Әлем</lang>
+    </country>
+    <country>
+        <id>179</id>
+        <name>Kazakhstan</name>
+        <code>kz</code>
+        <x>9</x>
+        <y>2</y>
+        <lang>Сәлем Әлем</lang>
+    </country>
+    <country>
+        <id>180</id>
+        <name>Uzbekistan</name>
+        <code>uz</code>
+        <x>8</x>
+        <y>2</y>
+        <lang>Салом Ҷаҳон</lang>
+    </country>
+    <country>
+        <id>181</id>
+        <name>Turkmenistan</name>
+        <code>tm</code>
+        <x>8</x>
+        <y>2</y>
+        <lang>سلام دنیا</lang>
+    </country>
+    <country>
+        <id>182</id>
+        <name>Sri Lanka</name>
+        <code>lk</code>
+        <x>9</x>
+        <y>3</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>183</id>
+        <name>India</name>
+        <code>in</code>
+        <x>9</x>
+        <y>3</y>
+        <lang>नमस्ते दुनिया</lang>
+    </country>
+    <country>
+        <id>184</id>
+        <name>Pakistan</name>
+        <code>pk</code>
+        <x>9</x>
+        <y>3</y>
+        <lang>ہیلو دنیا</lang>
+    </country>
+    <country>
+        <id>185</id>
+        <name>Pakistan</name>
+        <code>pk</code>
+        <x>9</x>
+        <y>2</y>
+        <lang>ہیلو دنیا</lang>
+    </country>
+    <country>
+        <id>186</id>
+        <name>Nepal</name>
+        <code>np</code>
+        <x>9</x>
+        <y>2</y>
+        <lang>नमस्कार संसार</lang>
+    </country>
+    <country>
+        <id>187</id>
+        <name>Mongolia</name>
+        <code>mn</code>
+        <x>9</x>
+        <y>2</y>
+        <lang>Сайн байна уу</lang>
+    </country>
+    <country>
+        <id>188</id>
+        <name>Bhutan</name>
+        <code>bt</code>
+        <x>9</x>
+        <y>3</y>
+        <lang>नमस्ते दुनिया</lang>
+    </country>
+    <country>
+        <id>189</id>
+        <name>Bangladesh</name>
+        <code>bd</code>
+        <x>9</x>
+        <y>3</y>
+        <lang>ওহে বিশ্ব</lang>
+    </country>
+    <country>
+        <id>190</id>
+        <name>Myanmar</name>
+        <code>mm</code>
+        <x>10</x>
+        <y>3</y>
+        <lang>ສະ​ບາຍ​ດີ​ຊາວ​ໂລກ</lang>
+    </country>
+    <country>
+        <id>191</id>
+        <name>Vatican</name>
+        <code>va</code>
+        <x>7</x>
+        <y>2</y>
+        <lang></lang>
+    </country>
+    <country>
+        <id>192</id>
+        <name>Thailand</name>
+        <code>th</code>
+        <x>10</x>
+        <y>3</y>
+        <lang>สวัสดีชาวโลก</lang>
+    </country>
+    <country>
+        <id>193</id>
+        <name>Laos</name>
+        <code>la</code>
+        <x>10</x>
+        <y>3</y>
+        <lang>ສະ​ບາຍ​ດີ​ຊາວ​ໂລກ</lang>
+    </country>
+    <country>
+        <id>194</id>
+        <name>Viet Nam</name>
+        <code>vn</code>
+        <x>10</x>
+        <y>3</y>
+        <lang>Xin chào</lang>
+    </country>
+    <country>
+        <id>195</id>
+        <name>Cambodia</name>
+        <code>kh</code>
+        <x>10</x>
+        <y>3</y>
+        <lang>សួស្តី​ពិភពលោក</lang>
+    </country>
+    <country>
+        <id>196</id>
+        <name>China</name>
+        <code>cn</code>
+        <x>8</x>
+        <y>2</y>
+        <lang>你好，世界</lang>
+    </country>
+    <country>
+        <id>197</id>
+        <name>China</name>
+        <code>cn</code>
+        <x>9</x>
+        <y>2</y>
+        <lang>你好，世界</lang>
+    </country>
+    <country>
+        <id>198</id>
+        <name>China</name>
+        <code>cn</code>
+        <x>10</x>
+        <y>2</y>
+        <lang>你好，世界</lang>
+    </country>
+    <country>
+        <id>199</id>
+        <name>China</name>
+        <code>cn</code>
+        <x>11</x>
+        <y>2</y>
+        <lang>你好，世界</lang>
+    </country>
+    <country>
+        <id>200</id>
+        <name>Kyrgyzstan</name>
+        <code>kg</code>
+        <x>8</x>
+        <y>2</y>
+        <lang>Привет мир</lang>
+    </country>
+    <country>
+        <id>201</id>
+        <name>China</name>
+        <code>cn</code>
+        <x>10</x>
+        <y>3</y>
+        <lang>你好，世界</lang>
+    </country>
+    <country>
+        <id>202</id>
+        <name>Taiwan</name>
+        <code>tw</code>
+        <x>11</x>
+        <y>3</y>
+        <lang>你好，世界</lang>
+    </country>
+    <country>
+        <id>203</id>
+        <name>Mongolia</name>
+        <code>mn</code>
+        <x>9</x>
+        <y>2</y>
+        <lang>Сайн уу</lang>
+    </country>
+    <country>
+        <id>204</id>
+        <name>Mongolia</name>
+        <code>mn</code>
+        <x>10</x>
+        <y>2</y>
+        <lang>Сайн уу</lang>
+    </country>
+    <country>
+        <id>205</id>
+        <name>North Korea</name>
+        <code>kp</code>
+        <x>11</x>
+        <y>2</y>
+        <lang>안녕 세상</lang>
+    </country>
+    <country>
+        <id>206</id>
+        <name>South Korea</name>
+        <code>kr</code>
+        <x>11</x>
+        <y>2</y>
+        <lang>안녕 세상</lang>
+    </country>
+    <country>
+        <id>207</id>
+        <name>Japan</name>
+        <code>jp</code>
+        <x>11</x>
+        <y>2</y>
+        <lang>こんにちは世界</lang>
+    </country>
+    <country>
+        <id>208</id>
+        <name>Russia</name>
+        <code>ru</code>
+        <x>11</x>
+        <y>2</y>
+        <lang>Привет мир</lang>
+    </country>
+    <country>
+        <id>209</id>
+        <name>Philippines</name>
+        <code>ph</code>
+        <x>11</x>
+        <y>2</y>
+        <lang>Hai dunia</lang>
+    </country>
+    <country>
+        <id>210</id>
+        <name>Malaysia</name>
+        <code>my</code>
+        <x>11</x>
+        <y>3</y>
+        <lang>Hai dunia</lang>
+    </country>
+    <country>
+        <id>211</id>
+        <name>Brunei</name>
+        <code>bn</code>
+        <x>10</x>
+        <y>3</y>
+        <lang>Hai dunia</lang>
+    </country>
+    <country>
+        <id>212</id>
+        <name>Malaysia</name>
+        <code>my</code>
+        <x>10</x>
+        <y>2</y>
+        <lang>Hai dunia</lang>
+    </country>
+    <country>
+        <id>213</id>
+        <name>Malaysia</name>
+        <code>my</code>
+        <x>11</x>
+        <y>2</y>
+        <lang>Hai dunia</lang>
+    </country>
+    <country>
+        <id>214</id>
+        <name>Indonesia</name>
+        <code>id</code>
+        <x>10</x>
+        <y>3</y>
+        <lang>Halo Dunia</lang>
+    </country>
+    <country>
+        <id>215</id>
+        <name>Indonesia</name>
+        <code>id</code>
+        <x>11</x>
+        <y>3</y>
+        <lang>Halo Dunia</lang>
+    </country>
+    <country>
+        <id>216</id>
+        <name>Indonesia</name>
+        <code>id</code>
+        <x>10</x>
+        <y>4</y>
+        <lang>Halo Dunia</lang>
+    </country>
+    <country>
+        <id>217</id>
+        <name>Indonesia</name>
+        <code>id</code>
+        <x>11</x>
+        <y>4</y>
+        <lang>Halo Dunia</lang>
+    </country>
+    <country>
+        <id>218</id>
+        <name>Timor-Leste</name>
+        <code>tl</code>
+        <x>11</x>
+        <y>4</y>
+        <lang>Olá Mundo</lang>
+    </country>
+    <country>
+        <id>219</id>
+        <name>Papua New Guinea</name>
+        <code>pg</code>
+        <x>11</x>
+        <y>4</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>220</id>
+        <name>Australia</name>
+        <code>au</code>
+        <x>10</x>
+        <y>4</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>221</id>
+        <name>Australia</name>
+        <code>au</code>
+        <x>11</x>
+        <y>4</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>222</id>
+        <name>Australia</name>
+        <code>au</code>
+        <x>12</x>
+        <y>4</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>223</id>
+        <name>Australia</name>
+        <code>au</code>
+        <x>10</x>
+        <y>5</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>224</id>
+        <name>Australia</name>
+        <code>au</code>
+        <x>11</x>
+        <y>5</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>225</id>
+        <name>Australia</name>
+        <code>au</code>
+        <x>12</x>
+        <y>5</y>
+        <lang>Hello world</lang>
+    </country>
+    <country>
+        <id>226</id>
+        <name>New Zealand</name>
+        <code>nz</code>
+        <x>12</x>
+        <y>5</y>
+        <lang>Hello world</lang>
+    </country>
 </world>

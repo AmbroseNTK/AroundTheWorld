@@ -35,7 +35,8 @@
                 android:layout_below="@id/tvLabel1"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/bnt_style2"
+                android:background="@color/textXanh"
+                android:textColor="#fff"
                 android:text="Flag mode" />
         </TableRow>
         <TableRow>
@@ -44,7 +45,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:background="@drawable/bnt_style2"
+                android:background="@color/textXanh"
+                android:textColor="#fff"
                 android:text="@string/menu_button_name_mode"
                 android:layout_marginTop="20dp"/>
         </TableRow>
@@ -56,7 +58,8 @@
 
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/bnt_style2"
+                android:background="@color/textXanh"
+                android:textColor="#fff"
                 android:text="@string/menu_button_leader_board" />
         </TableRow>
         <TableRow>
@@ -64,7 +67,8 @@
                 android:id="@+id/btSetting"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/bnt_style2"
+                android:background="@color/textXanh"
+                android:textColor="#fff"
                 android:text="@string/menu_button_setting"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"

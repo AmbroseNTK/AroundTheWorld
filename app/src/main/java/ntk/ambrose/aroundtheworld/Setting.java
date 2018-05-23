@@ -1,5 +1,8 @@
 package ntk.ambrose.aroundtheworld;
 
+/**
+ * Lưu trữ các cài đặt ứng dụng
+ */
 public class Setting {
     private boolean isMute;
     private String country="vn";
@@ -8,6 +11,7 @@ public class Setting {
     private int score;
     private int highScore;
     private int currentQuestion;
+    private int level =4;
 
     private Setting(){
 
@@ -72,5 +76,13 @@ public class Setting {
 
     public void setCurrentQuestion(int currentQuestion) {
         this.currentQuestion = currentQuestion;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
     }
 }

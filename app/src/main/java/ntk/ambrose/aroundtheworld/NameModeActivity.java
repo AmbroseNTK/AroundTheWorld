@@ -1,7 +1,6 @@
 package ntk.ambrose.aroundtheworld;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -9,7 +8,6 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 import ntk.ambrose.aroundtheworld.Models.QuestionBundle;
-import ntk.ambrose.aroundtheworld.Models.WorldMap;
 
 public class NameModeActivity extends AppCompatActivity {
 
@@ -25,6 +23,8 @@ public class NameModeActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.name_mode_activity);
+        SoundManager.getInstance().Stop(SoundManager.Playlist.BG_MAIN);
+        SoundManager.getInstance().Play(SoundManager.Playlist.BG_MODE2,true);
         btAnsA=findViewById(R.id.btAnsA);
         btAnsB=findViewById(R.id.btAnsB);
         btAnsC=findViewById(R.id.btAnsC);
@@ -41,11 +41,14 @@ public class NameModeActivity extends AppCompatActivity {
 
     }
     public void gameOver(){
+        SoundManager.getInstance().Stop(SoundManager.Playlist.BG_MODE2);
+        SoundManager.getInstance().Play(SoundManager.Playlist.SOUND_WRONG,false);
         startActivity(new Intent(NameModeActivity.this,GameOverActivity.class));
         finish();
     }
     private void checkAnswer(String ans){
         if(ans.equals(currentQuestion.getQuestion().getCode())){
+            SoundManager.getInstance().Play(SoundManager.Playlist.SOUND_CORRECT,false);
             Setting.getInstance().setScore(Setting.getInstance().getScore()+100);
             Setting.getInstance().setCurrentQuestion(Setting.getInstance().getCurrentQuestion()+1);
             if(Setting.getInstance().getCurrentQuestion()==QuestionBundle.getInstance().getQuestionArrayList().size()){

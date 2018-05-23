@@ -7,41 +7,43 @@
     tools:context=".MainActivity">
 
     <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#aac6e0"
-        >
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
-       <ImageView
-           android:layout_width="360dp"
-           android:layout_height="100dp"
-           android:layout_centerHorizontal="true"
-           android:layout_marginTop="20dp"
-           android:src="@drawable/text_around_the_world"
-           android:id="@+id/imgTitle"
-           />
+        <ImageView
+            android:id="@+id/imgTitle"
+            android:layout_width="360dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/text_around_the_world" />
 
-        
-                <ImageButton
-                    android:id="@+id/btStart"
-                    android:layout_below="@id/imgTitle"
-                    android:layout_width="150dp"
-                    android:layout_height="72dp"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="70dp"
-                    android:text="@string/menu_button_play"
-                    android:background="@drawable/bntplay"/>
 
-                <ImageButton
-                    android:id="@+id/btExit"
-                    android:layout_width="150dp"
-                    android:layout_height="72dp"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="20dp"
-                    android:layout_below="@id/btStart"
-                    android:text="@string/menu_button_exit"
-                    android:background="@drawable/bntmode"/>
+        <ImageButton
+            android:id="@+id/btStart"
+            android:layout_width="150dp"
+            android:layout_height="72dp"
+            android:layout_below="@id/imgTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/bntplay"
+            android:text="@string/menu_button_play" />
 
+        <ImageButton
+            android:id="@+id/btSetting"
+            android:layout_width="150dp"
+            android:layout_height="72dp"
+            android:layout_below="@id/btStart"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bntmode"
+            android:text="@string/menu_button_exit" />
 
 
     </RelativeLayout>

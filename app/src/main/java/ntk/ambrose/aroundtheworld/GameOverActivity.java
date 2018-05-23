@@ -30,6 +30,7 @@ public class GameOverActivity extends AppCompatActivity {
         btRetry.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                SoundManager.getInstance().Play(SoundManager.Playlist.SOUND_BUTTON,false);
                 startActivity(new Intent(GameOverActivity.this,MainActivity.class));
                 finish();
             }
@@ -51,6 +52,6 @@ public class GameOverActivity extends AppCompatActivity {
         editor.apply();
     }
     public void saveToLeaderboard(){
-        
+
     }
 }
