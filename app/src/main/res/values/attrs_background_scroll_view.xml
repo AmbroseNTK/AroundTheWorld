@@ -1,0 +1,6 @@
+<resources>
+    <declare-styleable name="BackgroundScrollView">
+        <attr name="speed" format="float"/>
+        <attr name="image" format="reference"/>
+    </declare-styleable>
+</resources>

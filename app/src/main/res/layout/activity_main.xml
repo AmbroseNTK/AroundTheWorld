@@ -6,46 +6,60 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
+    <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#aac6e0"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
 
+
         <ImageView
-            android:id="@+id/imgTitle"
-            android:layout_width="360dp"
-            android:layout_height="100dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:src="@drawable/text_around_the_world" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/low_poly_world_map"
+            android:adjustViewBounds="false"
+            android:scaleType="centerCrop"
+            />
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imgTitle"
+                android:layout_width="360dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/text_around_the_world" />
 
 
-        <ImageButton
-            android:id="@+id/btStart"
-            android:layout_width="150dp"
-            android:layout_height="72dp"
-            android:layout_below="@id/imgTitle"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="70dp"
-            android:background="@drawable/bntplay"
-            android:text="@string/menu_button_play" />
+            <ImageButton
+                android:id="@+id/btStart"
+                android:layout_width="150dp"
+                android:layout_height="72dp"
+                android:layout_below="@id/imgTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/bntplay"
+                android:text="@string/menu_button_play" />
 
-        <ImageButton
-            android:id="@+id/btSetting"
-            android:layout_width="150dp"
-            android:layout_height="72dp"
-            android:layout_below="@id/btStart"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/bntmode"
-            android:text="@string/menu_button_exit" />
+            <ImageButton
+                android:id="@+id/btSetting"
+                android:layout_width="150dp"
+                android:layout_height="72dp"
+                android:layout_below="@id/btStart"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bntmode"
+                android:text="@string/menu_button_exit" />
+        </RelativeLayout>
 
 
-    </RelativeLayout>
+
+    </FrameLayout>
 
 </android.support.constraint.ConstraintLayout>

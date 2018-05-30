@@ -94,7 +94,5 @@ public class MainActivity extends AppCompatActivity {
 
         anim.start();
 
-
-
     }
 }
