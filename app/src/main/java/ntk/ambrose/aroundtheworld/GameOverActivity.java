@@ -59,6 +59,6 @@ public class GameOverActivity extends AppCompatActivity {
     }
     public void saveToLeaderboard(){
 
-       
+
     }
 }
