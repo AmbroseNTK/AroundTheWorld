@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "602743241024",
+    "firebase_url": "https://aroundtheworld-41262.firebaseio.com",
+    "project_id": "aroundtheworld-41262",
+    "storage_bucket": "aroundtheworld-41262.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602743241024:android:e533cc6d81857c32",
+        "android_client_info": {
+          "package_name": "ntk.ambrose.aroundtheworld"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602743241024-t7asefcpdu62rpfrer3uejenksb3f2pa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ntk.ambrose.aroundtheworld",
+            "certificate_hash": "31a3133dea79c0fe7e049b864a18ec92b80b2a0e"
+          }
+        },
+        {
+          "client_id": "602743241024-e3ojjo8sck7jvuj6v6jl99hem8hqqjcn.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "602743241024-e3ojjo8sck7jvuj6v6jl99hem8hqqjcn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJh6PAwf5kBBB4TXy_2WI4uQDUQFhhP84"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602743241024-e3ojjo8sck7jvuj6v6jl99hem8hqqjcn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
