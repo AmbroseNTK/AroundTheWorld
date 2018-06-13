@@ -5,85 +5,91 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".FlagModeActivity">
-    <RelativeLayout
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/bgmode12new"
-        >
-        <TextView
-            android:id="@+id/tvQuestionNum"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Score:"
-            android:textSize="15pt"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="10dp"
-            android:textColor="@color/textXanh"
-            android:textStyle="bold"/>
+        android:layout_height="match_parent">
 
-        <android.support.v7.widget.CardView
-            android:id="@+id/cardImg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tvQuestionNum"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="20dp"
-            app:cardElevation="30dp">
-
-            <ImageView
-                android:id="@+id/imgFlag"
-                android:layout_width="290dp"
-                android:layout_height="150dp"
-                android:background="@drawable/image_style1"/>
-
-        </android.support.v7.widget.CardView>
-
-       <TableLayout
-           android:id="@+id/layoutAns"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:layout_below="@id/cardImg"
-           android:layout_marginTop="50dp"
-           android:layout_marginStart="20dp"
-           android:layout_marginEnd="20dp"
-           android:stretchColumns="*">
-           <TableRow>
-               <Button
-                   android:background="@drawable/button_style1"
-                   android:id="@+id/btAnsA"
-                   android:text="Country A"
-                   android:layout_marginTop="7dp"
-                   />
-           </TableRow>
-           <TableRow>
-               <Button
-                   android:background="@drawable/button_style1"
-                   android:id="@+id/btAnsB"
-                   android:text="Country B"
-                   android:layout_marginTop="7dp"/>
-           </TableRow>
-           <TableRow>
-               <Button
-                   android:background="@drawable/button_style1"
-                   android:id="@+id/btAnsC"
-                   android:text="Country C"
-                   android:layout_marginTop="7dp"/>
-           </TableRow>
-           <TableRow>
-               <Button
-                   android:background="@drawable/button_style1"
-                   android:id="@+id/btAnsD"
-                   android:text="Country D"
-                   android:layout_marginTop="7dp"/>
-           </TableRow>
-       </TableLayout>
-        <ProgressBar
-            android:id="@+id/progressTime"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_below="@id/layoutAns"
-            android:indeterminate="false"
-            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal" />
-    </RelativeLayout>
+            android:layout_height="match_parent"
+
+            >
+            <TextView
+                android:id="@+id/tvQuestionNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Score:"
+                android:textSize="15pt"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/textXanh"
+                android:textStyle="bold"/>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvQuestionNum"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                app:cardElevation="30dp">
+
+                <ImageView
+                    android:id="@+id/imgFlag"
+                    android:layout_width="290dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/image_style1"/>
+
+            </android.support.v7.widget.CardView>
+
+            <TableLayout
+                android:id="@+id/layoutAns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardImg"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:stretchColumns="*">
+                <TableRow>
+                    <Button
+                        android:background="@drawable/button_style1"
+                        android:id="@+id/btAnsA"
+                        android:text="Country A"
+                        android:layout_marginTop="7dp"
+                        />
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:background="@drawable/button_style1"
+                        android:id="@+id/btAnsB"
+                        android:text="Country B"
+                        android:layout_marginTop="7dp"/>
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:background="@drawable/button_style1"
+                        android:id="@+id/btAnsC"
+                        android:text="Country C"
+                        android:layout_marginTop="7dp"/>
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:background="@drawable/button_style1"
+                        android:id="@+id/btAnsD"
+                        android:text="Country D"
+                        android:layout_marginTop="7dp"/>
+                </TableRow>
+            </TableLayout>
+            <ProgressBar
+                android:id="@+id/progressTime"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/layoutAns"
+                android:indeterminate="false"
+                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal" />
+        </RelativeLayout>
+    </FrameLayout>
+
 
 </android.support.constraint.ConstraintLayout>

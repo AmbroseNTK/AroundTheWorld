@@ -5,9 +5,12 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+
+import com.google.android.gms.games.Games;
 
 import ntk.ambrose.aroundtheworld.Models.QuestionBundle;
 
@@ -17,6 +20,7 @@ public class ModeActivity extends AppCompatActivity {
     Button btFlagMode;
     Button btNameMode;
     Button btLeaderboard;
+    Button btTutorial;
 
     Animation showButtonAnimation;
 
@@ -50,12 +54,27 @@ public class ModeActivity extends AppCompatActivity {
             finish();
         });
 
+        btTutorial = findViewById(R.id.btTutorial);
+        btTutorial.setOnClickListener(view->{
+            startActivity(new Intent(ModeActivity.this,TutorialActivity.class));
+
+        });
+
         btLeaderboard = findViewById(R.id.btLeaderBoard);
+        btLeaderboard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Games.Leaderboards.getLeaderboardIntent(Setting.getInstance().getApiClient(),
+                        getString(R.string.leaderboard_main_leaderboard), 0);
+            }
+        });
 
         showButtonAnimation = AnimationUtils.loadAnimation(getBaseContext(),R.anim.show_button_answer);
         btFlagMode.startAnimation(showButtonAnimation);
         btNameMode.startAnimation(showButtonAnimation);
         btLeaderboard.startAnimation(showButtonAnimation);
         btSetting.startAnimation(showButtonAnimation);
+        btTutorial.startAnimation(showButtonAnimation);
+
     }
 }

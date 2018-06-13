@@ -1,5 +1,7 @@
 package ntk.ambrose.aroundtheworld;
 
+import com.google.android.gms.common.api.GoogleApiClient;
+
 /**
  * Lưu trữ các cài đặt ứng dụng
  */
@@ -12,6 +14,7 @@ public class Setting {
     private int highScore;
     private int currentQuestion;
     private int level =4;
+    private GoogleApiClient apiClient;
 
     private Setting(){
 
@@ -22,6 +25,8 @@ public class Setting {
             instance = new Setting();
         return instance;
     }
+
+
 
     public boolean isMute() {
         return isMute;
@@ -84,5 +89,13 @@ public class Setting {
 
     public void setLevel(int level) {
         this.level = level;
+    }
+
+    public GoogleApiClient getApiClient() {
+        return apiClient;
+    }
+
+    public void setApiClient(GoogleApiClient apiClient) {
+        this.apiClient = apiClient;
     }
 }

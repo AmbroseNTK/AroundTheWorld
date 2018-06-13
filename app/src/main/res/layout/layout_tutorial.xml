@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TutorialActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvTutName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tutorial"
+            android:textSize="20pt"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tvTut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTutName"
+            android:textSize="15pt"
+            android:background="@color/textXanh"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="First, select your play mode. Second, choose an anwser, which is suitable with the question."
+            />
+        <Button
+            android:id="@+id/btDoneTut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/textXanh"
+            android:textColor="#fff"
+            android:text="I understand, Done!"
+            android:layout_margin="10dp"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

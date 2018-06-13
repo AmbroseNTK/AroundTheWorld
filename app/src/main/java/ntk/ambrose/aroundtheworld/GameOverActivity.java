@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.android.gms.games.Games;
+
 public class GameOverActivity extends AppCompatActivity {
     Button btRetry;
     TextView tvScore;
@@ -23,6 +25,12 @@ public class GameOverActivity extends AppCompatActivity {
         if(Setting.getInstance().getScore()>Setting.getInstance().getHighScore()) {
             tvScore.setText("Your New High Score " + Setting.getInstance().getScore());
             saveHighScore();
+            if (Setting.getInstance().getApiClient().isConnected()) {
+                Games.Leaderboards.submitScore(Setting.getInstance().getApiClient(),
+                        getString(R.string.leaderboard_main_leaderboard),
+                        Setting.getInstance().getScore());
+            }
+
         }
         else{
             tvScore.setText("Your Score " + Setting.getInstance().getScore());

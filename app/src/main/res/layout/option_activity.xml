@@ -4,110 +4,123 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".OptionActivity">
-<RelativeLayout
-    android:background="#fff"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView
-        android:id="@+id/tvSetting"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Setting"
-        android:textStyle="bold"
-        android:textSize="20pt"
-        android:textColor="@color/textXanh"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
-    <CheckBox
-        android:id="@+id/checkMute"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Mute"
-        android:textColor="@color/textDen"
-        android:textSize="15pt"
-        android:layout_marginTop="10pt"
-        android:layout_below="@id/tvSetting"
-        android:layout_marginStart="20dp"/>
-    <TextView
-        android:id="@+id/tvPromp1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Select your country"
-        android:textSize="12pt"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/checkMute"
-        android:layout_marginStart="20dp"
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/low_poly_world_map"
+            android:adjustViewBounds="false"
+            android:scaleType="centerCrop"
+            />
+        <RelativeLayout
 
-        />
-    <Spinner
-        android:id="@+id/spinCountry"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_below="@id/tvPromp1"/>
-    <Button
-        android:id="@+id/btAutoDetectCountry"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Auto detect"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_below="@id/spinCountry"
-        android:background="@color/textXanh"
-        android:textColor="#fff"/>
-    <TextView
-        android:id="@+id/tvSelectPlayerMode"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Select player mode"
-        android:layout_below="@id/btAutoDetectCountry"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
-        android:textSize="12pt"/>
-    <RadioGroup
-        android:id="@+id/checkGroup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tvSelectPlayerMode"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
-        >
-        <RadioButton
-            android:id="@+id/radioEasy"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Easy"
-            android:textSize="12pt"
-            android:layout_marginTop="10dp"/>
-        <RadioButton
-            android:id="@+id/radioMedium"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Medium"
-            android:textSize="12pt"
-            android:layout_marginTop="10dp"/>
-        <RadioButton
-            android:id="@+id/radioHard"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Hard"
-            android:textSize="12pt"
-            android:layout_marginTop="10dp"/>
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tvSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Setting"
+                android:textStyle="bold"
+                android:textSize="20pt"
+                android:textColor="@color/textXanh"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" />
+            <CheckBox
+                android:id="@+id/checkMute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mute"
+                android:textColor="@color/textDen"
+                android:textSize="15pt"
+                android:layout_marginTop="10pt"
+                android:layout_below="@id/tvSetting"
+                android:layout_marginStart="20dp"/>
+            <TextView
+                android:id="@+id/tvPromp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select your country"
+                android:textSize="12pt"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/checkMute"
+                android:layout_marginStart="20dp"
 
-    </RadioGroup>
-    <Button
-        android:id="@+id/btSaveChanges"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Save changes"
-        android:background="@color/textXanh"
-        android:layout_below="@id/checkGroup"
-        android:textColor="#fff"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"/>
-</RelativeLayout>
+                />
+            <Spinner
+                android:id="@+id/spinCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@id/tvPromp1"/>
+            <Button
+                android:id="@+id/btAutoDetectCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Auto detect"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@id/spinCountry"
+                android:background="@color/textXanh"
+                android:textColor="#fff"/>
+            <TextView
+                android:id="@+id/tvSelectPlayerMode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select player mode"
+                android:layout_below="@id/btAutoDetectCountry"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:textSize="12pt"/>
+            <RadioGroup
+                android:id="@+id/checkGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvSelectPlayerMode"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                >
+                <RadioButton
+                    android:id="@+id/radioEasy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Easy"
+                    android:textSize="12pt"
+                    android:layout_marginTop="10dp"/>
+                <RadioButton
+                    android:id="@+id/radioMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Medium"
+                    android:textSize="12pt"
+                    android:layout_marginTop="10dp"/>
+                <RadioButton
+                    android:id="@+id/radioHard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hard"
+                    android:textSize="12pt"
+                    android:layout_marginTop="10dp"/>
+
+            </RadioGroup>
+            <Button
+                android:id="@+id/btSaveChanges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save changes"
+                android:background="@color/textXanh"
+                android:layout_below="@id/checkGroup"
+                android:textColor="#fff"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"/>
+        </RelativeLayout>
+
+    </FrameLayout>
+
 </android.support.constraint.ConstraintLayout>

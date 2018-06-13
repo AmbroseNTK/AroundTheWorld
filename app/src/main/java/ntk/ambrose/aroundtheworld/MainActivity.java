@@ -1,18 +1,19 @@
 package ntk.ambrose.aroundtheworld;
 
 import android.Manifest;
-import android.animation.ValueAnimator;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
-import android.view.animation.Animation;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
+
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.games.Games;
 
 import ntk.ambrose.aroundtheworld.Models.WorldMap;
 
@@ -26,9 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     RelativeLayout relativeLayout;
 
-    float[] hsv;
-    int runColor;
-    int hue = 0;
+    GoogleApiClient apiClient;
 
 
     @Override
@@ -75,24 +74,15 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(MainActivity.this,OptionActivity.class));
         });
 
-        ValueAnimator anim = ValueAnimator.ofFloat(0, 1);
-        anim.setDuration(20000);
+        apiClient = new GoogleApiClient.Builder(this)
+                .addApi(Games.API)
+                .addScope(Games.SCOPE_GAMES)
+                .enableAutoManage(this, connectionResult -> {
+                    Log.e("AroundTheWorld", "Could not connect to Play games services");
 
-        hsv = new float[3]; // Transition color
-        hsv[1] = 1;
-        hsv[2] = 1;
-
-        anim.addUpdateListener(animation -> {
-
-            hsv[0] = 360 * animation.getAnimatedFraction();
-
-            runColor = Color.HSVToColor(hsv);
-            relativeLayout.setBackgroundColor(runColor);
-        });
-
-        anim.setRepeatCount(Animation.INFINITE);
-
-        anim.start();
+                }).build();
+        apiClient.connect();
+        Setting.getInstance().setApiClient(apiClient);
 
     }
 }

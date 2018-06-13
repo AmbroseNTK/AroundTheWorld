@@ -25,8 +25,7 @@ public class WorldMap {
         map = new CountryUnit[HEIGHT][WIDTH];
         codeTable=new HashMap<>();
         for(int i=0;i<HEIGHT;i++){
-            for(int j=0;j<WIDTH;j++){
-                map[i][j]=new CountryUnit();
+            for(int j=0;j<WIDTH;j++){              map[i][j]=new CountryUnit();
             }
         }
     }
