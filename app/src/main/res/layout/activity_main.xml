@@ -75,9 +75,19 @@
                 android:id="@+id/btSignIn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginBottom="20dp"/>
+                android:layout_marginBottom="5dp"
+                android:layout_above="@+id/btLoginFacebook"/>
+
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/btLoginFacebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"/>
         </RelativeLayout>
     </FrameLayout>
 

@@ -38,6 +38,13 @@
             android:textSize="15pt"
             android:layout_below="@id/btRetry"
             android:layout_centerHorizontal="true"/>
+        <com.facebook.share.widget.ShareButton
+            android:id="@+id/btShareFB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvScore"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

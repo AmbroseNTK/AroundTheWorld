@@ -16,6 +16,14 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.facebook.CallbackManager;
+import com.facebook.FacebookCallback;
+import com.facebook.FacebookException;
+import com.facebook.FacebookSdk;
+import com.facebook.appevents.AppEventsLogger;
+import com.facebook.login.LoginManager;
+import com.facebook.login.LoginResult;
+import com.facebook.login.widget.LoginButton;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -27,6 +35,8 @@ import com.google.android.gms.games.Games;
 import com.google.android.gms.games.LeaderboardsClient;
 import com.google.android.gms.tasks.Task;
 import com.sdsmdg.tastytoast.TastyToast;
+
+import java.util.Arrays;
 
 import ntk.ambrose.aroundtheworld.Models.WorldMap;
 
@@ -44,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
     RelativeLayout relativeLayout;
 
     SignInButton btSignIn;
+    LoginButton loginButton;
 
     TextView tvUsername;
 
@@ -53,6 +64,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        FacebookSdk.sdkInitialize(getApplicationContext());
+        AppEventsLogger.activateApp(this);
+
         setContentView(R.layout.activity_main);
 
 
@@ -137,6 +152,8 @@ public class MainActivity extends AppCompatActivity {
             tvUsername.setText(Setting.getInstance().getGoogleSignInAccount().getDisplayName());
         }
 
+
+
     }
 
     private int RC_SIGN_IN;
@@ -177,6 +194,13 @@ public class MainActivity extends AppCompatActivity {
             Log.e("AroundTheWorld", "signInResult:failed code=" + e.getStatusCode());
 
         }
+        loginButton = findViewById(R.id.btLoginFacebook);
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                loginFacebook();
+            }
+        });
     }
     @Override
     protected void onPause() {
@@ -187,6 +211,32 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
+    }
+
+    CallbackManager callbackManager;
+    private void loginFacebook() {
+
+        callbackManager = CallbackManager.Factory.create();
+
+        LoginManager.getInstance().registerCallback(callbackManager,
+                new FacebookCallback<LoginResult>() {
+                    @Override
+                    public void onSuccess(LoginResult loginResult) {
+
+                        TastyToast.makeText(getBaseContext(), "Logged in Facebook", TastyToast.LENGTH_LONG, TastyToast.SUCCESS).show();
+                    }
+
+                    @Override
+                    public void onCancel() {
+                        // App code
+                    }
+
+                    @Override
+                    public void onError(FacebookException exception) {
+                        TastyToast.makeText(getBaseContext(), "Sorry! I cannot login Facebook, please try again...", TastyToast.LENGTH_LONG, TastyToast.ERROR).show();
+                    }
+                });
+
     }
 
 }

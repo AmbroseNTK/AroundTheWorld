@@ -8,4 +8,7 @@
     <string name="menu_button_leader_board">Leader board</string>
     <string name="menu_button_setting">Setting</string>
 
+    <string name="facebook_app_id">1553477878285140</string>
+    <string name="fb_login_protocol_scheme">fb1553477878285140</string>
+
 </resources>
