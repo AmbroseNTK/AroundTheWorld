@@ -81,6 +81,14 @@ public class SoundManager {
         }
     }
 
+    public void stopAll(){
+        for (MediaPlayer player: soundList.values()) {
+            if(player!=null && player.isPlaying()) {
+                player.stop();
+            }
+        }
+    }
+
     public static class Playlist{
         public final static String SOUND_CORRECT = "sound_correct";
         public final static String SOUND_WRONG ="sound_wrong";

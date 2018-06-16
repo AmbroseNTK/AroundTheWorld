@@ -4,88 +4,106 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ModeActivity">
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
-    <TextView
-        android:id="@+id/tvLabel1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SELECT MODE"
-        android:textSize="20pt"
-        android:layout_marginTop="50dp"
-        android:layout_centerHorizontal="true"
-        android:textColor="@color/xanh2"
-        android:textStyle="bold"/>
-
-    <TableLayout
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tvLabel1"
-        android:stretchColumns="*"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="20dp">
-        <TableRow>
-            <Button
-                android:id="@+id/btFlagMode"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:id="@+id/tvLabel1"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SELECT MODE"
+                android:textSize="15pt"
+                android:layout_marginTop="50dp"
+
+                android:textColor="@color/xanh2"
+                android:textStyle="bold"
+                />
+
+            <TableLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tvLabel1"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"
-                android:background="@color/textXanh"
-                android:textColor="#fff"
-                android:text="Flag mode" />
-        </TableRow>
-        <TableRow>
-            <Button
-                android:id="@+id/btNameMode"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:background="@color/textXanh"
-                android:textColor="#fff"
-                android:text="@string/menu_button_name_mode"
-                android:layout_marginTop="20dp"/>
-        </TableRow>
-        <TableRow>
-            <Button
-                android:id="@+id/btLeaderBoard"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"
-                android:background="@color/textXanh"
-                android:textColor="#fff"
-                android:text="@string/menu_button_leader_board" />
-        </TableRow>
-        <TableRow>
-            <Button
-                android:id="@+id/btTutorial"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/textXanh"
-                android:textColor="#fff"
-                android:text="Tutorial"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"
-                />
-        </TableRow>
-        <TableRow>
-            <Button
-                android:id="@+id/btSetting"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/textXanh"
-                android:textColor="#fff"
-                android:text="@string/menu_button_setting"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"
-                />
-        </TableRow>
-    </TableLayout>
+                android:stretchColumns="*"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp">
+                <TableRow>
+                    <Button
+                        android:id="@+id/btFlagMode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvLabel1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/textXanh"
+                        android:textColor="#fff"
+                        android:text="Flag mode" />
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:id="@+id/btNameMode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/textXanh"
+                        android:textColor="#fff"
+                        android:text="@string/menu_button_name_mode"
+                        android:layout_marginTop="20dp"/>
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:id="@+id/btLeaderBoard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/textXanh"
+                        android:textColor="#fff"
+                        android:text="@string/menu_button_leader_board" />
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:id="@+id/btAchievement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/textXanh"
+                        android:textColor="#fff"
+                        android:text="Achievements" />
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:id="@+id/btTutorial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/textXanh"
+                        android:textColor="#fff"
+                        android:text="Tutorial"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        />
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:id="@+id/btSetting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/textXanh"
+                        android:textColor="#fff"
+                        android:text="@string/menu_button_setting"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        />
+                </TableRow>
+            </TableLayout>
 
-</RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
 </android.support.constraint.ConstraintLayout>

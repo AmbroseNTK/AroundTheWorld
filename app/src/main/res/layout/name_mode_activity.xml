@@ -8,7 +8,7 @@
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgmode12new">
+    >
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,58 +28,61 @@
         android:textSize="15pt"
         android:layout_marginTop="10dp"
         android:textAlignment="center"
-        android:id="@+id/tvQuestion"/>
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/tvQuestion"
+
+        />
+    <ImageButton
+        android:id="@+id/btAnsA"
+        android:layout_width="165dp"
+        android:layout_height="85dp"
         android:layout_below="@id/tvQuestion"
-        android:layout_marginTop="20dp"
-        android:stretchColumns="*">
-        <TableRow>
-                <ImageButton
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:id="@id/btAnsA"
-                    android:scaleType="fitCenter"
-                    android:layout_span="1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="96dp"
+        android:scaleType="fitCenter"
+        android:background="#00000000"
+         />
 
-                    />
-        </TableRow>
-        <TableRow>
-                <ImageButton
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:id="@+id/btAnsB"
-                    android:scaleType="fitCenter"
+    <ImageButton
+        android:id="@+id/btAnsB"
+        android:layout_width="165dp"
+        android:layout_height="85dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/btAnsA"
+        android:scaleType="fitCenter"
+        android:background="#00000000"
 
-                    android:layout_span="1"
+        />
 
-                    />
+    <ImageButton
+        android:id="@+id/btAnsC"
+        android:layout_width="165dp"
+        android:layout_height="85dp"
+        android:layout_marginLeft="8dp"
+        android:layout_below="@id/btAnsA"
+        android:layout_marginTop="18dp"
+        android:scaleType="fitCenter"
+        android:background="#00000000"
+        />
 
-        </TableRow>
+    <ImageButton
+        android:id="@+id/btAnsD"
+        android:layout_width="165dp"
+        android:layout_height="85dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/btAnsC"
+        android:scaleType="fitCenter"
+        android:background="#00000000"
+        />
+    <ProgressBar
+        android:id="@+id/progressTime"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
 
-        <TableRow>
-
-                <ImageButton
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:id="@+id/btAnsC"
-                    android:scaleType="fitCenter"
-                    android:layout_span="1"
-
-                    />
-        </TableRow>
-        <TableRow>
-
-                <ImageButton
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:id="@+id/btAnsD"
-                    android:scaleType="fitCenter"
-                    android:layout_span="1"
-                    />
-        </TableRow>
-    </TableLayout>
+        android:indeterminate="false"
+        android:layout_alignParentBottom="true"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal" />
 </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

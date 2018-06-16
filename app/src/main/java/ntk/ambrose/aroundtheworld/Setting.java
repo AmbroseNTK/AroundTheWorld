@@ -1,6 +1,8 @@
 package ntk.ambrose.aroundtheworld;
 
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.games.LeaderboardsClient;
 
 /**
  * Lưu trữ các cài đặt ứng dụng
@@ -14,7 +16,8 @@ public class Setting {
     private int highScore;
     private int currentQuestion;
     private int level =4;
-    private GoogleApiClient apiClient;
+    private GoogleSignInAccount googleSignInAccount;
+    private LeaderboardsClient leaderboardsClient;
 
     private Setting(){
 
@@ -91,11 +94,20 @@ public class Setting {
         this.level = level;
     }
 
-    public GoogleApiClient getApiClient() {
-        return apiClient;
+
+    public GoogleSignInAccount getGoogleSignInAccount() {
+        return googleSignInAccount;
     }
 
-    public void setApiClient(GoogleApiClient apiClient) {
-        this.apiClient = apiClient;
+    public void setGoogleSignInAccount(GoogleSignInAccount googleSignInAccount) {
+        this.googleSignInAccount = googleSignInAccount;
+    }
+
+    public LeaderboardsClient getLeaderboardsClient() {
+        return leaderboardsClient;
+    }
+
+    public void setLeaderboardsClient(LeaderboardsClient leaderboardsClient) {
+        this.leaderboardsClient = leaderboardsClient;
     }
 }

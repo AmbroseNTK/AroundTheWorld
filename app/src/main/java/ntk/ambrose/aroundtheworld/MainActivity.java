@@ -9,11 +9,24 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.common.SignInButton;
+import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.games.Games;
+import com.google.android.gms.games.LeaderboardsClient;
+import com.google.android.gms.tasks.Task;
+import com.sdsmdg.tastytoast.TastyToast;
 
 import ntk.ambrose.aroundtheworld.Models.WorldMap;
 
@@ -24,10 +37,17 @@ public class MainActivity extends AppCompatActivity {
 
     ImageButton btStart;
     ImageButton btSetting;
+    ImageView background;
+
+    Animation backgroundAnimation;
 
     RelativeLayout relativeLayout;
 
-    GoogleApiClient apiClient;
+    SignInButton btSignIn;
+
+    TextView tvUsername;
+
+
 
 
     @Override
@@ -35,9 +55,34 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
+        backgroundAnimation = AnimationUtils.loadAnimation(this,R.anim.rotate_background);
+        backgroundAnimation.setRepeatCount(Animation.INFINITE);
+        backgroundAnimation.setRepeatMode(Animation.RESTART);
+        backgroundAnimation.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                background.startAnimation(animation);
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
+        background = findViewById(R.id.imgBackground);
+        background.startAnimation(backgroundAnimation);
+
+
         relativeLayout = findViewById(R.id.relativeLayout);
         SoundManager.getInstance().init(this);
-
+        SoundManager.getInstance().stopAll();
         SoundManager.getInstance().Play(SoundManager.Playlist.BG_MAIN,true);
         //Set permission in runtime
         if (ContextCompat.checkSelfPermission(this,
@@ -74,15 +119,74 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(MainActivity.this,OptionActivity.class));
         });
 
-        apiClient = new GoogleApiClient.Builder(this)
-                .addApi(Games.API)
-                .addScope(Games.SCOPE_GAMES)
-                .enableAutoManage(this, connectionResult -> {
-                    Log.e("AroundTheWorld", "Could not connect to Play games services");
+        btSignIn = findViewById(R.id.btSignIn);
+        btSignIn.setSize(SignInButton.SIZE_WIDE);
+        btSignIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                signIn();
 
-                }).build();
-        apiClient.connect();
-        Setting.getInstance().setApiClient(apiClient);
+            }
+        });
+
+        tvUsername = findViewById(R.id.tvUserName);
+        if(Setting.getInstance().getGoogleSignInAccount()==null) {
+            signIn();
+        }
+        else{
+            tvUsername.setText(Setting.getInstance().getGoogleSignInAccount().getDisplayName());
+        }
 
     }
+
+    private int RC_SIGN_IN;
+    private void signIn() {
+        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestEmail()
+                .build();
+        // Build a GoogleSignInClient with the options specified by gso.
+        GoogleSignInClient mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
+        Intent signInIntent = mGoogleSignInClient.getSignInIntent();
+        startActivityForResult(signInIntent, RC_SIGN_IN);
+    }
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        // Result returned from launching the Intent from GoogleSignInClient.getSignInIntent(...);
+        if (requestCode == RC_SIGN_IN) {
+            // The Task returned from this call is always completed, no need to attach
+            // a listener.
+            Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
+            handleSignInResult(task);
+        }
+    }
+    private void handleSignInResult(Task<GoogleSignInAccount> completedTask) {
+        try {
+            Setting.getInstance().setGoogleSignInAccount(completedTask.getResult(ApiException.class));
+            Log.i("AroundTheWorld","Signed in successfully");
+            Setting.getInstance().setLeaderboardsClient(Games.getLeaderboardsClient(getBaseContext(), Setting.getInstance().getGoogleSignInAccount()));
+            TastyToast.makeText(getBaseContext(),"Welcome! "+Setting.getInstance().getGoogleSignInAccount().getEmail(),TastyToast.LENGTH_LONG,TastyToast.SUCCESS);
+            tvUsername.setText(Setting.getInstance().getGoogleSignInAccount().getDisplayName());
+
+            // Signed in successfully, show authenticated UI.
+
+        } catch (ApiException e) {
+            // The ApiException status code indicates the detailed failure reason.
+            // Please refer to the GoogleSignInStatusCodes class reference for more information.
+            Log.e("AroundTheWorld", "signInResult:failed code=" + e.getStatusCode());
+
+        }
+    }
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
 }

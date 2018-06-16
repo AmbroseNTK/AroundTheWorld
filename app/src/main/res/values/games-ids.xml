@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Google Play game services IDs.
+Save this file as res/values/games-ids.xml in your project.
+-->
+<resources>
+    <!-- app_id -->
+    <string name="app_id" translatable="false">822228617574</string>
+    <!-- package_name -->
+    <string name="package_name" translatable="false">ntk.ambrose.aroundtheworld</string>
+    <!-- achievement First 10 Flag -->
+    <string name="achievement_first_10_flag" translatable="false">CgkI5pKUhfcXEAIQAg</string>
+    <!-- leaderboard Main_Leaderboard -->
+    <string name="leaderboard_main_leaderboard" translatable="false">CgkI5pKUhfcXEAIQAA</string>
+</resources>

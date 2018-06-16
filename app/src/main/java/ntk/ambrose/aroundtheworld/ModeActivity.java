@@ -9,8 +9,15 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.TextView;
 
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.games.Games;
+import com.google.android.gms.games.LeaderboardsClient;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.sdsmdg.tastytoast.TastyToast;
+
+import java.util.Set;
 
 import ntk.ambrose.aroundtheworld.Models.QuestionBundle;
 
@@ -21,8 +28,12 @@ public class ModeActivity extends AppCompatActivity {
     Button btNameMode;
     Button btLeaderboard;
     Button btTutorial;
+    Button btAchievement;
+
+    TextView tvLabel1;
 
     Animation showButtonAnimation;
+    Animation labelRunAnimation;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -64,8 +75,25 @@ public class ModeActivity extends AppCompatActivity {
         btLeaderboard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Games.Leaderboards.getLeaderboardIntent(Setting.getInstance().getApiClient(),
-                        getString(R.string.leaderboard_main_leaderboard), 0);
+                if(Setting.getInstance().getLeaderboardsClient()!=null){
+                    showLeaderboard();
+                }
+                else{
+                    TastyToast.makeText(getBaseContext(),"I cannot show world leader board, Please sign in Google first !!!",TastyToast.LENGTH_LONG,TastyToast.ERROR).show();
+                }
+            }
+        });
+
+        btAchievement = findViewById(R.id.btAchievement);
+        btAchievement.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(Setting.getInstance().getLeaderboardsClient()!=null){
+                    showAchievements();
+                }
+                else{
+                    TastyToast.makeText(getBaseContext(),"I cannot show world leader board, Please sign in Google first !!!",TastyToast.LENGTH_LONG,TastyToast.ERROR).show();
+                }
             }
         });
 
@@ -73,8 +101,57 @@ public class ModeActivity extends AppCompatActivity {
         btFlagMode.startAnimation(showButtonAnimation);
         btNameMode.startAnimation(showButtonAnimation);
         btLeaderboard.startAnimation(showButtonAnimation);
+        btAchievement.startAnimation(showButtonAnimation);
         btSetting.startAnimation(showButtonAnimation);
         btTutorial.startAnimation(showButtonAnimation);
 
+        tvLabel1 = findViewById(R.id.tvLabel1);
+        labelRunAnimation = AnimationUtils.loadAnimation(getBaseContext(),R.anim.label_anim);
+        labelRunAnimation.setRepeatCount(Animation.INFINITE);
+        labelRunAnimation.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+                tvLabel1.setText("SELECT MODE");
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                tvLabel1.startAnimation(animation);
+                tvLabel1.setText("");
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
+
+        tvLabel1.startAnimation(labelRunAnimation);
+        labelRunAnimation.start();
+
+    }
+    private static final int RC_LEADERBOARD_UI = 9004;
+
+    private void showLeaderboard() {
+        Setting.getInstance().getLeaderboardsClient()
+                .getLeaderboardIntent(getString(R.string.leaderboard_main_leaderboard))
+                .addOnSuccessListener(new OnSuccessListener<Intent>() {
+                    @Override
+                    public void onSuccess(Intent intent) {
+                        startActivityForResult(intent, RC_LEADERBOARD_UI);
+                    }
+                });
+    }
+    private static final int RC_ACHIEVEMENT_UI = 9003;
+
+    private void showAchievements() {
+        Games.getAchievementsClient(this, GoogleSignIn.getLastSignedInAccount(this))
+                .getAchievementsIntent()
+                .addOnSuccessListener(new OnSuccessListener<Intent>() {
+                    @Override
+                    public void onSuccess(Intent intent) {
+                        startActivityForResult(intent, RC_ACHIEVEMENT_UI);
+                    }
+                });
     }
 }

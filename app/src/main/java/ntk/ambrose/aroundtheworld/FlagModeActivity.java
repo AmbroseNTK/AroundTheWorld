@@ -13,6 +13,8 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.google.android.gms.games.Games;
+
 import java.util.Timer;
 
 import ntk.ambrose.aroundtheworld.Models.QuestionBundle;
@@ -50,8 +52,8 @@ public class FlagModeActivity extends AppCompatActivity{
 
         cardView = findViewById(R.id.cardImg);
 
+        SoundManager.getInstance().stopAll();
         SoundManager.getInstance().Play(SoundManager.Playlist.BG_MODE1,true);
-        SoundManager.getInstance().Stop(SoundManager.Playlist.BG_MAIN);
 
         Setting.getInstance().setScore(0);
         timeProgress = findViewById(R.id.progressTime);
@@ -129,7 +131,11 @@ public class FlagModeActivity extends AppCompatActivity{
 
         if(ans.equals(currentQuestion.getQuestion().getName())){
             countDownTimer.cancel();
-
+            if(Setting.getInstance().getCurrentQuestion() ==10) {
+                if (Setting.getInstance().getGoogleSignInAccount() != null) {
+                    Games.getAchievementsClient(getBaseContext(), Setting.getInstance().getGoogleSignInAccount()).unlock(getString(R.string.achievement_first_10_flag));
+                }
+            }
             tvQuestionNum.startAnimation(textFadeAnim);
             SoundManager.getInstance().Play(SoundManager.Playlist.SOUND_CORRECT,false);
             Setting.getInstance().setScore(Setting.getInstance().getScore()+100);

@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.android.gms.games.Games;
+import com.sdsmdg.tastytoast.TastyToast;
 
 public class GameOverActivity extends AppCompatActivity {
     Button btRetry;
@@ -26,11 +27,7 @@ public class GameOverActivity extends AppCompatActivity {
         if(Setting.getInstance().getScore()>Setting.getInstance().getHighScore()) {
             tvScore.setText("Your New High Score " + Setting.getInstance().getScore());
             saveHighScore();
-            if (Setting.getInstance().getApiClient().isConnected()) {
-                Games.Leaderboards.submitScore(Setting.getInstance().getApiClient(),
-                        getString(R.string.leaderboard_main_leaderboard),
-                        Setting.getInstance().getScore());
-            }
+            saveToLeaderboard();
 
         }
         else{
@@ -61,7 +58,13 @@ public class GameOverActivity extends AppCompatActivity {
         editor.apply();
     }
     public void saveToLeaderboard(){
+        if(Setting.getInstance().getLeaderboardsClient()!=null){
+            Setting.getInstance().getLeaderboardsClient().submitScore(getString(R.string.leaderboard_main_leaderboard),Setting.getInstance().getScore());
 
-
+            TastyToast.makeText(this,"High score was submitted to world Leaderboard",TastyToast.LENGTH_LONG,TastyToast.SUCCESS).show();
+        }
+        else{
+            TastyToast.makeText(this,"Sorry, I cannot submit your new high score",TastyToast.LENGTH_LONG,TastyToast.ERROR).show();
+        }
     }
 }

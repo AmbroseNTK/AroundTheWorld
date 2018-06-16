@@ -2,9 +2,11 @@ package ntk.ambrose.aroundtheworld;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageButton;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import ntk.ambrose.aroundtheworld.Models.QuestionBundle;
@@ -18,12 +20,14 @@ public class NameModeActivity extends AppCompatActivity {
     TextView tvQuestion;
     TextView tvScore;
     QuestionBundle.Question currentQuestion;
+    CountDownTimer  countDownTimer;
+    ProgressBar timeProgress;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.name_mode_activity);
-        SoundManager.getInstance().Stop(SoundManager.Playlist.BG_MAIN);
+        SoundManager.getInstance().stopAll();
         SoundManager.getInstance().Play(SoundManager.Playlist.BG_MODE2,true);
         btAnsA=findViewById(R.id.btAnsA);
         btAnsB=findViewById(R.id.btAnsB);
@@ -39,8 +43,22 @@ public class NameModeActivity extends AppCompatActivity {
         btAnsC.setOnClickListener(view->checkAnswer(currentQuestion.getAnsC()));
         btAnsD.setOnClickListener(view -> checkAnswer(currentQuestion.getAnsD()));
 
+        timeProgress = findViewById(R.id.progressTime);
+
+        countDownTimer = new CountDownTimer(1/(Setting.getInstance().getCurrentQuestion()+1)*7*1010,1/(Setting.getInstance().getCurrentQuestion()+1)*7*10) {
+            @Override
+            public void onTick(long l) {
+                timeProgress.setProgress(timeProgress.getProgress()+1);
+            }
+
+            @Override
+            public void onFinish() {
+                gameOver();
+            }
+        }.start();
     }
     public void gameOver(){
+        countDownTimer.cancel();
         SoundManager.getInstance().Stop(SoundManager.Playlist.BG_MODE2);
         SoundManager.getInstance().Play(SoundManager.Playlist.SOUND_WRONG,false);
         startActivity(new Intent(NameModeActivity.this,GameOverActivity.class));
@@ -48,6 +66,7 @@ public class NameModeActivity extends AppCompatActivity {
     }
     private void checkAnswer(String ans){
         if(ans.equals(currentQuestion.getQuestion().getCode())){
+            countDownTimer.cancel();
             SoundManager.getInstance().Play(SoundManager.Playlist.SOUND_CORRECT,false);
             Setting.getInstance().setScore(Setting.getInstance().getScore()+100);
             Setting.getInstance().setCurrentQuestion(Setting.getInstance().getCurrentQuestion()+1);
@@ -57,6 +76,8 @@ public class NameModeActivity extends AppCompatActivity {
             }
             currentQuestion = QuestionBundle.getInstance().getQuestionArrayList().get(Setting.getInstance().getCurrentQuestion());
             showQuestion();
+            timeProgress.setProgress(0);
+            countDownTimer.start();
         }
         else{
             gameOver();
