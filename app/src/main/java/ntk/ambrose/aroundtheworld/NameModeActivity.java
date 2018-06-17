@@ -27,6 +27,7 @@ public class NameModeActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.name_mode_activity);
+        Setting.getInstance().setScore(0);
         SoundManager.getInstance().stopAll();
         SoundManager.getInstance().Play(SoundManager.Playlist.BG_MODE2,true);
         btAnsA=findViewById(R.id.btAnsA);

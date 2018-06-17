@@ -12,10 +12,13 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 
@@ -44,6 +47,10 @@ public class OptionActivity extends AppCompatActivity{
 
     Button btSaveChanges;
 
+    Animation backgroundRotateAnim;
+
+    ImageView imgSettingIcon;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +61,7 @@ public class OptionActivity extends AppCompatActivity{
         radioHard = findViewById(R.id.radioHard);
 
         btSaveChanges = findViewById(R.id.btSaveChanges);
+
 
 
         locationManager=(LocationManager)getSystemService(Context.LOCATION_SERVICE);
@@ -163,8 +171,33 @@ public class OptionActivity extends AppCompatActivity{
             public void onClick(View view) {
                 saveSetting();
                 TastyToast.makeText(getBaseContext(),"Saved changes !",TastyToast.LENGTH_LONG,TastyToast.SUCCESS);
+                finish();
             }
         });
+
+
+        backgroundRotateAnim = AnimationUtils.loadAnimation(getBaseContext(),R.anim.rotate_background);
+        backgroundRotateAnim.setRepeatCount(Animation.INFINITE);
+        backgroundRotateAnim.setRepeatMode(Animation.RESTART);
+        imgSettingIcon = findViewById(R.id.imgSettingIcon);
+        backgroundRotateAnim.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                imgSettingIcon.startAnimation(animation);
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
+        imgSettingIcon.startAnimation(backgroundRotateAnim);
+
 
     }
     public void loadSetting(){
