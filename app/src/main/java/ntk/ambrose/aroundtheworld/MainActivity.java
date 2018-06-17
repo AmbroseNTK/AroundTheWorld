@@ -184,7 +184,7 @@ public class MainActivity extends AppCompatActivity {
             Log.i("AroundTheWorld","Signed in successfully");
             Setting.getInstance().setLeaderboardsClient(Games.getLeaderboardsClient(getBaseContext(), Setting.getInstance().getGoogleSignInAccount()));
             TastyToast.makeText(getBaseContext(),"Welcome! "+Setting.getInstance().getGoogleSignInAccount().getEmail(),TastyToast.LENGTH_LONG,TastyToast.SUCCESS);
-            tvUsername.setText(Setting.getInstance().getGoogleSignInAccount().getDisplayName());
+            tvUsername.setText("Hi, "+Setting.getInstance().getGoogleSignInAccount().getDisplayName());
 
             // Signed in successfully, show authenticated UI.
 
