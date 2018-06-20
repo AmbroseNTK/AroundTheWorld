@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
@@ -29,6 +31,10 @@ public class VsModePlayActivity extends AppCompatActivity{
 
     QuestionBundle.Question currentQuestion;
 
+    Animation fadeText;
+
+    boolean lockButton = false;
+
     @Override
     public void onBackPressed() {
         gameOver();
@@ -39,6 +45,29 @@ public class VsModePlayActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.vs_mode_play_activity);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        SoundManager.getInstance().stopAll();
+        SoundManager.getInstance().Play(SoundManager.Playlist.BG_MODE1,true);
+        fadeText = AnimationUtils.loadAnimation(getBaseContext(),R.anim.text_fade);
+        fadeText.setDuration(1000);
+
+        fadeText.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                lockButton=false;
+                moveToNextQuestion();
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
+
         progressScore = findViewById(R.id.progressScore);
         progressScore.setMax(100);
         progressScore.setProgress(50);
@@ -116,46 +145,58 @@ public class VsModePlayActivity extends AppCompatActivity{
 
     private void gameOver() {
         SoundManager.getInstance().stopAll();
-        finish();
         startActivity(new Intent(VsModePlayActivity.this,GameOverActivity.class));
+        finish();
     }
 
     private void checkAnswer(String ans, String player) {
 
-        if (ans.equals(currentQuestion.getQuestion().getName())) {
-            if (player.equals("1")) {
-                Setting.getInstance().setPlayer1Score(Setting.getInstance().getPlayer1Score() + 100);
+        if(!lockButton) {
+            lockButton = true;
+
+            if (tvAnsA.getText().equals(currentQuestion.getQuestion().getName())) {
+                tvAnsA.startAnimation(fadeText);
+            } else if (tvAnsB.getText().equals(currentQuestion.getQuestion().getName())) {
+                tvAnsB.startAnimation(fadeText);
+            } else if (tvAnsC.getText().equals(currentQuestion.getQuestion().getName())) {
+                tvAnsC.startAnimation(fadeText);
             } else {
-                Setting.getInstance().setPlayer2Score(Setting.getInstance().getPlayer2Score() + 100);
+                tvAnsD.startAnimation(fadeText);
             }
-            SoundManager.getInstance().Play(SoundManager.Playlist.SOUND_CORRECT, false);
-            Setting.getInstance().setCurrentQuestion(Setting.getInstance().getCurrentQuestion() + 1);
-            if (Setting.getInstance().getCurrentQuestion() == QuestionBundle.getInstance().getQuestionArrayList().size()) {
-                Setting.getInstance().setCurrentQuestion(0);
-                QuestionBundle.getInstance().generateQuestionList(Setting.getInstance().getY(), Setting.getInstance().getX());
-            }
-            currentQuestion = QuestionBundle.getInstance().getQuestionArrayList().get(Setting.getInstance().getCurrentQuestion());
-            showQuestion();
-        } else {
-            if (player.equals("1")) {
-                Setting.getInstance().setPlayer1Score(Setting.getInstance().getPlayer1Score() - 100);
+
+            if (ans.equals(currentQuestion.getQuestion().getName())) {
+                if (player.equals("1")) {
+                    Setting.getInstance().setPlayer1Score(Setting.getInstance().getPlayer1Score() + 100);
+                } else {
+                    Setting.getInstance().setPlayer2Score(Setting.getInstance().getPlayer2Score() + 100);
+                }
+                SoundManager.getInstance().Play(SoundManager.Playlist.SOUND_CORRECT, false);
+
             } else {
-                Setting.getInstance().setPlayer2Score(Setting.getInstance().getPlayer2Score() - 100);
+                if (player.equals("1")) {
+                    Setting.getInstance().setPlayer1Score(Setting.getInstance().getPlayer1Score() - 100);
+                } else {
+                    Setting.getInstance().setPlayer2Score(Setting.getInstance().getPlayer2Score() - 100);
+                }
+                //SoundManager.getInstance().Play(SoundManager.Playlist.SOUND_WRONG, false);
+
             }
-            //SoundManager.getInstance().Play(SoundManager.Playlist.SOUND_WRONG, false);
-            Setting.getInstance().setCurrentQuestion(Setting.getInstance().getCurrentQuestion() + 1);
-            if (Setting.getInstance().getCurrentQuestion() == QuestionBundle.getInstance().getQuestionArrayList().size()) {
-                Setting.getInstance().setCurrentQuestion(0);
-                QuestionBundle.getInstance().generateQuestionList(Setting.getInstance().getY(), Setting.getInstance().getX());
+            if (Setting.getInstance().getPlayer1Score() + Setting.getInstance().getPlayer2Score() != 0) {
+                progressScore.setMax(Setting.getInstance().getPlayer1Score() + Setting.getInstance().getPlayer2Score());
+                progressScore.setProgress(Setting.getInstance().getPlayer1Score());
             }
-            currentQuestion = QuestionBundle.getInstance().getQuestionArrayList().get(Setting.getInstance().getCurrentQuestion());
-            showQuestion();
-        }
-        if(Setting.getInstance().getPlayer1Score()+Setting.getInstance().getPlayer2Score()!=0){
-            progressScore.setMax(Setting.getInstance().getPlayer1Score()+Setting.getInstance().getPlayer2Score());
-            progressScore.setProgress(Setting.getInstance().getPlayer1Score());
+
         }
 
+    }
+    private void moveToNextQuestion(){
+        Setting.getInstance().setCurrentQuestion(Setting.getInstance().getCurrentQuestion() + 1);
+        if (Setting.getInstance().getCurrentQuestion() == QuestionBundle.getInstance().getQuestionArrayList().size()) {
+            Setting.getInstance().setCurrentQuestion(0);
+            QuestionBundle.getInstance().generateQuestionList(Setting.getInstance().getY(), Setting.getInstance().getX());
+        }
+        currentQuestion = QuestionBundle.getInstance().getQuestionArrayList().get(Setting.getInstance().getCurrentQuestion());
+        showQuestion();
     }
 
 }
