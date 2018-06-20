@@ -11,6 +11,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@drawable/low_poly_world_map"
             >
             <TextView
                 android:id="@+id/tvLabel1"
@@ -54,6 +55,17 @@
                         android:textColor="#fff"
                         android:text="@string/menu_button_name_mode"
                         android:layout_marginTop="20dp"/>
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:id="@+id/btPlayVsPlay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/textXanh"
+                        android:textColor="#fff"
+                        android:text="Play vs play" />
                 </TableRow>
                 <TableRow>
                     <Button

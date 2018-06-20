@@ -6,7 +6,8 @@
     tools:context=".OptionActivity">
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/low_poly_world_map">
         <ImageView
             android:id="@+id/imgSettingIcon"
             android:layout_width="wrap_content"
@@ -15,9 +16,9 @@
             android:adjustViewBounds="false"
             />
         <RelativeLayout
-
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            >
             <TextView
                 android:id="@+id/tvSetting"
                 android:layout_width="wrap_content"

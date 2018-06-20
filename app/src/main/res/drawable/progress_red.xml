@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-<item >
+<item>
     <shape>
-        <stroke android:width="0.5pt" android:color="#c1c1c1"/>
+        <solid android:color="#d63031"/>
     </shape>
-
 </item>
 </selector>

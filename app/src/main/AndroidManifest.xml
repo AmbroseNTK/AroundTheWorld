@@ -23,6 +23,8 @@
         <activity android:name=".GameOverActivity"/>
         <activity android:name=".NameModeActivity"/>
         <activity android:name=".TutorialActivity"/>
+        <activity android:name=".VsModeStartActivity"/>
+        <activity android:name=".VsModePlayActivity"/>
         <meta-data android:name="com.google.android.gms.games.APP_ID"
             android:value="@string/app_id" />
         <meta-data android:name="com.google.android.gms.version"

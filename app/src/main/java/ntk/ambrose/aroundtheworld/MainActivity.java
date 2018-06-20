@@ -2,6 +2,7 @@ package ntk.ambrose.aroundtheworld;
 
 import android.Manifest;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
@@ -30,13 +31,9 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.ApiException;
-import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.games.Games;
-import com.google.android.gms.games.LeaderboardsClient;
 import com.google.android.gms.tasks.Task;
 import com.sdsmdg.tastytoast.TastyToast;
-
-import java.util.Arrays;
 
 import ntk.ambrose.aroundtheworld.Models.WorldMap;
 
@@ -65,10 +62,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
         FacebookSdk.sdkInitialize(getApplicationContext());
         AppEventsLogger.activateApp(this);
 
         setContentView(R.layout.activity_main);
+
 
 
 
@@ -178,6 +177,9 @@ public class MainActivity extends AppCompatActivity {
             handleSignInResult(task);
         }
     }
+
+
+
     private void handleSignInResult(Task<GoogleSignInAccount> completedTask) {
         try {
             Setting.getInstance().setGoogleSignInAccount(completedTask.getResult(ApiException.class));

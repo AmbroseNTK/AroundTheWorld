@@ -13,11 +13,8 @@ import android.widget.TextView;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.games.Games;
-import com.google.android.gms.games.LeaderboardsClient;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.sdsmdg.tastytoast.TastyToast;
-
-import java.util.Set;
 
 import ntk.ambrose.aroundtheworld.Models.QuestionBundle;
 
@@ -29,6 +26,7 @@ public class ModeActivity extends AppCompatActivity {
     Button btLeaderboard;
     Button btTutorial;
     Button btAchievement;
+    Button btPlayVsPlay;
 
     TextView tvLabel1;
 
@@ -97,6 +95,15 @@ public class ModeActivity extends AppCompatActivity {
             }
         });
 
+        btPlayVsPlay = findViewById(R.id.btPlayVsPlay);
+        btPlayVsPlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(ModeActivity.this,VsModeStartActivity.class));
+            }
+        });
+
         showButtonAnimation = AnimationUtils.loadAnimation(getBaseContext(),R.anim.show_button_answer);
         btFlagMode.startAnimation(showButtonAnimation);
         btNameMode.startAnimation(showButtonAnimation);
@@ -104,6 +111,7 @@ public class ModeActivity extends AppCompatActivity {
         btAchievement.startAnimation(showButtonAnimation);
         btSetting.startAnimation(showButtonAnimation);
         btTutorial.startAnimation(showButtonAnimation);
+        btPlayVsPlay.startAnimation(showButtonAnimation);
 
         tvLabel1 = findViewById(R.id.tvLabel1);
         labelRunAnimation = AnimationUtils.loadAnimation(getBaseContext(),R.anim.label_anim);

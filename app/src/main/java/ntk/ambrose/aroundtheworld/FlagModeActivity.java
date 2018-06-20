@@ -33,7 +33,6 @@ public class FlagModeActivity extends AppCompatActivity{
     QuestionBundle.Question currentQuestion;
     Timer timer;
     CountDownTimer  countDownTimer;
-    int timeLength=4;
 
     Animation showButtonAnswerAnim;
     Animation flyFlagAnim;

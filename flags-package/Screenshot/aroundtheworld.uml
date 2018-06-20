@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ntk.ambrose.aroundtheworld</OriginalElement>
+  <nodes>
+    <node x="478.7716676478284" y="1481.0">ntk.ambrose.aroundtheworld.FlagModeActivity</node>
+    <node x="114.75083071690233" y="1049.0">ntk.ambrose.aroundtheworld.MainActivity</node>
+    <node x="790.1466676478285" y="562.0">ntk.ambrose.aroundtheworld.VsModePlayActivity</node>
+    <node x="760.2412483647308" y="771.0">ntk.ambrose.aroundtheworld.VsModeStartActivity</node>
+    <node x="284.30440214547383" y="0.0">ntk.ambrose.aroundtheworld.Setting</node>
+    <node x="593.3044021454739" y="99.0">ntk.ambrose.aroundtheworld.SoundManager</node>
+    <node x="1145.6630775771848" y="176.5">ntk.ambrose.aroundtheworld.Models</node>
+    <node x="162.5645198848772" y="1282.0">ntk.ambrose.aroundtheworld.GameOverActivity</node>
+    <node x="290.5645198848772" y="782.0">ntk.ambrose.aroundtheworld.TutorialActivity</node>
+    <node x="1054.1466676478285" y="573.0">ntk.ambrose.aroundtheworld.NameModeActivity</node>
+    <node x="458.89666764782845" y="584.0">ntk.ambrose.aroundtheworld.OptionActivity</node>
+    <node x="594.2716676478285" y="904.0">ntk.ambrose.aroundtheworld.ModeActivity</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ntk.ambrose.aroundtheworld.GameOverActivity" target="ntk.ambrose.aroundtheworld.SoundManager">
+      <point x="-47.0" y="-69.5" />
+      <point x="233.0645198848772" y="1252.0" />
+      <point x="104.25083071690233" y="1252.0" />
+      <point x="104.25083071690233" y="731.0" />
+      <point x="369.8865499084251" y="731.0" />
+      <point x="369.8865499084251" y="472.0" />
+      <point x="635.6794021454739" y="472.0" />
+      <point x="-70.625" y="92.0" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.GameOverActivity" target="ntk.ambrose.aroundtheworld.Setting">
+      <point x="-94.0" y="-69.5" />
+      <point x="186.0645198848772" y="1262.0" />
+      <point x="11.0" y="1262.0" />
+      <point x="11.0" y="432.0" />
+      <point x="338.49190214547383" y="432.0" />
+      <point x="-90.3125" y="191.0" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.VsModePlayActivity" target="ntk.ambrose.aroundtheworld.Models">
+      <point x="30.375" y="-69.5" />
+      <point x="942.0216676478285" y="512.0" />
+      <point x="1187.5476929618003" y="512.0" />
+      <point x="-18.615384615384613" y="14.5" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.VsModeStartActivity" target="ntk.ambrose.aroundtheworld.VsModePlayActivity">
+      <point x="23.625" y="-36.5" />
+      <point x="878.3662483647308" y="751.0" />
+      <point x="850.8966676478285" y="751.0" />
+      <point x="-60.75" y="69.5" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.FlagModeActivity" target="ntk.ambrose.aroundtheworld.Models">
+      <point x="64.75" y="-69.5" />
+      <point x="673.0216676478284" y="1451.0" />
+      <point x="1300.0649368785978" y="1451.0" />
+      <point x="1300.0649368785978" y="512.0" />
+      <point x="1252.7015391156465" y="512.0" />
+      <point x="46.53846153846155" y="14.5" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.ModeActivity" target="ntk.ambrose.aroundtheworld.SoundManager">
+      <point x="0.0" y="-47.5" />
+      <point x="698.2716676478285" y="492.0" />
+      <point x="720.4294021454739" y="492.0" />
+      <point x="14.125" y="92.0" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.GameOverActivity" target="ntk.ambrose.aroundtheworld.MainActivity">
+      <point x="0.0" y="-69.5" />
+      <point x="280.0645198848772" y="1262.0" />
+      <point x="295.7508307169023" y="1262.0" />
+      <point x="0.0" y="91.5" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.VsModePlayActivity" target="ntk.ambrose.aroundtheworld.SoundManager">
+      <point x="-30.375" y="-69.5" />
+      <point x="881.2716676478285" y="422.0" />
+      <point x="776.9294021454739" y="422.0" />
+      <point x="70.625" y="92.0" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.NameModeActivity" target="ntk.ambrose.aroundtheworld.Models">
+      <point x="25.75" y="-58.5" />
+      <point x="1182.8966676478285" y="542.0" />
+      <point x="1215.4707698848772" y="542.0" />
+      <point x="9.30769230769232" y="14.5" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.NameModeActivity" target="ntk.ambrose.aroundtheworld.SoundManager">
+      <point x="-25.75" y="-58.5" />
+      <point x="1131.3966676478285" y="402.0" />
+      <point x="805.1794021454739" y="402.0" />
+      <point x="98.875" y="92.0" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.ModeActivity" target="ntk.ambrose.aroundtheworld.VsModeStartActivity">
+      <point x="29.71428571428578" y="-47.5" />
+      <point x="727.9859533621143" y="864.0" />
+      <point x="854.7412483647308" y="864.0" />
+      <point x="0.0" y="36.5" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.NameModeActivity" target="ntk.ambrose.aroundtheworld.GameOverActivity">
+      <point x="51.50000000000006" y="58.5" />
+      <point x="1208.6466676478285" y="751.0" />
+      <point x="1173.9082698848772" y="751.0" />
+      <point x="1173.9082698848772" y="1262.0" />
+      <point x="374.0645198848772" y="1262.0" />
+      <point x="94.0" y="-69.5" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.VsModePlayActivity" target="ntk.ambrose.aroundtheworld.Setting">
+      <point x="-91.125" y="-69.5" />
+      <point x="820.5216676478285" y="432.0" />
+      <point x="519.1169021454739" y="432.0" />
+      <point x="90.3125" y="191.0" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.ModeActivity" target="ntk.ambrose.aroundtheworld.Models">
+      <point x="89.14285714285711" y="-47.5" />
+      <point x="787.4145247906856" y="884.0" />
+      <point x="1281.449552263213" y="884.0" />
+      <point x="1281.449552263213" y="532.0" />
+      <point x="1234.0861545002617" y="532.0" />
+      <point x="27.923076923076906" y="14.5" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.OptionActivity" target="ntk.ambrose.aroundtheworld.SoundManager">
+      <point x="0.0" y="-47.5" />
+      <point x="553.3966676478285" y="492.0" />
+      <point x="692.1794021454739" y="492.0" />
+      <point x="-14.125" y="92.0" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.ModeActivity" target="ntk.ambrose.aroundtheworld.OptionActivity">
+      <point x="-29.714285714285666" y="-47.5" />
+      <point x="668.5573819335427" y="884.0" />
+      <point x="663.8966676478285" y="884.0" />
+      <point x="663.8966676478285" y="751.0" />
+      <point x="600.6466676478285" y="751.0" />
+      <point x="47.25" y="47.5" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.ModeActivity" target="ntk.ambrose.aroundtheworld.NameModeActivity">
+      <point x="59.428571428571445" y="-47.5" />
+      <point x="757.7002390763998" y="874.0" />
+      <point x="1056.2686878597597" y="874.0" />
+      <point x="1056.2686878597597" y="751.0" />
+      <point x="1105.6466676478285" y="751.0" />
+      <point x="-51.5" y="58.5" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.MainActivity" target="ntk.ambrose.aroundtheworld.OptionActivity">
+      <point x="0.0" y="-91.5" />
+      <point x="295.7508307169023" y="1029.0" />
+      <point x="280.0645198848772" y="1029.0" />
+      <point x="280.0645198848772" y="751.0" />
+      <point x="506.14666764782845" y="751.0" />
+      <point x="-47.25" y="47.5" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.FlagModeActivity" target="ntk.ambrose.aroundtheworld.Setting">
+      <point x="-107.91666666666663" y="-69.5" />
+      <point x="500.35500098116177" y="1461.0" />
+      <point x="0.0" y="1461.0" />
+      <point x="0.0" y="422.0" />
+      <point x="302.36690214547383" y="422.0" />
+      <point x="-126.4375" y="191.0" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.Models" target="ntk.ambrose.aroundtheworld.Models">
+      <point x="-46.53846153846155" y="14.5" />
+      <point x="1159.6246160387232" y="235.5" />
+      <point x="1115.6630775771848" y="235.5" />
+      <point x="1115.6630775771848" y="191.0" />
+      <point x="-60.5" y="-0.0" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.MainActivity" target="ntk.ambrose.aroundtheworld.Models">
+      <point x="144.79999999999995" y="-91.5" />
+      <point x="440.5508307169023" y="1029.0" />
+      <point x="1290.7572445709054" y="1029.0" />
+      <point x="1290.7572445709054" y="522.0" />
+      <point x="1243.393846807954" y="522.0" />
+      <point x="37.23076923076928" y="14.5" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.VsModeStartActivity" target="ntk.ambrose.aroundtheworld.SoundManager">
+      <point x="-23.625" y="-36.5" />
+      <point x="831.1162483647308" y="741.0" />
+      <point x="779.6466676478285" y="741.0" />
+      <point x="779.6466676478285" y="492.0" />
+      <point x="748.6794021454739" y="492.0" />
+      <point x="42.375" y="92.0" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.VsModePlayActivity" target="ntk.ambrose.aroundtheworld.GameOverActivity">
+      <point x="60.75" y="69.5" />
+      <point x="972.3966676478285" y="741.0" />
+      <point x="1091.980299908425" y="741.0" />
+      <point x="1091.980299908425" y="1252.0" />
+      <point x="327.0645198848772" y="1252.0" />
+      <point x="47.0" y="-69.5" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.MainActivity" target="ntk.ambrose.aroundtheworld.SoundManager">
+      <point x="-72.39999999999998" y="-91.5" />
+      <point x="223.35083071690235" y="1029.0" />
+      <point x="269.0645198848772" y="1029.0" />
+      <point x="269.0645198848772" y="741.0" />
+      <point x="380.8865499084251" y="741.0" />
+      <point x="380.8865499084251" y="482.0" />
+      <point x="663.9294021454739" y="482.0" />
+      <point x="-42.375" y="92.0" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.FlagModeActivity" target="ntk.ambrose.aroundtheworld.GameOverActivity">
+      <point x="-21.583333333333314" y="-69.5" />
+      <point x="586.6883343144951" y="1441.0" />
+      <point x="280.0645198848772" y="1441.0" />
+      <point x="0.0" y="69.5" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.VsModeStartActivity" target="ntk.ambrose.aroundtheworld.Setting">
+      <point x="-70.875" y="-36.5" />
+      <point x="783.8662483647308" y="751.0" />
+      <point x="738.9591676478285" y="751.0" />
+      <point x="738.9591676478285" y="442.0" />
+      <point x="482.99190214547383" y="442.0" />
+      <point x="54.1875" y="191.0" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.MainActivity" target="ntk.ambrose.aroundtheworld.Setting">
+      <point x="-144.8" y="-91.5" />
+      <point x="150.95083071690232" y="1029.0" />
+      <point x="22.0" y="1029.0" />
+      <point x="22.0" y="442.0" />
+      <point x="374.61690214547383" y="442.0" />
+      <point x="-54.1875" y="191.0" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.VsModeStartActivity" target="ntk.ambrose.aroundtheworld.Models">
+      <point x="70.875" y="-36.5" />
+      <point x="925.6162483647308" y="751.0" />
+      <point x="1043.6466676478285" y="751.0" />
+      <point x="1043.6466676478285" y="532.0" />
+      <point x="1206.1630775771848" y="532.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.OptionActivity" target="ntk.ambrose.aroundtheworld.Setting">
+      <point x="-63.0" y="-47.5" />
+      <point x="490.39666764782845" y="452.0" />
+      <point x="446.86690214547383" y="452.0" />
+      <point x="18.0625" y="191.0" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.ModeActivity" target="ntk.ambrose.aroundtheworld.Setting">
+      <point x="-59.428571428571445" y="-47.5" />
+      <point x="638.843096219257" y="874.0" />
+      <point x="490.0645198848772" y="874.0" />
+      <point x="490.0645198848772" y="721.0" />
+      <point x="358.8865499084251" y="721.0" />
+      <point x="358.8865499084251" y="452.0" />
+      <point x="410.74190214547383" y="452.0" />
+      <point x="-18.0625" y="191.0" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.NameModeActivity" target="ntk.ambrose.aroundtheworld.Setting">
+      <point x="-77.25" y="-58.5" />
+      <point x="1079.8966676478285" y="412.0" />
+      <point x="555.2419021454739" y="412.0" />
+      <point x="126.4375" y="191.0" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.MainActivity" target="ntk.ambrose.aroundtheworld.ModeActivity">
+      <point x="72.39999999999998" y="-91.5" />
+      <point x="368.1508307169023" y="1019.0" />
+      <point x="646.2716676478285" y="1019.0" />
+      <point x="-52.0" y="47.5" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.FlagModeActivity" target="ntk.ambrose.aroundtheworld.SoundManager">
+      <point x="-64.74999999999997" y="-69.5" />
+      <point x="543.5216676478285" y="1451.0" />
+      <point x="77.5645198848772" y="1451.0" />
+      <point x="77.5645198848772" y="462.0" />
+      <point x="607.4294021454739" y="462.0" />
+      <point x="-98.875" y="92.0" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.ModeActivity" target="ntk.ambrose.aroundtheworld.TutorialActivity">
+      <point x="-89.14285714285711" y="-47.5" />
+      <point x="609.1288105049714" y="884.0" />
+      <point x="385.0645198848772" y="884.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.ModeActivity" target="ntk.ambrose.aroundtheworld.FlagModeActivity">
+      <point x="52.0" y="47.5" />
+      <point x="750.2716676478285" y="1441.0" />
+      <point x="629.8550009811618" y="1441.0" />
+      <point x="21.583333333333343" y="-69.5" />
+    </edge>
+    <edge source="ntk.ambrose.aroundtheworld.OptionActivity" target="ntk.ambrose.aroundtheworld.Models">
+      <point x="63.0" y="-47.5" />
+      <point x="616.3966676478285" y="502.0" />
+      <point x="1178.240000654108" y="502.0" />
+      <point x="-27.923076923076934" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.30000000000000016" x="1229.8521098784258" y="880.589133089129" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
