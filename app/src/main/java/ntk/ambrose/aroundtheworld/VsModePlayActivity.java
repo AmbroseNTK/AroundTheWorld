@@ -37,6 +37,7 @@ public class VsModePlayActivity extends AppCompatActivity{
 
     @Override
     public void onBackPressed() {
+        finish();
         gameOver();
     }
 
@@ -46,7 +47,7 @@ public class VsModePlayActivity extends AppCompatActivity{
         setContentView(R.layout.vs_mode_play_activity);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         SoundManager.getInstance().stopAll();
-        SoundManager.getInstance().Play(SoundManager.Playlist.BG_MODE1,true);
+        SoundManager.getInstance().Play(SoundManager.Playlist.BG_MODE2,true);
         fadeText = AnimationUtils.loadAnimation(getBaseContext(),R.anim.text_fade);
         fadeText.setDuration(1000);
 
@@ -170,7 +171,7 @@ public class VsModePlayActivity extends AppCompatActivity{
                 } else {
                     Setting.getInstance().setPlayer2Score(Setting.getInstance().getPlayer2Score() + 100);
                 }
-                SoundManager.getInstance().Play(SoundManager.Playlist.SOUND_CORRECT, false);
+                SoundManager.getInstance().Play(SoundManager.Playlist.SOUND_TRUE, false);
 
             } else {
                 if (player.equals("1")) {
@@ -178,7 +179,7 @@ public class VsModePlayActivity extends AppCompatActivity{
                 } else {
                     Setting.getInstance().setPlayer2Score(Setting.getInstance().getPlayer2Score() - 100);
                 }
-                //SoundManager.getInstance().Play(SoundManager.Playlist.SOUND_WRONG, false);
+                SoundManager.getInstance().Play(SoundManager.Playlist.SOUND_FALSE, false);
 
             }
             if (Setting.getInstance().getPlayer1Score() + Setting.getInstance().getPlayer2Score() != 0) {

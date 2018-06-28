@@ -29,6 +29,14 @@
             android:layout_marginEnd="10dp"
             android:text="First, select your play mode. Second, choose an anwser, which is suitable with the question."
             />
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tvTut"
+            android:id="@+id/webTut">
+
+        </WebView>
         <Button
             android:id="@+id/btDoneTut"
             android:layout_width="match_parent"

@@ -33,6 +33,8 @@ public class SoundManager {
         soundList.put(Playlist.SOUND_CORRECT,MediaPlayer.create(context,R.raw.sound_correct));
         soundList.put(Playlist.SOUND_WRONG,MediaPlayer.create(context,R.raw.sound_wrong));
         soundList.put(Playlist.SOUND_MUTE,MediaPlayer.create(context,R.raw.sound_mute));
+        soundList.put(Playlist.SOUND_TRUE,MediaPlayer.create(context,R.raw.sound_true));
+        soundList.put(Playlist.SOUND_FALSE,MediaPlayer.create(context,R.raw.sound_false));
     }
 
     private HashMap<String,MediaPlayer> soundList;
@@ -97,5 +99,7 @@ public class SoundManager {
         public final static String BG_MODE1 = "bg_mode1";
         public final static String BG_MODE2 ="bg_mode2";
         public final static String SOUND_MUTE="sound_mute";
+        public final static String SOUND_TRUE = "sound_true";
+        public final static String SOUND_FALSE="sound_false";
     }
 }

@@ -1,6 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'key0'
+            keyPassword '23031998'
+            storeFile file('D:/Source/Repos/KeyStore/key.jks')
+            storePassword '23031998'
+        }
+    }
     compileSdkVersion 26
     defaultConfig {
         applicationId "ntk.ambrose.aroundtheworld"
@@ -9,16 +17,23 @@ android {
         versionCode 2
         versionName "1.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.config
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
         }
     }
     compileOptions {
         targetCompatibility 1.8
         sourceCompatibility 1.8
+    }
+    productFlavors {
     }
 }
 
